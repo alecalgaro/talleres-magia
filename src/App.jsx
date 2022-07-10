@@ -1,7 +1,9 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from 'styled-components'
 
-import Navbar from "./components/Navbar"
+import HomePage from './components/HomePage'
+import CoursePage from './components/CoursePage'
 import GamePage from './components/GamePage'
 
 function App() {
@@ -9,8 +11,11 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <GamePage />
+      <Routes>
+        <Route path="/" element={ <HomePage /> } />
+        <Route path="/curso" element={ <CoursePage /> } />
+        <Route path="/curso/:idCurso" element={ <GamePage /> } />
+      </Routes>
     </>
   )
 }
@@ -22,6 +27,13 @@ const GlobalStyle = createGlobalStyle`
     --black: #191919;
     --white: #ffffff;
     --yellow: #FFDF57;
+    --blue: #1877b8;
+
+    --color1:#b2d9f7;
+    --color2:#487aa1;
+    --color3:#3d3c3b;
+    --color4:#7c8071;
+    --color5:#dde3ca;
   }
 
   * {

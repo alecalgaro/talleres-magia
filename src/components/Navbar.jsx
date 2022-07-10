@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 import imgLogo from '../img/logo.webp'
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
             <a href="#about">Sobre mi</a>
             <a href="#courses">Cursos</a>
           </div>
-            <a href="#home"><img src={imgLogo} alt="logo" /></a>
+            <Link to="/"><img src={imgLogo} alt="logo" /></Link>
           <div className='menu_der'>
             <a href="#contact">Contacto</a>
             <a href="#login">Ingresar</a>
@@ -51,7 +51,7 @@ const NavContainer = styled.nav`
     transition: letter-spacing .3s;
       
     &:hover{
-      color: var(--amarillo);
+      color: var(--blue);
     }
   }
 
