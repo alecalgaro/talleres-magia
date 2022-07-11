@@ -1,12 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
+import Modal from './Modal';
 
-const GameItem = ({number, title}) => {
+const GameItem = ({numberGame, titleGame, effect, resources, realization, comments}) => {
+  const [modal, setModal] = useState(false);
+
+  const openModal = () => {
+    setModal(true);
+  }
+
   return (
-    <ContainerItem>
-        <h3>{number}</h3> 
-        <p>{title}</p>
-    </ContainerItem>
+    <>
+        <ContainerItem onClick={() => openModal()}>
+            <h3>{numberGame}</h3> 
+            <p>{titleGame}</p>
+        </ContainerItem>
+
+        {modal && <Modal 
+            setModal={setModal}
+            titleGame={titleGame}
+            effect={effect}
+            resources={resources}
+            realization={realization}
+            comments={comments}
+            />
+        }
+    </>
   )
 }
 

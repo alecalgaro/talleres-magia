@@ -4,7 +4,6 @@ import { createGlobalStyle } from 'styled-components'
 
 import HomePage from './components/HomePage'
 import CoursePage from './components/CoursePage'
-import GamePage from './components/GamePage'
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={ <HomePage /> } />
         <Route path="/curso" element={ <CoursePage /> } />
-        <Route path="/curso/:idCurso" element={ <GamePage /> } />
       </Routes>
     </>
   )
@@ -33,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     --color2:#487aa1;
     --color3:#3d3c3b;
     --color4:#7c8071;
-    --color5:#dde3ca;
+    --color5:#f7f7f7;
   }
 
   * {
@@ -47,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     overflow-x: hidden;
+    background-color: var(--color5);
   }
 
   section[id] {

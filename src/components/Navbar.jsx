@@ -35,9 +35,9 @@ const NavContainer = styled.nav`
   align-items: center;
   width: 100%;
   height: 4.2rem;
-  background-color: #fff;
+  background-color: var(--color5);
   box-shadow: 4px 4px 5px #e5e5e5;   // si la barra se pone abajo, seria -4px en lugar de +4px
-  opacity: .9;
+  opacity: .95;
   z-index: 10;
 
   a{
