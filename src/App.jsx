@@ -22,13 +22,8 @@ export default App
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --black: #191919;
-    --white: #ffffff;
-    --yellow: #FFDF57;
-    --blue: #1877b8;
-
-    --color1:#b2d9f7;
-    --color2:#487aa1;
+    --color1:#487aa1;
+    --color2:#00A8CC;
     --color3:#3d3c3b;
     --color4:#7c8071;
     --color5:#f7f7f7;
@@ -54,5 +49,9 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  p{
+    color: var(--color3);
   }
 `

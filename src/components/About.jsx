@@ -20,7 +20,7 @@ const ContainerAbout = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-bottom: 10rem; 
 
     img{
         width: 15rem;
@@ -32,11 +32,11 @@ const ContainerAbout = styled.div`
         font-weight: 600;
         font-size: 2rem;
         text-align: center;
-        background-color: var(--blue);
+        background-color: var(--color1);
         transform: rotate(-1deg);
         position: relative;
         bottom: 2rem;
-        color: var(--white);
+        color: var(--color5);
 
         @media (min-width: 768px) {
             font-size: 3rem;
@@ -47,6 +47,10 @@ const ContainerAbout = styled.div`
     p{
         font-size: 1.6rem;
         margin: 1rem 2rem;
+        width: 90%;
         text-align: center;
+
+        @media (min-width: 768px) { width: 70%; }
+        @media (min-width: 992px) { width: 50%; }
     }
 `

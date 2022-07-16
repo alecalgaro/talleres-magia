@@ -41,7 +41,7 @@ const NavContainer = styled.nav`
   z-index: 10;
 
   a{
-    color: var(--black);
+    color: var(--color3);
     display: block;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ const NavContainer = styled.nav`
     transition: letter-spacing .3s;
       
     &:hover{
-      color: var(--blue);
+      color: var(--color2);
     }
   }
 

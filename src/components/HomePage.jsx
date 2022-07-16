@@ -1,13 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from './Navbar'
+import Header from './Header'
 import About from './About'
 
 const HomePage = () => {
   return (
     <ContainerHome>
         <Navbar />
-        <About />
+        <header>
+          <Header />
+        </header>
+        <body>
+          <About />
+        </body>
     </ContainerHome>
   )
 }
@@ -20,5 +26,6 @@ const ContainerHome = styled.div`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    /* margin-top: 10rem; */
+    /* height: 100vh; */
 `

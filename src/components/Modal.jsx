@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BtnCerrar from '../img/icon-close.png'
+import BtnCerrar from '../img/icon-close.webp'
 import Title from './Title';
 import GameDetails from './GameDetails';
 import { motion } from "framer-motion";
@@ -29,20 +29,20 @@ const Modal = ({setModal, titleGame, effect, resources, realization, comments}) 
             <ContainerGame>
                 <Title title={titleGame}/>
                 <GameDetails 
-                title="Efecto" 
-                text={effect}
+                    title="Efecto" 
+                    text={effect}
                 />
                 <GameDetails 
-                title="Recursos" 
-                text={resources}
+                    title="Recursos" 
+                    text={resources}
                 />
                 <GameDetails 
-                title="Realización"
-                text={realization} 
+                    title="Realización"
+                    text={realization} 
                 />
                 <GameDetails 
-                title="Comentarios" 
-                text={comments}
+                    title="Comentarios" 
+                    text={comments}
                 />
             </ContainerGame>
         </ContainerModal>
