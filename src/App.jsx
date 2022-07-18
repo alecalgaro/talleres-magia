@@ -1,24 +1,23 @@
-import React from 'react'
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
-import HomePage from './components/HomePage'
-import CoursePage from './components/CoursePage'
+import HomePage from "./components/HomePage";
+import CoursePage from "./components/CoursePage";
 
 function App() {
-
-  return (
-    <>
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={ <HomePage /> } />
-        <Route path="/curso" element={ <CoursePage /> } />
-      </Routes>
-    </>
-  )
+	return (
+		<>
+			<GlobalStyle />
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/taller" element={<CoursePage />} />
+			</Routes>
+		</>
+	);
 }
 
-export default App
+export default App;
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -44,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section[id] {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 80px;
   }
 
   a {
@@ -54,4 +53,4 @@ const GlobalStyle = createGlobalStyle`
   p{
     color: var(--color3);
   }
-`
+`;

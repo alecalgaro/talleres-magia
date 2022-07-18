@@ -3,6 +3,7 @@ import styled from "styled-components";
 import BtnCerrar from "../img/icon-close.webp";
 import Title from "./Title";
 import GameDetails from "./GameDetails";
+import Slider from "./Slider";
 import { motion } from "framer-motion";
 
 const Modal = ({ setModal, titleGame, effect, resources, realization, comments }) => {
@@ -24,6 +25,7 @@ const Modal = ({ setModal, titleGame, effect, resources, realization, comments }
 			<ContainerModal>
 				<ContainerGame>
 					<Title title={titleGame} />
+					<Slider />
 					<GameDetails title="Efecto" text={effect} />
 					<GameDetails title="Recursos" text={resources} />
 					<GameDetails title="Realización" text={realization} />

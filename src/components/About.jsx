@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-
+import Title from "./Title";
 import imgPerfil from "../img/img-perfil.webp";
 
 const About = () => {
 	return (
-		<ContainerAbout>
+		<ContainerAbout id="sobre-mi">
+			<Title title="Sobre mí" />
 			<img src={imgPerfil} alt="foto" />
 			<h3>Alejandro Calgaro</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim
-				voluptates, non nisi velit exercitationem eaque quam neque? Iusto natus officia
-				molestias odit nam repellat minima cupiditate quo suscipit iste?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim voluptates, non
+				nisi velit exercitationem eaque quam neque? Iusto natus officia molestias odit nam repellat
+				minima cupiditate quo suscipit iste?
 			</p>
 		</ContainerAbout>
 	);
@@ -19,12 +20,12 @@ const About = () => {
 
 export default About;
 
-const ContainerAbout = styled.div`
+const ContainerAbout = styled.section`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 10rem;
+	margin: 10rem 0;
 
 	img {
 		width: 15rem;
@@ -51,7 +52,7 @@ const ContainerAbout = styled.div`
 	}
 
 	p {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		margin: 1rem 2rem;
 		width: 90%;
 		text-align: center;

@@ -9,15 +9,15 @@ function Navbar() {
 			<NavContainer>
 				<>
 					<div className="menu_izq">
-						<a href="#about">Sobre mi</a>
-						<a href="#courses">Cursos</a>
+						<a href="#sobre-mi">Sobre mi</a>
+						<a href="#talleres">Talleres</a>
 					</div>
 					<Link to="/">
 						<img src={imgLogo} alt="logo" />
 					</Link>
 					<div className="menu_der">
-						<a href="#contact">Contacto</a>
-						<a href="#login">Ingresar</a>
+						<a href="#contacto">Contacto</a>
+						<Link to="/">Ingresar</Link>
 					</div>
 				</>
 			</NavContainer>

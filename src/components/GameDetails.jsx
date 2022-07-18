@@ -8,16 +8,11 @@ const GameDetails = ({ title, text }) => {
 		<Container open={open} onClick={() => setOpen(!open)}>
 			<div>
 				<h2>{title}</h2>
-				<svg
-					fill="none"
-					stroke="currentColor"
-					viewBox="0 0 24 24"
-					data-darkreader-inline-stroke=""
-				>
+				<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" data-darkreader-inline-stroke="">
 					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="2"
 						d="M19 9l-7 7-7-7"
 					></path>
 				</svg>

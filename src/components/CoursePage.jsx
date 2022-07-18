@@ -1,41 +1,45 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 import GameItem from "./GameItem";
 import Title from "./Title";
-import Navbar from "./Navbar";
+import Footer from "./Footer";
 import games from "./games.json";
 
 const CoursePage = () => {
 	return (
 		<>
 			<Navbar />
-			<ContainerGamePage>
-				<Title title="Nombre del curso" />
-				<img
-					src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
-					alt="logo curso"
-				/>
-				<GamesContainer>
-					{games.map((game) => (
-						<GameItem
-							key={game.number}
-							numberGame={game.number}
-							titleGame={game.title}
-							effect={game.effect}
-							resources={game.resources}
-							realization={game.realization}
-							comments={game.comments}
-						/>
-					))}
-				</GamesContainer>
-			</ContainerGamePage>
+			<main>
+				<ContainerGamePage>
+					<Title title="Nombre del curso" />
+					<img
+						src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
+						alt="logo curso"
+					/>
+					<GamesContainer>
+						{games.map((game) => (
+							<GameItem
+								key={game.number}
+								numberGame={game.number}
+								titleGame={game.title}
+								effect={game.effect}
+								resources={game.resources}
+								realization={game.realization}
+								comments={game.comments}
+							/>
+						))}
+					</GamesContainer>
+				</ContainerGamePage>
+			</main>
+			<Footer />
 		</>
 	);
 };
 
 export default CoursePage;
 
-const ContainerGamePage = styled.div`
+const ContainerGamePage = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;

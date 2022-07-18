@@ -9,7 +9,7 @@ export default Title;
 
 const TitleSection = styled.h2`
 	padding: 1rem 1.5rem 0.5rem 1.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	font-weight: 600;
 	font-size: 3rem;
 	text-align: center;

@@ -26,7 +26,7 @@ const Header = () => {
 
 export default Header;
 
-const ContainerHeader = styled.div`
+const ContainerHeader = styled.header`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,14 +50,18 @@ const ContainerHeader = styled.div`
 	}
 
 	.title {
-		position: relative;
-		color: #000;
-		font-size: 3rem;
+		font-size: 6rem;
 		margin: 0 2rem;
+		font-weight: 600;
+		color: var(--color1);
+		text-shadow: 4px 4px 0px var(--color3);
+		text-align: center;
 	}
 
 	.subtitle {
-		font-size: 2rem;
+		font-size: 4rem;
+		margin: 2rem;
+		text-align: justify;
 	}
 
 	.rotate-words {
@@ -66,14 +70,14 @@ const ContainerHeader = styled.div`
 	}
 
 	.rotate-words span {
-		font-size: 2rem;
+		font-size: 3.5rem;
 		text-align: center;
 		width: max-content;
 		position: absolute;
 		background-color: var(--color1);
 		color: var(--color5);
 		padding-inline: 1rem;
-		padding-top: 0.3rem;
+		padding-top: 0.5rem;
 		opacity: 0;
 		transform-origin: 10% 75%;
 		animation: rotateWords 12s var(--d) linear infinite;
