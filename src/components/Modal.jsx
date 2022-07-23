@@ -50,7 +50,7 @@ const BgModal = styled(motion.div)`
 
 const BtnCerrarModal = styled.div`
 	position: absolute;
-	right: 2rem;
+	left: 2rem;
 	top: 2rem;
 	width: 3.6rem;
 	cursor: pointer;
