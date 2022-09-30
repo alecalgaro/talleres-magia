@@ -1,0 +1,46 @@
+[
+	{
+		"idGame": 1,
+		"title": "Nombre del juego 1",
+		"effect": [
+			{
+				"p": "Mensaje 1"
+			},
+			{
+				"p": "Mensaje 2"
+			},
+			{
+				"p": "Mensaje 3"
+			}
+		],
+		"resources": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!",
+		"realization": "Te dejo el link de dos vídeos de YouTube donde podrás aprender fácilmente como fabricarlo.",
+		"comments": "https://www.youtube.com/watch?v=wo3IOY6U2r0&t=341s",
+		"video": "https://www.youtube.com/embed/l30qpPzbwNI"
+	},
+	{
+		"idGame": 2,
+		"number": "2",
+		"title": "Nombre del juego 2"
+	},
+	{
+		"idGame": 3,
+		"number": "3",
+		"title": "Nombre del juego 3"
+	},
+	{
+		"idGame": 4,
+		"number": "4",
+		"title": "Nombre del juego 4"
+	},
+	{
+		"idGame": 5,
+		"number": "5",
+		"title": "Nombre del juego 5"
+	},
+	{
+		"idGame": 6,
+		"number": "6",
+		"title": "Nombre del juego 6"
+	}
+]

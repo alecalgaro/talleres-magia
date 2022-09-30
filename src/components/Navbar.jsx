@@ -3,23 +3,37 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import imgLogo from "../img/logo.webp";
 
-function Navbar() {
+function Navbar({ page }) {
 	return (
 		<>
 			<NavContainer>
-				<>
-					<div className="menu_izq">
-						<a href="#sobre-mi">Sobre mi</a>
-						<a href="#talleres">Talleres</a>
-					</div>
-					<Link to="/">
-						<img src={imgLogo} alt="logo" />
-					</Link>
-					<div className="menu_der">
-						<a href="#contacto">Contacto</a>
-						<Link to="/">Ingresar</Link>
-					</div>
-				</>
+				{page === "home" ? (
+					<>
+						<div className="menu_izq">
+							<a href="#sobre-mi">Sobre mi</a>
+							<a href="#talleres">Talleres</a>
+						</div>
+						<Link to="/">
+							<img src={imgLogo} alt="logo" />
+						</Link>
+						<div className="menu_der">
+							<a href="#contacto">Contacto</a>
+							<Link to="/">Ingresar</Link>
+						</div>
+					</>
+				) : (
+					<>
+						<div className="menu_izq">
+							<Link to="/">Inicio</Link>
+						</div>
+						<Link to="/">
+							<img src={imgLogo} alt="logo" />
+						</Link>
+						<div className="menu_der">
+							<Link to="/">Salir</Link>
+						</div>
+					</>
+				)}
 			</NavContainer>
 		</>
 	);

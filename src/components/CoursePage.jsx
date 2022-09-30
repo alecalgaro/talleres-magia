@@ -1,33 +1,44 @@
 import React from "react";
 import styled from "styled-components";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import GameItem from "./GameItem";
 import Title from "./Title";
 import Footer from "./Footer";
-import games from "./games.json";
+
+import course from "./data/courses.json";
+import games_catholic from "./data/magic_catholic.json";
+import games_family from "./data/magic_family.json";
+import games_educational from "./data/magic_educational.json";
 
 const CoursePage = () => {
+	const { courseName } = useParams();
+
+	let games;
+
+	if (courseName == "catolica") {
+		games = games_catholic;
+	} else if (courseName == "familiar") {
+		games = games_family;
+	} else {
+		games = games_educational;
+	}
+
 	return (
 		<>
 			<Navbar />
 			<main>
 				<ContainerGamePage>
-					<Title title="Nombre del curso" />
+					<Title title={"Magia " + courseName} />
 					<img
 						src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
 						alt="logo curso"
 					/>
 					<GamesContainer>
 						{games.map((game) => (
-							<GameItem
-								key={game.number}
-								numberGame={game.number}
-								titleGame={game.title}
-								effect={game.effect}
-								resources={game.resources}
-								realization={game.realization}
-								comments={game.comments}
-							/>
+							<Link to={"/magia/" + courseName + "/" + game.idGame} key={game.idGame}>
+								<GameItem idGame={game.idGame} titleGame={game.title} />
+							</Link>
 						))}
 					</GamesContainer>
 				</ContainerGamePage>

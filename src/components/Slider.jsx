@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Slider = () => {
+	// Tengo que obtener las imagenes desde el json segun el juego, y ademas
+	// ponerle los botones para cambiar hacia los lados, porque en desktop
+	// sino no funciona el scroll. Dejo el video del tutorial:
+	// https://www.youtube.com/watch?v=ua2nNoigrD4
+
 	const images = [
 		"https://picsum.photos/id/1015/400",
 		"https://picsum.photos/id/1025/400",
@@ -31,6 +36,7 @@ const Container = styled.div`
 
 	.item {
 		flex: 0 0 100%;
+		width: 50%;
 		scroll-snap-align: start;
 	}
 `;

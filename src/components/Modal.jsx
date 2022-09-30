@@ -6,7 +6,7 @@ import GameDetails from "./GameDetails";
 import Slider from "./Slider";
 import { motion } from "framer-motion";
 
-const Modal = ({ setModal, titleGame, effect, resources, realization, comments }) => {
+const Modal = ({ setModal, titleGame, effect, resources, realization, comments, video }) => {
 	const ocultarModal = () => {
 		setModal(false);
 	};
@@ -25,11 +25,15 @@ const Modal = ({ setModal, titleGame, effect, resources, realization, comments }
 			<ContainerModal>
 				<ContainerGame>
 					<Title title={titleGame} />
+					<GameDetails title="Video" video={video} />
+					{/* Deberia recibir como props el video y las imagenes, asi hacer lo que hice arriba con el video
+					y tambien aca quitar el slider y hacer un GameDetails que reciba las imagenes y arme el slider
+					como hice con el iframe del video en "GameDetails.jsx" */}
 					<Slider />
-					<GameDetails title="Efecto" text={effect} />
-					<GameDetails title="Recursos" text={resources} />
-					<GameDetails title="Realización" text={realization} />
-					<GameDetails title="Comentarios" text={comments} />
+					<GameDetails title="Efecto" text1={effect} text2={realization} text3={comments} />
+					<GameDetails title="Recursos" text1={resources} />
+					<GameDetails title="Realización" text1={realization} />
+					<GameDetails title="Comentarios" text1={comments} />
 				</ContainerGame>
 			</ContainerModal>
 		</BgModal>
@@ -71,7 +75,7 @@ const ContainerModal = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin-top: 7rem;
+	margin: 7rem 0 3rem 0;
 `;
 
 const ContainerGame = styled.div`

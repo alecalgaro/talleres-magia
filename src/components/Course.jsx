@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Title from "./Title";
 
-const Course = ({ title, textBtn, item1, item2, item3 }) => {
+const Course = ({ title, route, textBtn, item1, item2, item3 }) => {
 	return (
 		<ContainerCourse>
 			<Title title={title} />
-			<button>{textBtn}</button>
+			<Link to={"/magia/" + route}>
+				<button>{textBtn}</button>
+			</Link>
 			<div>
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
 					<circle cx="32" cy="32" r="22" stroke="var(--color1)" strokeWidth="4"></circle>

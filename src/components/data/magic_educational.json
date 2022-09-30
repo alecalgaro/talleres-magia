@@ -1,0 +1,36 @@
+[
+	{
+		"idGame": 1,
+		"title": "Magia educativa 1",
+		"effect": "Estas banditas representan a distintas personas que aparecen en la Biblia, por ejemplo, Jesús, María, José, los discípulos… (Se pregunta al púbico para que ellos den más opciones). Pero en este momento nos queremos centrar en  tres personas muy especiales y unidas, que son Dios, Jesús y el Espíritu Santo. Muchas veces los nombramos juntos, por ejemplo, siempre que hacemos la señal de la cruz. Pero no tenemos que confundirnos, son tres personas, Padre, Hijo y Espíritu Santo, que conforman un solo Dios. Estas tres personas unidas forman lo que llamamos “la Santísima Trinidad”. La primera persona de la Santísima Trinidad es Dios Padre, la segunda es Dios Hijo (Jesús) y la tercera es Dios Espíritu Santo. Tres personas que se aman, Dios es amor, el Padre ama al Hijo, que ama al Padre, y de ese amor emana el Espíritu Santo.",
+		"resources": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!",
+		"realization": "Te dejo el link de dos vídeos de YouTube donde podrás aprender fácilmente como fabricarlo.",
+		"comments": "https://www.youtube.com/watch?v=wo3IOY6U2r0&t=341s",
+		"video": "https://www.youtube.com/embed/l30qpPzbwNI"
+	},
+	{
+		"idGame": 2,
+		"number": "2",
+		"title": "Nombre del juego 2"
+	},
+	{
+		"idGame": 3,
+		"number": "3",
+		"title": "Nombre del juego 3"
+	},
+	{
+		"idGame": 4,
+		"number": "4",
+		"title": "Nombre del juego 4"
+	},
+	{
+		"idGame": 5,
+		"number": "5",
+		"title": "Nombre del juego 5"
+	},
+	{
+		"idGame": 6,
+		"number": "6",
+		"title": "Nombre del juego 6"
+	}
+]

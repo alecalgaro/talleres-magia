@@ -10,30 +10,33 @@ import Footer from "./Footer";
 const HomePage = () => {
 	return (
 		<ContainerHome>
-			<Navbar />
+			<Navbar page="home" />
 			<Header />
 			<main>
 				<section className="courses" id="talleres">
 					<Course
-						title={"Magia católica"}
-						textBtn={"Acceder"}
-						item1={"Item1"}
-						item2={"Item2"}
-						item3={"Item3"}
+						title="Magia católica"
+						route="catolica"
+						textBtn="Acceder"
+						item1="Item1"
+						item2="Item2"
+						item3="Item3"
 					/>
 					<Course
-						title={"Magia educativa"}
-						textBtn={"Proximamente"}
-						item1={"Item1"}
-						item2={"Item2"}
-						item3={"Item3"}
+						title="Magia educativa"
+						route="educativa"
+						textBtn="Proximamente"
+						item1="Item1"
+						item2="Item2"
+						item3="Item3"
 					/>
 					<Course
-						title={"Magia familiar"}
-						textBtn={"Proximamente"}
-						item1={"Item1"}
-						item2={"Item2"}
-						item3={"Item3"}
+						title="Magia familiar"
+						route="familiar"
+						textBtn="Proximamente"
+						item1="Item1"
+						item2="Item2"
+						item3="Item3"
 					/>
 				</section>
 				<About />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const GameDetails = ({ title, text }) => {
+const GameDetails = ({ title, text1, text2, text3, video }) => {
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -17,7 +17,22 @@ const GameDetails = ({ title, text }) => {
 					></path>
 				</svg>
 			</div>
-			<p>{text}</p>
+			{video ? (
+				<iframe
+					// width="560"
+					// height="315"
+					src={video}
+					title="Video del juego"
+					// frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					// allowfullscreen
+				></iframe>
+			) : null}
+
+			{/* {text1 ? text1.map((effect) => <p>{effect.p}</p>) : null} */}
+			{text1 ? <p>{text1}</p> : null}
+			{text2 ? <p>{text2}</p> : null}
+			{text3 ? <p>{text3}</p> : null}
 		</Container>
 	);
 };
@@ -70,6 +85,21 @@ const Container = styled.div`
 
 		@media (min-width: 768px) {
 			font-size: 1.8rem;
+		}
+	}
+
+	iframe {
+		padding: 1rem 1.5rem;
+		width: 100%;
+		height: 20rem;
+		display: ${(props) => (props.open ? "hidden" : "none")};
+
+		@media (min-width: 576px) {
+			height: 35rem;
+		}
+
+		@media (min-width: 992px) {
+			height: 40rem;
 		}
 	}
 `;

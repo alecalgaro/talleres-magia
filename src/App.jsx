@@ -1,9 +1,10 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import HomePage from "./components/HomePage";
 import CoursePage from "./components/CoursePage";
+import Game from "./components/Game";
 
 function App() {
 	return (
@@ -11,7 +12,19 @@ function App() {
 			<GlobalStyle />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="/taller" element={<CoursePage />} />
+				<Route path="/magia/:courseName" element={<CoursePage />} />
+				<Route path="/magia/catolica/:idGame" element={<Game course="catholic" />} />
+				<Route path="/magia/familiar/:idGame" element={<Game course="family" />} />
+				<Route path="/magia/educativa/:idGame" element={<Game course="educational" />} />
+
+				{/* Cuando tenga hecha la parte de usuarios, aplico la siguiente validacion en las rutas para 
+        que se pueda acceder solo si tiene un usuario, caso contrario te redirige a la pagina de inicio "/" 
+        Ya lo probe usando una variable const user = false y funciona*/}
+				{/* <Route path="/otra" element={user ? <CoursePage /> : <Navigate to="/" replace /> } /> */}
+
+				{/* Crear pagina NotFound
+        <Route path="*" element={<NotFound />} /> 
+        */}
 			</Routes>
 		</>
 	);
@@ -23,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --color1:#487aa1;
     --color2:#00A8CC;
-    --color3:#3d3c3b;
+    --color3:#282828;
     --color4:#7c8071;
     --color5:#f7f7f7;
   }
