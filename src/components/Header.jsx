@@ -16,10 +16,10 @@ const Header = () => {
 					<span className="tres">familiar</span>
 				</div>
 			</h3>
-			<img
-				src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
-				alt="logo curso"
-			/>
+			<p>
+				Aprenderás juegos de magia sencillos con objetos cotidialos, los cuales podrás poner en
+				práctica rapidamente...
+			</p>
 		</ContainerHeader>
 	);
 };
@@ -34,20 +34,6 @@ const ContainerHeader = styled.header`
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
-
-	img {
-		width: 80%;
-		margin-top: 5rem;
-		@media (min-width: 768px) {
-			width: 60%;
-		}
-		@media (min-width: 992px) {
-			width: 50%;
-		}
-		@media (min-width: 1200px) {
-			width: 30%;
-		}
-	}
 
 	.title {
 		font-size: 6rem;

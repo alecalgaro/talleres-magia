@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 import HomePage from "./components/HomePage";
 import CoursePage from "./components/CoursePage";
 import Game from "./components/Game";
+import NotFound from "./components/NotFound";
+import LoginPage from "./components/LoginPage";
 
 function App() {
 	return (
@@ -17,14 +19,15 @@ function App() {
 				<Route path="/magia/familiar/:idGame" element={<Game course="family" />} />
 				<Route path="/magia/educativa/:idGame" element={<Game course="educational" />} />
 
+				{/* A LoginPage le tengo que pasar un prop title para saber si voy a crear una cuenta o ingresar */}
+				<Route path="/login" element={<LoginPage type="create" />} />
+
 				{/* Cuando tenga hecha la parte de usuarios, aplico la siguiente validacion en las rutas para 
         que se pueda acceder solo si tiene un usuario, caso contrario te redirige a la pagina de inicio "/" 
         Ya lo probe usando una variable const user = false y funciona*/}
 				{/* <Route path="/otra" element={user ? <CoursePage /> : <Navigate to="/" replace /> } /> */}
 
-				{/* Crear pagina NotFound
-        <Route path="*" element={<NotFound />} /> 
-        */}
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</>
 	);

@@ -10,8 +10,8 @@ function Navbar({ page }) {
 				{page === "home" ? (
 					<>
 						<div className="menu_izq">
-							<a href="#sobre-mi">Sobre mi</a>
 							<a href="#talleres">Talleres</a>
+							<a href="#sobre-mi">Sobre mi</a>
 						</div>
 						<Link to="/">
 							<img src={imgLogo} alt="logo" />
