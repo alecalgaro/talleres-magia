@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import imgLogoWhatsapp from "../img/icon-whatsapp.webp";
 
 const Header = () => {
 	return (
@@ -16,10 +17,16 @@ const Header = () => {
 					<span className="tres">familiar</span>
 				</div>
 			</h3>
-			<p>
-				Aprenderás juegos de magia sencillos con objetos cotidialos, los cuales podrás poner en
-				práctica rapidamente...
+			<p className="description">
+				Para adquirir alguno de los talleres, haz click en el botón de Whatsapp que encontrarás
+				abajo a la derecha o en la sección de contacto. <br /> Muchas gracias!
 			</p>
+			<a
+				href="https://wa.me/3456474803?text=Quiero%20adquirir%20un%20taller%20de%20magia"
+				target="_blank"
+			>
+				<img className="btn-whatsapp" src={imgLogoWhatsapp} alt="Logo whatsapp" />
+			</a>
 		</ContainerHeader>
 	);
 };
@@ -94,6 +101,34 @@ const ContainerHeader = styled.header`
 		25% {
 			opacity: 0;
 			transform: translateY(9rem) rotate(10deg);
+		}
+	}
+
+	.description {
+		font-size: 2rem;
+		text-align: center;
+		margin: 10rem 2rem 5rem 2rem;
+
+		@media (min-width: 576px) {
+			width: 70%;
+		}
+
+		@media (min-width: 992px) {
+			width: 50%;
+		}
+	}
+
+	.btn-whatsapp {
+		width: 6.4rem;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 2rem;
+		z-index: 9;
+		transition: all 0.3s;
+
+		:hover {
+			opacity: 0.8;
 		}
 	}
 `;

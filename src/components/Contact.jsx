@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "./Title";
-import iconWhatsapp from "../img/icon-whatsapp.png";
-import iconInstagram from "../img/icon-instagram.png";
+import iconWhatsapp from "../img/icon-whatsapp.webp";
+import iconInstagram from "../img/icon-instagram.webp";
 
 const Contact = () => {
 	return (
@@ -51,12 +51,12 @@ const ContainerContact = styled.section`
 	}
 
 	img {
-		width: 4rem;
+		width: 6rem;
 		cursor: pointer;
 		transition: all 0.3s;
 
 		&:hover {
-			transform: scale(1.1);
+			opacity: 0.8;
 		}
 	}
 `;

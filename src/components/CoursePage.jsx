@@ -14,14 +14,18 @@ import games_educational from "./data/magic_educational.json";
 const CoursePage = () => {
 	const { courseName } = useParams();
 
-	let games;
+	var games;
+	var title;
 
 	if (courseName == "catolica") {
 		games = games_catholic;
+		title = "Con magia el Evangelio se contagia";
 	} else if (courseName == "familiar") {
 		games = games_family;
+		title = "Titulo magia familiar";
 	} else {
 		games = games_educational;
+		title = "Titulo magia educativa";
 	}
 
 	return (
@@ -29,7 +33,7 @@ const CoursePage = () => {
 			<Navbar />
 			<main>
 				<ContainerGamePage>
-					<Title title={"Magia " + courseName} />
+					<Title title={title} />
 					<img
 						src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
 						alt="logo curso"

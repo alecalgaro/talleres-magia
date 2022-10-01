@@ -28,11 +28,10 @@ const Game = ({ course }) => {
 					<ContainerModal key={game.idGame}>
 						<ContainerGame>
 							<Title title={game.title} />
-							<GameDetails title="Video" video={game.video} />
-							{/* Deberia recibir como props el video y las imagenes, asi hacer lo que hice arriba con el video
-						y tambien aca quitar el slider y hacer un GameDetails que reciba las imagenes y arme el slider
-						como hice con el iframe del video en "GameDetails.jsx" */}
+
+							{/* Deberia recibir como props las imagenes tambien */}
 							<Slider />
+							<GameDetails title="Video" video={game.video} />
 							<GameDetails
 								title="Efecto"
 								// text1={game.effect.map((effect) => effect.p)}
