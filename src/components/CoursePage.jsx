@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import GameItem from "./GameItem";
 import Title from "./Title";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 import course from "./data/courses.json";
 import games_catholic from "./data/magic_catholic.json";
@@ -30,6 +31,11 @@ const CoursePage = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>{"Magia " + courseName}</title>
+				<meta name="description" content={"Página del taller de magia " + courseName} />
+			</Helmet>
+
 			<Navbar />
 			<main>
 				<ContainerGamePage>

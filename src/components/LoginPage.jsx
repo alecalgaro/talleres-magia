@@ -3,10 +3,23 @@ import styled from "styled-components";
 import Form from "./Form";
 import Navbar from "./Navbar";
 import imgLogoWhatsapp from "../img/icon-whatsapp.webp";
+import { Helmet } from "react-helmet";
 
 const LoginPage = ({ type }) => {
 	return (
 		<ContainerLogin>
+			{type === "create" ? (
+				<Helmet>
+					<title>Crear cuenta</title>
+					<meta name="description" content="Página para registrarse como nuevo usuario" />
+				</Helmet>
+			) : (
+				<Helmet>
+					<title>Iniciar sesion</title>
+					<meta name="description" content="Página para iniciar sesion" />
+				</Helmet>
+			)}
+
 			<Navbar />
 			{type === "create" ? <h1>Crear cuenta</h1> : <h1>Iniciar sesion</h1>}
 

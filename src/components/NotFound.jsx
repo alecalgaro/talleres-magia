@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 const NotFound = () => {
 	return (
 		<Container>
+			<Helmet>
+				<title>Página no encontrada</title>
+				<meta name="description" content="Página de error 404 - Página no encontrada" />
+			</Helmet>
 			<h2>No existe la página a la que intentas acceder</h2>
 			<Link to="/">Volver al inicio</Link>
 		</Container>

@@ -9,7 +9,7 @@ import games_catholic from "./data/magic_catholic.json";
 import games_family from "./data/magic_family.json";
 import games_educational from "./data/magic_educational.json";
 
-const Game = ({ course }) => {
+const GamePage = ({ course }) => {
 	const { idGame } = useParams();
 	let games;
 
@@ -50,7 +50,7 @@ const Game = ({ course }) => {
 	);
 };
 
-export default Game;
+export default GamePage;
 
 const ContainerModal = styled.div`
 	display: flex;
