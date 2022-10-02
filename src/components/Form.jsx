@@ -3,6 +3,11 @@ import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
+// imports de react-toastify:
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// imports de Firebase:
 import firebaseApp from "../credentials";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
@@ -11,6 +16,19 @@ const firestore = getFirestore(firebaseApp);
 
 const Form = ({ type }) => {
 	let navigate = useNavigate();
+
+	// Notificacion (alert) de react-toastify:
+	const notify = (message) => {
+		toast.error(message, {
+			position: "top-center",
+			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
+	};
 
 	const {
 		register,
@@ -21,15 +39,21 @@ const Form = ({ type }) => {
 	async function createUser(data) {
 		// gracias a handleSubmit de react-hook-form, en "data" obtiene los datos del formulario (como un objeto)
 
-		// VALIDAR QUE NO EXISTE UN USUARIO YA CREADO CON ESE CORREO
-
-		// Buscar si alguien con ese email ya adquirio un taller (lo registro yo en Firebase cuando paga un taller)
-		if (await findUser(data.email)) {
-			// con await porque debe esperar a obtener la respuesta
-			// Crear usuario:
-			const user = await createUserWithEmailAndPassword(auth, data.email, data.password);
-		} else {
-			alert("Debes adquirir uno de los talleres antes de crear un usuario");
+		// -Busco si alguien con ese email ya adquirio un taller (lo registro yo en Firebase cuando paga un taller)
+		// -Si el usuario quiso crear una cuenta pero no compro antes un taller no estara registrado su correo
+		// en Firebase, por lo tanto le muestro un alert (notify).
+		// Y va dentro de un try-catch porque si ya existe una cuenta con ese correo y se intenta crear otra, se
+		// captura el error que da Firebase en el catch y le muestro una notificacion.
+		try {
+			if (await findUser(data.email)) {
+				// con await porque debe esperar a obtener la respuesta
+				// Crear usuario:
+				const user = await createUserWithEmailAndPassword(auth, data.email, data.password);
+			} else {
+				notify("Debes adquirir un taller antes de crear una cuenta");
+			}
+		} catch (error) {
+			notify("Ya existe un usuario registrado con ese correo");
 		}
 	}
 
@@ -48,11 +72,9 @@ const Form = ({ type }) => {
 		// En ambos casos, si existe o no el documento, Firebase nos devuelve un objeto, por eso verificamos si existe:
 		if (result.exists()) {
 			// Codigo cuando si existe:
-			console.log("Existe el usuario");
 			return true;
 		} else {
 			// Codigo cuando no existe:
-			console.log("NO existe el usuario");
 			return false;
 		}
 	}
@@ -94,6 +116,7 @@ const Form = ({ type }) => {
 						<button type="submit">Ingresar</button>
 					)}
 				</form>
+				<ToastContainer /> {/* Componente de notificacion de react-toastify */}
 			</ContainerForm>
 		</>
 	);
