@@ -3,11 +3,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import imgLogo from "../img/logo.webp";
 
-function Navbar({ page }) {
+import firebaseApp from "../credentials";
+import { getAuth, signOut } from "firebase/auth";
+const auth = getAuth(firebaseApp);
+
+function Navbar({ user }) {
 	return (
 		<>
 			<NavContainer>
-				{page === "home" ? (
+				{user === null ? (
 					<>
 						<div className="menu_izq">
 							<a href="#talleres">Talleres</a>
@@ -30,7 +34,9 @@ function Navbar({ page }) {
 							<img src={imgLogo} alt="logo" />
 						</Link>
 						<div className="menu_der">
-							<Link to="/">Salir</Link>
+							<button onClick={() => signOut(auth)}>
+								<Link to="/">Salir</Link>
+							</button>
 						</div>
 					</>
 				)}
@@ -96,5 +102,10 @@ const NavContainer = styled.nav`
 	img {
 		width: 3.5rem;
 		padding-bottom: 1rem;
+	}
+
+	button {
+		border: none;
+		background-color: var(--color5);
 	}
 `;

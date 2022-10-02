@@ -3,12 +3,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Title from "./Title";
 
-const Course = ({ title, route, textBtn, item1, item2, item3 }) => {
+const Course = ({ title, route, textBtn, item1, item2, item3, enable }) => {
 	return (
 		<ContainerCourse>
 			<Title title={title} />
 			<Link to={"/magia/" + route}>
-				<button>{textBtn}</button>
+				{enable ? (
+					<Button enable={enable}>{textBtn}</Button>
+				) : (
+					<Button enable={enable} disabled>
+						{textBtn}
+					</Button>
+				)}
 			</Link>
 			<div className="container_items">
 				<div>
@@ -61,24 +67,6 @@ const ContainerCourse = styled.div`
 	flex-direction: column;
 	margin: 0 2rem 6rem 2rem;
 
-	button {
-		font-size: 1.6rem;
-		text-transform: uppercase;
-		background-color: var(--color1);
-		color: var(--color5);
-		padding: 1rem 1rem 0.5rem 1rem;
-		border: none;
-		border-radius: 1rem;
-		margin-bottom: 1rem;
-		transform: rotate(-1deg);
-		cursor: pointer;
-		transition: all 0.3s;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-
 	div {
 		display: flex;
 		text-align: start;
@@ -98,5 +86,23 @@ const ContainerCourse = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		margin-top: 1rem;
+	}
+`;
+
+const Button = styled.button`
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	background-color: var(--color1);
+	color: var(--color5);
+	padding: 1rem 1rem 0.5rem 1rem;
+	border: none;
+	border-radius: 1rem;
+	transform: rotate(-1deg);
+	transition: all 0.3s;
+	cursor: ${(props) => (props.enable ? "pointer" : "not-allowed")};
+
+	&:hover {
+		transform: scale(1.1);
 	}
 `;

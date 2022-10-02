@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import Header from "./Header";
@@ -6,15 +6,54 @@ import Course from "./Course";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
-const HomePage = () => {
+import firebaseApp from "../credentials";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
+const firestore = getFirestore(firebaseApp);
+
+const HomePage = ({ user }) => {
+	const [enable, setEnable] = useState([]);
+
+	useEffect(() => {
+		async function getEnables() {
+			await findUser(user.email);
+		}
+		getEnables();
+	}, []);
+
+	// Busca si hay un documento para ese usuario que se quiere crear (lo agrego yo en Firebase cuando compran un taller)
+	async function findUser(email) {
+		// Crear referencia al documento:
+		const docRef = doc(firestore, `users/${email}`);
+		// Buscar documento:
+		const result = await getDoc(docRef);
+		// En ambos casos, si existe o no el documento, Firebase nos devuelve un objeto, por eso verificamos si existe:
+		if (result.exists()) {
+			// Codigo cuando si existe: obtengo los talleres que tiene habilitados y los guardo en el state
+			const infoDoc = result.data();
+			setEnable(infoDoc.enable);
+		} else {
+			// Codigo cuando no existe: dejo el state con todos los talleres deshabilitados
+			setEnable([false, false, false]);
+		}
+	}
+
 	return (
 		<ContainerHome>
-			<Navbar page="home" />
+			<Helmet>
+				<title>Talleres de magia</title>
+				<meta
+					name="description"
+					content="Talleres online de magia católica, familiar y educativa."
+				/>
+			</Helmet>
+			<Navbar user={user} />
 			<Header />
 			<main>
 				<section className="courses" id="talleres">
 					<Course
+						enable={enable[0]}
 						title="Magia católica"
 						route="catolica"
 						textBtn="Acceder"
@@ -23,6 +62,7 @@ const HomePage = () => {
 						item3="Mensajes creativos y alegres"
 					/>
 					<Course
+						enable={enable[1]}
 						title="Magia educativa"
 						route="educativa"
 						textBtn="Proximamente"
@@ -31,6 +71,7 @@ const HomePage = () => {
 						item3="Aprender de forma divertida"
 					/>
 					<Course
+						enable={enable[2]}
 						title="Magia familiar"
 						route="familiar"
 						textBtn="Proximamente"

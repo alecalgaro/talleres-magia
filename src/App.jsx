@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
@@ -8,19 +8,35 @@ import GamePage from "./components/GamePage";
 import NotFound from "./components/NotFound";
 import LoginPage from "./components/LoginPage";
 
+import firebaseApp from "./credentials";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+const auth = getAuth(firebaseApp);
+
 function App() {
+	const [user, setUser] = useState(null);
+
+	onAuthStateChanged(auth, (userFirebase) => {
+		if (userFirebase) {
+			// si hay una sesion iniciada (o cuando se inicia sesion)
+			setUser(userFirebase);
+		} else {
+			// si no hay una sesion iniciada (o cuando se cierra sesion)
+			setUser(null);
+		}
+	});
+
 	return (
 		<>
 			<GlobalStyle />
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<HomePage user={user} />} />
 				<Route path="/magia/:courseName" element={<CoursePage />} />
 				<Route path="/magia/catolica/:idGame" element={<GamePage course="catholic" />} />
 				<Route path="/magia/familiar/:idGame" element={<GamePage course="family" />} />
 				<Route path="/magia/educativa/:idGame" element={<GamePage course="educational" />} />
 
 				{/* A LoginPage le tengo que pasar un prop title para saber si voy a crear una cuenta o ingresar */}
-				<Route path="/login" element={<LoginPage type="create" />} />
+				<Route path="/login" element={<LoginPage />} />
 
 				{/* Cuando tenga hecha la parte de usuarios, aplico la siguiente validacion en las rutas para 
         que se pueda acceder solo si tiene un usuario, caso contrario te redirige a la pagina de inicio "/" 

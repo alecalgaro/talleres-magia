@@ -1,23 +1,66 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
+import firebaseApp from "../credentials";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
+const auth = getAuth(firebaseApp);
+const firestore = getFirestore(firebaseApp);
 
 const Form = ({ type }) => {
+	let navigate = useNavigate();
+
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
 	} = useForm();
 
-	const customSubmit = (data) => {
-		// gracias a handleSubmit de la libreria, en "data" obtiene los datos del formulario
-		console.log(data);
-	};
+	async function createUser(data) {
+		// gracias a handleSubmit de react-hook-form, en "data" obtiene los datos del formulario (como un objeto)
+
+		// VALIDAR QUE NO EXISTE UN USUARIO YA CREADO CON ESE CORREO
+
+		// Buscar si alguien con ese email ya adquirio un taller (lo registro yo en Firebase cuando paga un taller)
+		if (await findUser(data.email)) {
+			// con await porque debe esperar a obtener la respuesta
+			// Crear usuario:
+			const user = await createUserWithEmailAndPassword(auth, data.email, data.password);
+		} else {
+			alert("Debes adquirir uno de los talleres antes de crear un usuario");
+		}
+	}
+
+	async function login(data) {
+		// gracias a handleSubmit de react-hook-form, en "data" obtiene los datos del formulario (como un objeto)
+		const user = await signInWithEmailAndPassword(auth, data.email, data.password);
+		navigate("/");
+	}
+
+	// Busca si hay un documento para ese usuario que se quiere crear (lo agrego yo en Firebase cuando compran un taller)
+	async function findUser(email) {
+		// Crear referencia al documento:
+		const docRef = doc(firestore, `users/${email}`);
+		// Buscar documento:
+		const result = await getDoc(docRef);
+		// En ambos casos, si existe o no el documento, Firebase nos devuelve un objeto, por eso verificamos si existe:
+		if (result.exists()) {
+			// Codigo cuando si existe:
+			console.log("Existe el usuario");
+			return true;
+		} else {
+			// Codigo cuando no existe:
+			console.log("NO existe el usuario");
+			return false;
+		}
+	}
 
 	return (
 		<>
 			<ContainerForm>
-				<form onSubmit={handleSubmit(customSubmit)}>
+				<form onSubmit={type === "create" ? handleSubmit(createUser) : handleSubmit(login)}>
 					<label htmlFor="">Correo</label>
 					<input
 						type="email"
@@ -31,18 +74,19 @@ const Form = ({ type }) => {
 						type="password"
 						placeholder="Ingrese una contraseña"
 						{...register("password", { required: true })}
+						// AÑADIR QUE DEBE TENER MINIMO 6 CARACTERES LA CONTRASEÑA (por Firebase)
 					/>
 					{errors.password?.type === "required" && <small>El campo no puede quedar vacío</small>}
 
 					{type === "create" ? (
 						<>
-							<label htmlFor="">Código</label>
+							{/* <label htmlFor="">Código</label>
 							<input
 								type="text"
 								placeholder="Ingrese el código recibido"
 								{...register("code", { required: true })}
 							/>
-							{errors.code?.type === "required" && <small>El campo no puede quedar vacío</small>}
+							{errors.code?.type === "required" && <small>El campo no puede quedar vacío</small>} */}
 
 							<button type="submit">Crear cuenta</button>
 						</>

@@ -1,41 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Form from "./Form";
 import Navbar from "./Navbar";
-import imgLogoWhatsapp from "../img/icon-whatsapp.webp";
 import { Helmet } from "react-helmet";
 
-const LoginPage = ({ type }) => {
+const LoginPage = () => {
+	const [typeForm, setTypeForm] = useState("create");
+
 	return (
 		<ContainerLogin>
-			{type === "create" ? (
-				<Helmet>
-					<title>Crear cuenta</title>
-					<meta name="description" content="Página para registrarse como nuevo usuario" />
-				</Helmet>
-			) : (
-				<Helmet>
-					<title>Iniciar sesion</title>
-					<meta name="description" content="Página para iniciar sesion" />
-				</Helmet>
-			)}
-
-			<Navbar />
-			{type === "create" ? <h1>Crear cuenta</h1> : <h1>Iniciar sesion</h1>}
-
-			<Form type={type} />
-
-			{type === "create" ? (
+			{typeForm === "create" ? (
 				<>
-					<p>Si aún no adquiriste el curso, haz click en el icono de Whatsapp para comunicarte</p>
-					<a
-						href="https://wa.me/3456474803?text=Quiero%20adquirir%20un%20taller%20de%20magia"
-						target="_blank"
-					>
-						<img className="btn-whatsapp" src={imgLogoWhatsapp} alt="Logo whatsapp" />
-					</a>
+					<Helmet>
+						<title>Crear cuenta</title>
+						<meta name="description" content="Página para registrarse como nuevo usuario" />
+					</Helmet>
+
+					<Navbar />
+					<h1>Crear cuenta</h1>
+					<Form type={typeForm} />
+					<p>
+						¿Ya tienes una cuenta creada? <br />
+						<span onClick={() => setTypeForm("login")}>Presiona aquí para iniciar sesión</span>
+					</p>
 				</>
-			) : null}
+			) : (
+				<>
+					<Helmet>
+						<title>Iniciar sesion</title>
+						<meta name="description" content="Página para iniciar sesion" />
+					</Helmet>
+
+					<Navbar />
+					<h1>Iniciar sesión</h1>
+					<Form type={typeForm} />
+					<p>
+						¿Aún no tienes una cuenta creada? <br />
+						<span onClick={() => setTypeForm("create")}>Presiona aquí para crearla</span>
+					</p>
+				</>
+			)}
 		</ContainerLogin>
 	);
 };
@@ -79,5 +83,11 @@ const ContainerLogin = styled.div`
 		:hover {
 			opacity: 0.8;
 		}
+	}
+
+	span {
+		font-style: italic;
+		color: var(--color1);
+		cursor: pointer;
 	}
 `;
