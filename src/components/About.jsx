@@ -39,11 +39,11 @@ const ContainerAbout = styled.section`
 		font-weight: 600;
 		font-size: 2rem;
 		text-align: center;
-		background-color: var(--color1);
+		background-color: var(--primary);
 		transform: rotate(-1deg);
 		position: relative;
 		bottom: 2rem;
-		color: var(--color5);
+		color: var(--white);
 
 		@media (min-width: 768px) {
 			font-size: 3rem;

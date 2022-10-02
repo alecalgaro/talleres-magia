@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 
+// imports de Firebase:
 import firebaseApp from "../credentials";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 const firestore = getFirestore(firebaseApp);
@@ -56,7 +57,7 @@ const HomePage = ({ user }) => {
 					content="Talleres online de magia católica, familiar y educativa."
 				/>
 			</Helmet>
-			<Navbar user={user} />
+			<Navbar user={user} page="home" />
 			<Header />
 			<main>
 				<section className="courses" id="talleres">

@@ -62,11 +62,11 @@ export default App;
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --color1:#487aa1;
-    --color2:#00A8CC;
-    --color3:#282828;
-    --color4:#7c8071;
-    --color5:#f7f7f7;
+    --primary:#487aa1;
+    --secondary:#019abc;
+    --black:#282828;
+    --grey:#7c8071;
+    --white:#f7f7f7;
   }
 
   * {
@@ -80,7 +80,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     overflow-x: hidden;
-    background-color: var(--color5);
+    background-color: var(--white);
   }
 
   section[id] {
@@ -92,6 +92,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p{
-    color: var(--color3);
+    color: var(--black);
   }
 `;

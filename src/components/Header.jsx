@@ -47,15 +47,15 @@ const ContainerHeader = styled.header`
 		font-size: 5rem;
 		margin: 0 2rem;
 		font-weight: 600;
-		color: var(--color1);
-		text-shadow: 4px 4px 0px var(--color3);
+		color: var(--primary);
+		text-shadow: 4px 4px 0px var(--black);
 		text-align: center;
 	}
 
 	.subtitle {
 		font-size: 3rem;
 		margin: 3rem 4rem;
-		color: var(--color3);
+		color: var(--black);
 		text-align: start;
 	}
 
@@ -69,8 +69,8 @@ const ContainerHeader = styled.header`
 		text-align: center;
 		width: max-content;
 		position: absolute;
-		background-color: var(--color1);
-		color: var(--color5);
+		background-color: var(--primary);
+		color: var(--white);
 		padding-inline: 1rem;
 		padding-top: 0.5rem;
 		opacity: 0;

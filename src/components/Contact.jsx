@@ -13,10 +13,13 @@ const Contact = () => {
 				siguientes medios presionando el ícono correspondiente.
 			</p>
 			<div>
-				<a href="">
+				<a href="https://www.instagram.com/alecalgaro/" target="_blank">
 					<img src={iconInstagram} alt="icono instagram" />
 				</a>
-				<a href="">
+				<a
+					href="https://wa.me/3456474803?text=Quiero%20adquirir%20un%20taller%20de%20magia"
+					target="_blank"
+				>
 					<img src={iconWhatsapp} alt="icono whatsapp" />
 				</a>
 			</div>

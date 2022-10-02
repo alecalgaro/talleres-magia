@@ -34,7 +34,7 @@ const ContainerItem = styled.div`
 
 	h3 {
 		font-size: 2.4rem;
-		color: var(--color3);
+		color: var(--black);
 	}
 
 	p {

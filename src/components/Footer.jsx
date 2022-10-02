@@ -17,7 +17,7 @@ export default Footer;
 const ContainerFooter = styled.footer`
 	width: 100%;
 	text-align: center;
-	border-top: 1px solid var(--color4);
+	border-top: 1px solid var(--grey);
 
 	p {
 		padding: 2rem;
@@ -26,6 +26,6 @@ const ContainerFooter = styled.footer`
 
 	a {
 		font-style: italic;
-		color: var(--color1);
+		color: var(--primary);
 	}
 `;

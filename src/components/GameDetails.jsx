@@ -45,14 +45,14 @@ const Container = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	border: 2px solid var(--color4);
+	border: 2px solid var(--grey);
 	border-radius: 1.5rem;
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: all 0.3s;
 
 	&:hover {
-		border-color: var(--color2);
+		border-color: var(--secondary);
 	}
 
 	div {
@@ -71,7 +71,7 @@ const Container = styled.div`
 
 	h2 {
 		font-size: 2rem;
-		color: var(--color2);
+		color: var(--secondary);
 		text-transform: uppercase;
 		font-weight: 600;
 		padding: 2rem 0 1rem 0;

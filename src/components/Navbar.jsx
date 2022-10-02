@@ -1,28 +1,54 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import imgLogo from "../img/logo.webp";
 
 import firebaseApp from "../credentials";
 import { getAuth, signOut } from "firebase/auth";
 const auth = getAuth(firebaseApp);
 
-function Navbar({ user }) {
+function Navbar({ user, page }) {
+	const navigate = useNavigate();
 	return (
 		<>
 			<NavContainer>
-				{user === null ? (
+				{user === null && page === "home" ? (
 					<>
 						<div className="menu_izq">
 							<a href="#talleres">Talleres</a>
 							<a href="#sobre-mi">Sobre mi</a>
 						</div>
-						<Link to="/">
+						<a href="#">
 							<img src={imgLogo} alt="logo" />
-						</Link>
+						</a>
 						<div className="menu_der">
 							<a href="#contacto">Contacto</a>
 							<Link to="/login">Ingresar</Link>
+						</div>
+					</>
+				) : user !== null && page === "home" ? (
+					<>
+						<div className="menu_izq">
+							<a href="#talleres">Talleres</a>
+							<a href="#sobre-mi">Sobre mi</a>
+						</div>
+						<a href="#">
+							<img src={imgLogo} alt="logo" />
+						</a>
+						<div className="menu_der">
+							<a href="#contacto">Contacto</a>
+							<button onClick={() => signOut(auth)}>
+								<Link to="/">Salir</Link>
+							</button>
+						</div>
+					</>
+				) : page === "game" ? (
+					<>
+						<div className="back">
+							{/* Boton para volver hacia atras usando navigate(-1), como la flecha para volver hacia atras */}
+							<button className="btn-back" onClick={() => navigate(-1)}>
+								Volver
+							</button>
 						</div>
 					</>
 				) : (
@@ -56,13 +82,14 @@ const NavContainer = styled.nav`
 	align-items: center;
 	width: 100%;
 	height: 4.2rem;
-	background-color: var(--color5);
+	background-color: var(--white);
 	box-shadow: 4px 4px 5px #e5e5e5; // si la barra se pone abajo, seria -4px en lugar de +4px
 	opacity: 0.95;
 	z-index: 10;
 
-	a {
-		color: var(--color3);
+	a,
+	.btn-back {
+		color: var(--black);
 		display: block;
 		font-size: 1.2rem;
 		text-transform: uppercase;
@@ -70,9 +97,10 @@ const NavContainer = styled.nav`
 		margin: 0.5rem 0.6rem 0 0.6rem;
 		text-decoration: none;
 		transition: letter-spacing 0.3s;
+		cursor: pointer;
 
 		&:hover {
-			color: var(--color2);
+			color: var(--secondary);
 		}
 	}
 
@@ -106,6 +134,12 @@ const NavContainer = styled.nav`
 
 	button {
 		border: none;
-		background-color: var(--color5);
+		background-color: var(--white);
+	}
+
+	.back {
+		position: absolute;
+		left: 0;
+		margin-left: 1rem;
 	}
 `;

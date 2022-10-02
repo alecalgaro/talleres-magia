@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Title from "./Title";
 import GameDetails from "./GameDetails";
 import Slider from "./Slider";
+import Navbar from "./Navbar";
 
 import games_catholic from "./data/magic_catholic.json";
 import games_family from "./data/magic_family.json";
@@ -26,6 +27,7 @@ const GamePage = ({ course }) => {
 			{games.map((game) =>
 				game.idGame == idGame ? (
 					<ContainerModal key={game.idGame}>
+						<Navbar page="game" />
 						<ContainerGame>
 							<Title title={game.title} />
 

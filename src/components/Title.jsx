@@ -13,8 +13,8 @@ const TitleSection = styled.h2`
 	font-weight: 600;
 	font-size: 3rem;
 	text-align: center;
-	color: var(--color5);
-	background-color: var(--color1);
+	color: var(--white);
+	background-color: var(--primary);
 	transform: rotate(-1deg);
 
 	@media (min-width: 768px) {

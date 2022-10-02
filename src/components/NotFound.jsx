@@ -35,7 +35,7 @@ const Container = styled.div`
 	}
 
 	a {
-		color: var(--color1);
+		color: var(--primary);
 		font-size: 2rem;
 	}
 `;

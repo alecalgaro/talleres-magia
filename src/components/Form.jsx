@@ -15,7 +15,7 @@ const auth = getAuth(firebaseApp);
 const firestore = getFirestore(firebaseApp);
 
 const Form = ({ type }) => {
-	let navigate = useNavigate();
+	const navigate = useNavigate();
 
 	// Notificacion (alert) de react-toastify:
 	const notify = (message) => {
@@ -156,7 +156,7 @@ const ContainerForm = styled.div`
 
 		input {
 			font-size: 1.8rem;
-			border: 2px solid var(--color1);
+			border: 2px solid var(--primary);
 			border-radius: 6px;
 			padding: 0.5rem;
 
@@ -169,8 +169,8 @@ const ContainerForm = styled.div`
 			width: 16rem;
 			font-size: 1.6rem;
 			text-transform: uppercase;
-			background-color: var(--color1);
-			color: var(--color5);
+			background-color: var(--primary);
+			color: var(--white);
 			padding: 0.8rem;
 			border: none;
 			border-radius: 1rem;

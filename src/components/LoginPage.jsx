@@ -59,8 +59,8 @@ const ContainerLogin = styled.div`
 		font-size: 3.5rem;
 		margin: 2rem 2rem 0 2rem;
 		font-weight: 600;
-		color: var(--color1);
-		text-shadow: 2px 2px 0px var(--color3);
+		color: var(--primary);
+		text-shadow: 2px 2px 0px var(--black);
 		text-align: center;
 	}
 
@@ -87,7 +87,7 @@ const ContainerLogin = styled.div`
 
 	span {
 		font-style: italic;
-		color: var(--color1);
+		color: var(--primary);
 		cursor: pointer;
 	}
 `;
