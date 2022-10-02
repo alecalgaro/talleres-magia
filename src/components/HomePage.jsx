@@ -19,8 +19,16 @@ const HomePage = ({ user }) => {
 		async function getEnables() {
 			await findUser(user.email);
 		}
-		getEnables();
-	}, []);
+		if (user === null) {
+			// cuando se cierra la sesion user queda como null, asi que deshabilito todos
+			setEnable([false, false, false]);
+		} else {
+			// sino llamo a esta funcion para revise si existe el user y vea que talleres tiene habilitados
+			getEnables();
+		}
+	}, [user]);
+	// se ejecuta cada vez que hay un cambio en "user" que viene de App, porque sino por ejemplo
+	// al actualizar la pagina ocurria que no se tenia en cuenta los talleres habilitados
 
 	// Busca si hay un documento para ese usuario que se quiere crear (lo agrego yo en Firebase cuando compran un taller)
 	async function findUser(email) {
