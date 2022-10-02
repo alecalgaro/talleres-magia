@@ -18,7 +18,7 @@ function Navbar({ page }) {
 						</Link>
 						<div className="menu_der">
 							<a href="#contacto">Contacto</a>
-							<Link to="/">Ingresar</Link>
+							<Link to="/login">Ingresar</Link>
 						</div>
 					</>
 				) : (

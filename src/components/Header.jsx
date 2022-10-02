@@ -40,10 +40,11 @@ const ContainerHeader = styled.header`
 	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
+	margin: 2rem 2rem;
 	overflow-x: hidden;
 
 	.title {
-		font-size: 6rem;
+		font-size: 5rem;
 		margin: 0 2rem;
 		font-weight: 600;
 		color: var(--color1);
@@ -52,9 +53,10 @@ const ContainerHeader = styled.header`
 	}
 
 	.subtitle {
-		font-size: 4rem;
-		margin: 2rem;
-		text-align: justify;
+		font-size: 3rem;
+		margin: 3rem 4rem;
+		color: var(--color3);
+		text-align: start;
 	}
 
 	.rotate-words {
@@ -63,7 +65,7 @@ const ContainerHeader = styled.header`
 	}
 
 	.rotate-words span {
-		font-size: 3.5rem;
+		font-size: 2.8rem;
 		text-align: center;
 		width: max-content;
 		position: absolute;
@@ -107,14 +109,14 @@ const ContainerHeader = styled.header`
 	.description {
 		font-size: 2rem;
 		text-align: center;
-		margin: 10rem 2rem 5rem 2rem;
+		margin: 9rem 2rem 5rem 2rem;
 
 		@media (min-width: 576px) {
 			width: 70%;
 		}
 
 		@media (min-width: 992px) {
-			width: 50%;
+			width: 40%;
 		}
 	}
 

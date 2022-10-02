@@ -61,13 +61,13 @@ const ContainerForm = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 70%;
+	width: 80%;
 
 	form {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-top: 3rem;
+		margin-top: 2rem;
 
 		@media (min-width: 768px) {
 			width: 80%;
@@ -81,13 +81,21 @@ const ContainerForm = styled.div`
 			font-size: 2rem;
 			margin: 2rem 0 0.6rem 0;
 			padding-left: 0.2rem;
+
+			@media (min-width: 768px) {
+				font-size: 1.8rem;
+			}
 		}
 
 		input {
 			font-size: 1.8rem;
 			border: 2px solid var(--color1);
 			border-radius: 6px;
-			padding: 0.5rem 0.2rem;
+			padding: 0.5rem;
+
+			@media (min-width: 768px) {
+				font-size: 1.6rem;
+			}
 		}
 
 		button {
@@ -96,7 +104,7 @@ const ContainerForm = styled.div`
 			text-transform: uppercase;
 			background-color: var(--color1);
 			color: var(--color5);
-			padding: 1rem 1rem 0.5rem 1rem;
+			padding: 0.8rem;
 			border: none;
 			border-radius: 1rem;
 			margin: 2rem 0 1rem 0;

@@ -18,25 +18,25 @@ const HomePage = () => {
 						title="Magia católica"
 						route="catolica"
 						textBtn="Acceder"
-						item1="Item1"
-						item2="Item2"
-						item3="Item3"
+						item1="Magia con objetos cotidianos"
+						item2="Nuevas ideas para evangelizar"
+						item3="Mensajes creativos y alegres"
 					/>
 					<Course
 						title="Magia educativa"
 						route="educativa"
 						textBtn="Proximamente"
-						item1="Item1"
-						item2="Item2"
-						item3="Item3"
+						item1="Magia con elementos de clases"
+						item2="Más atención y entusiasmo"
+						item3="Aprender de forma divertida"
 					/>
 					<Course
 						title="Magia familiar"
 						route="familiar"
 						textBtn="Proximamente"
-						item1="Item1"
-						item2="Item2"
-						item3="Item3"
+						item1="Magia para niños y adultos"
+						item2="Momentos compartidos en familia"
+						item3="Sonrisas y sorpresas garantizadas"
 					/>
 				</section>
 				<About />
@@ -61,7 +61,7 @@ const ContainerHome = styled.div`
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 12rem;
+			gap: 8rem;
 			margin: 10rem 0;
 
 			h2 {
