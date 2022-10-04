@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 
 // imports de Firebase:
-import firebaseApp from "../credentials";
+import firebaseApp from "../firebaseConfig";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 const firestore = getFirestore(firebaseApp);
 

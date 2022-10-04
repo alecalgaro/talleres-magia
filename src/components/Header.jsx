@@ -75,17 +75,17 @@ const ContainerHeader = styled.header`
 		padding-top: 0.5rem;
 		opacity: 0;
 		transform-origin: 10% 75%;
-		animation: rotateWords 12s var(--d) linear infinite;
+		animation: rotateWords 9s var(--d) linear infinite;
 	}
 
 	.uno {
 		--d: 0s;
 	}
 	.dos {
-		--d: 4s;
+		--d: 3s;
 	}
 	.tres {
-		--d: 8s;
+		--d: 6s;
 	}
 
 	@keyframes rotateWords {
@@ -109,7 +109,10 @@ const ContainerHeader = styled.header`
 	.description {
 		font-size: 2rem;
 		text-align: center;
-		margin: 9rem 2rem 5rem 2rem;
+		margin: 8rem 2rem 5rem 2rem;
+		padding: 2rem;
+		border-radius: 3rem;
+		background-color: #ffffff;
 
 		@media (min-width: 576px) {
 			width: 70%;

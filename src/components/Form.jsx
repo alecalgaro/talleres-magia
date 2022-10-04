@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // imports de Firebase:
-import firebaseApp from "../credentials";
+import firebaseApp from "../firebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 const auth = getAuth(firebaseApp);
@@ -59,8 +59,12 @@ const Form = ({ type }) => {
 
 	async function login(data) {
 		// gracias a handleSubmit de react-hook-form, en "data" obtiene los datos del formulario (como un objeto)
-		const user = await signInWithEmailAndPassword(auth, data.email, data.password);
-		navigate("/");
+		try {
+			const user = await signInWithEmailAndPassword(auth, data.email, data.password);
+			navigate("/");
+		} catch (error) {
+			notify("No existe un usuario registrado con esos datos");
+		}
 	}
 
 	// Busca si hay un documento para ese usuario que se quiere crear (lo agrego yo en Firebase cuando compran un taller)
@@ -95,10 +99,15 @@ const Form = ({ type }) => {
 					<input
 						type="password"
 						placeholder="Ingrese una contraseña"
-						{...register("password", { required: true })}
-						// AÑADIR QUE DEBE TENER MINIMO 6 CARACTERES LA CONTRASEÑA (por Firebase)
+						{...register("password", {
+							required: true,
+							minLength: 6,
+						})}
 					/>
 					{errors.password?.type === "required" && <small>El campo no puede quedar vacío</small>}
+					{errors.password?.type === "minLength" && (
+						<small>La contaseña debe tener al menos 6 caracteres</small>
+					)}
 
 					{type === "create" ? (
 						<>

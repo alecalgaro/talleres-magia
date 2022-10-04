@@ -74,7 +74,7 @@ const Container = styled.div`
 		color: var(--secondary);
 		text-transform: uppercase;
 		font-weight: 600;
-		padding: 2rem 0 1rem 0;
+		padding: 1.2rem 0;
 		transition: all 0.3s;
 	}
 

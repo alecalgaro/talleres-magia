@@ -8,7 +8,7 @@ import GamePage from "./components/GamePage";
 import NotFound from "./components/NotFound";
 import LoginPage from "./components/LoginPage";
 
-import firebaseApp from "./credentials";
+import firebaseApp from "./firebaseConfig";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 const auth = getAuth(firebaseApp);
 
@@ -62,11 +62,11 @@ export default App;
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary:#487aa1;
-    --secondary:#019abc;
+	--primary:#3F84B8;
+    --secondary:#50A8EA;
     --black:#282828;
     --grey:#7c8071;
-    --white:#f7f7f7;
+    --white:#f8f8f8;
   }
 
   * {
