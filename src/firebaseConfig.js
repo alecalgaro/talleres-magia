@@ -6,7 +6,8 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 
 // Recordar que con Vite las variables de entorno deben llevar el prefijo "VITE"
-// y para utilizarlas se debe usar import.meta.env.nombreVariable
+// y para utilizarlas se debe usar import.meta.env.nombreVariable.
+// Luego los valores de las variables se ingresan en Vercel desde Project Settings - Environment Variables
 const firebaseConfig = {
 	apiKey: import.meta.env.VITE_APP_FIREBASE_APIKEY,
 	authDomain: import.meta.env.VITE_APP_FIREBASE_AUTHDOMAIN,
