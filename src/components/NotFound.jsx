@@ -25,7 +25,6 @@ const Container = styled.div`
 	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
-	background-color: var(--grey);
 
 	h2 {
 		font-size: 2.5rem;

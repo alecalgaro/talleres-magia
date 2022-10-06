@@ -109,10 +109,11 @@ const ContainerHeader = styled.header`
 	.description {
 		font-size: 2rem;
 		text-align: center;
-		margin: 8rem 2rem 5rem 2rem;
+		margin: 6rem 2rem 5rem 2rem;
 		padding: 2rem;
 		border-radius: 3rem;
 		background-color: #ffffff;
+		z-index: 9;
 
 		@media (min-width: 576px) {
 			width: 70%;

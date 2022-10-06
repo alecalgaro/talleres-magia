@@ -6,7 +6,10 @@ const Footer = () => {
 		<ContainerFooter>
 			<p>
 				Sitio web desarrollado por
-				<a href="https://alejandrocalgaro.netlify.app/"> Alejandro Calgaro</a>
+				<a href="https://alejandrocalgaro.netlify.app/">
+					{" "}
+					<br /> Alejandro Calgaro
+				</a>
 			</p>
 		</ContainerFooter>
 	);

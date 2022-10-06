@@ -63,6 +63,7 @@ const HomePage = ({ user }) => {
 				<section className="courses" id="talleres">
 					<Course
 						enable={enable[0]}
+						enableMoreInfo={true}
 						title="Magia católica"
 						route="catolica"
 						textBtn="Acceder"
@@ -72,6 +73,7 @@ const HomePage = ({ user }) => {
 					/>
 					<Course
 						enable={enable[1]}
+						enableMoreInfo={false}
 						title="Magia educativa"
 						route="educativa"
 						textBtn="Proximamente"
@@ -81,6 +83,7 @@ const HomePage = ({ user }) => {
 					/>
 					<Course
 						enable={enable[2]}
+						enableMoreInfo={false}
 						title="Magia familiar"
 						route="familiar"
 						textBtn="Proximamente"

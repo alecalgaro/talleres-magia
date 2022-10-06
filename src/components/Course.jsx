@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Title from "./Title";
 
-const Course = ({ title, route, textBtn, item1, item2, item3, enable }) => {
+const Course = ({ title, route, textBtn, item1, item2, item3, enable, enableMoreInfo }) => {
 	return (
 		<ContainerCourse>
 			<Title title={title} />
@@ -13,6 +13,17 @@ const Course = ({ title, route, textBtn, item1, item2, item3, enable }) => {
 				) : (
 					<Button enable={enable} disabled>
 						{textBtn}
+					</Button>
+				)}
+			</Link>
+			<Link to={"/magia/" + route + "/info"}>
+				{enableMoreInfo ? (
+					<Button className="btn-more" enableMoreInfo={enableMoreInfo}>
+						Conocer más
+					</Button>
+				) : (
+					<Button className="btn-more" enableMoreInfo={enableMoreInfo} disabled>
+						Conocer más
 					</Button>
 				)}
 			</Link>
@@ -86,6 +97,10 @@ const ContainerCourse = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		margin-top: 1.5rem;
+	}
+
+	.btn-more {
 		margin-top: 1rem;
 	}
 `;
@@ -100,7 +115,7 @@ const Button = styled.button`
 	border-radius: 1rem;
 	transform: rotate(-1deg);
 	transition: all 0.3s;
-	cursor: ${(props) => (props.enable ? "pointer" : "not-allowed")};
+	cursor: ${(props) => (props.enable || props.enableMoreInfo ? "pointer" : "not-allowed")};
 
 	@media (hover: hover) {
 		&:hover {

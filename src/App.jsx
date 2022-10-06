@@ -7,6 +7,7 @@ import CoursePage from "./components/CoursePage";
 import GamePage from "./components/GamePage";
 import NotFound from "./components/NotFound";
 import LoginPage from "./components/LoginPage";
+import MoreInformation from "./components/MoreInformation";
 
 import firebaseApp from "./firebaseConfig";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
@@ -45,6 +46,10 @@ function App() {
 					path="/magia/:courseName"
 					element={user ? <CoursePage /> : <Navigate to="/" replace />}
 				/>
+
+				<Route path="/magia/catolica/info" element={<MoreInformation course="catholic" />} />
+				<Route path="/magia/familiar/info" element={<MoreInformation course="family" />} />
+				<Route path="/magia/educativa/info" element={<MoreInformation course="educational" />} />
 
 				<Route path="/magia/catolica/:idGame" element={<GamePage course="catholic" />} />
 				<Route path="/magia/familiar/:idGame" element={<GamePage course="family" />} />
