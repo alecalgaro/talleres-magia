@@ -16,6 +16,8 @@ const TitleSection = styled.h2`
 	color: var(--white);
 	background-color: var(--primary);
 	transform: rotate(-1deg);
+	// le agrego un borde para evitar que se vea mal el borde inclinado algunas veces en movil
+	border: 2px solid var(--primary);
 
 	@media (min-width: 768px) {
 		font-size: 3.5rem;

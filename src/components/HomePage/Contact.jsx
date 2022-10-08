@@ -9,15 +9,15 @@ const Contact = () => {
 		<ContainerContact id="contacto">
 			<Title title="Contacto" />
 			<p>
-				Si deseas adquirir algún taller o realizar una consulta, podes comunicarte a través de los
-				siguientes medios presionando el ícono correspondiente.
+				Si deseas adquirir algún taller o realizar una consulta, podes comunicarte a través de
+				Whatsapp o instagram presionando el ícono correspondiente.
 			</p>
 			<div>
 				<a href="https://www.instagram.com/alecalgaro/" target="_blank">
 					<img src={iconInstagram} alt="icono instagram" />
 				</a>
 				<a
-					href="https://wa.me/3456474803?text=Quiero%20adquirir%20un%20taller%20de%20magia"
+					href="https://wa.me/+5493456474803?text=Hola!%20Deseo%20adquirir%20un%20taller%20de%20magia"
 					target="_blank"
 				>
 					<img src={iconWhatsapp} alt="icono whatsapp" />

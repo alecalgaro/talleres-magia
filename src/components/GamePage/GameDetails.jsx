@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const GameDetails = ({ title, text1, text2, text3, video }) => {
+const GameDetails = ({ title, effect, resources, dialog, realization, comments, videos }) => {
 	const [open, setOpen] = useState(false);
 
+	// Desde GamePage voy a renderizar varios GameDetails enviando como props en cada uno
+	// el titulo (video, efecto, recursos, etc.) y el contenido a renderizar en ese
+	// detalle (son las tipo cards que se abren). Es por eso que en este componente
+	// abajo compruebo cual de las props recibi para mostrar eso.
+
+	console.log(videos);
 	return (
 		<Container open={open} onClick={() => setOpen(!open)}>
 			<div>
@@ -17,22 +23,26 @@ const GameDetails = ({ title, text1, text2, text3, video }) => {
 					></path>
 				</svg>
 			</div>
-			{video ? (
-				<iframe
-					// width="560"
-					// height="315"
-					src={video}
-					title="Video del juego"
-					// frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					// allowfullscreen
-				></iframe>
-			) : null}
+			{videos
+				? videos.map((video, index) => (
+						<iframe
+							key={index}
+							// width="560"
+							// height="315"
+							src={video}
+							title="Video del juego"
+							// frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							// allowfullscreen
+						></iframe>
+				  ))
+				: null}
 
-			{/* {text1 ? text1.map((effect) => <p>{effect.p}</p>) : null} */}
-			{text1 ? <p>{text1}</p> : null}
-			{text2 ? <p>{text2}</p> : null}
-			{text3 ? <p>{text3}</p> : null}
+			{effect ? effect.map((eff, index) => <p key={index}>{eff}</p>) : null}
+			{dialog ? dialog.map((dia, index) => <p key={index}>{dia}</p>) : null}
+			{resources ? resources.map((res, index) => <p key={index}>{res}</p>) : null}
+			{realization ? realization.map((rea, index) => <p key={index}>{rea}</p>) : null}
+			{comments ? comments.map((com, index) => <p key={index}>{com}</p>) : null}
 		</Container>
 	);
 };
@@ -89,9 +99,11 @@ const Container = styled.div`
 	}
 
 	iframe {
-		padding: 1rem 1.5rem;
+		padding: 0.5rem;
 		width: 100%;
 		height: 20rem;
+		border: none;
+		border-radius: 1.5rem;
 		display: ${(props) => (props.open ? "hidden" : "none")};
 
 		@media (min-width: 576px) {

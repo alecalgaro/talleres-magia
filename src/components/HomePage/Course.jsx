@@ -7,26 +7,28 @@ const Course = ({ title, route, textBtn, item1, item2, item3, enable, enableMore
 	return (
 		<ContainerCourse>
 			<Title title={title} />
-			<Link to={"/magia/" + route}>
-				{enable ? (
-					<Button enable={enable}>{textBtn}</Button>
-				) : (
-					<Button enable={enable} disabled>
-						{textBtn}
-					</Button>
-				)}
-			</Link>
-			<Link to={"/magia/" + route + "/info"}>
-				{enableMoreInfo ? (
-					<Button className="btn-more" enableMoreInfo={enableMoreInfo}>
-						Conocer más
-					</Button>
-				) : (
-					<Button className="btn-more" enableMoreInfo={enableMoreInfo} disabled>
-						Conocer más
-					</Button>
-				)}
-			</Link>
+			<div className="buttons">
+				<Link to={"/magia/" + route}>
+					{enable ? (
+						<Button enable={enable}>{textBtn}</Button>
+					) : (
+						<Button enable={enable} disabled>
+							{textBtn}
+						</Button>
+					)}
+				</Link>
+				<Link to={"/magia/" + route + "/info"}>
+					{enableMoreInfo ? (
+						<Button className="btn-more" enableMoreInfo={enableMoreInfo}>
+							Conocer más
+						</Button>
+					) : (
+						<Button className="btn-more" enableMoreInfo={enableMoreInfo} disabled>
+							Conocer más
+						</Button>
+					)}
+				</Link>
+			</div>
 			<div className="container_items">
 				<div>
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
@@ -100,8 +102,13 @@ const ContainerCourse = styled.div`
 		margin-top: 1.5rem;
 	}
 
-	.btn-more {
-		margin-top: 1rem;
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem 0;
+		// uso este div y gap porque usando margin para los botones se pueden clickear
+		// aunque esten inhabilitados
 	}
 `;
 

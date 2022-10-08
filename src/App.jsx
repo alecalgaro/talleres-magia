@@ -9,12 +9,32 @@ import NotFound from "./components/General/NotFound";
 import LoginPage from "./components/LoginPage/LoginPage";
 import MoreInformation from "./components/InfoPage/MoreInformation";
 
+// imports de react-toastify:
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// imports de Firebase:
 import firebaseApp from "./firebaseConfig";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 const auth = getAuth(firebaseApp);
 
 function App() {
 	const [user, setUser] = useState(null);
+	const [enableToast, setEnableToast] = useState(true);
+
+	// Notificacion de react-toastify
+	const notify = (message) => {
+		toast(message, {
+			position: "top-center",
+			autoClose: false,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			className: "toast_header",
+		});
+	};
 
 	// Cada vez que se renderiza la App voy a comprobar con Firebase si tiene una sesion iniciada,
 	// porque sino cada vez que se renderiza este componente se coloca como null por defecto en useState(null)
@@ -30,6 +50,14 @@ function App() {
 			}
 		});
 	}, []);
+
+	if (user === null && enableToast === true) {
+		notify(
+			"Para adquirir alguno de los talleres, haz click en el botón de Whatsapp que encontrarás abajo a la derecha o en la sección de contacto. Muchas gracias!"
+		);
+		// cambio el state para que no se vuelva a mostrar luego de cerrarlo:
+		setEnableToast(false);
+	}
 
 	return (
 		<>
@@ -59,6 +87,10 @@ function App() {
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+
+			{/* Componente de notificacion de react-toastify. 
+				El limit={1} es para que solo aparezca un toast a la vez */}
+			<ToastContainer limit={1} />
 		</>
 	);
 }
@@ -86,6 +118,19 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     overflow-x: hidden;
     background-color: var(--white);
+
+	.toast_header {
+		font-size: 1.4rem;
+		text-align: center;
+		margin: 2rem;
+		position: relative;
+		top: 50px;
+	}
+
+	// sobreescribo el z-indez de abajo para que no me tapa el Navbar
+	.Toastify__toast-container {
+		z-index: 1;
+	}
   }
 
   section[id] {

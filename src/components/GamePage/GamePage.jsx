@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import Title from "../General/Title";
 import GameDetails from "./GameDetails";
-import Slider from "../General/Slider";
+import Slider from "./Slider";
 import Navbar from "../General/Navbar";
 
 import games_catholic from "../../data/magic_catholic.json";
@@ -14,6 +14,7 @@ const GamePage = ({ course }) => {
 	const { idGame } = useParams();
 	let games;
 
+	// Elijo de que archivo obtener los datos:
 	if (course == "catholic") {
 		games = games_catholic;
 	} else if (course == "family") {
@@ -26,26 +27,19 @@ const GamePage = ({ course }) => {
 		<>
 			{games.map((game) =>
 				game.idGame == idGame ? (
-					<ContainerModal key={game.idGame}>
+					<ContainerPage key={game.idGame}>
 						<Navbar page="game" />
 						<ContainerGame>
 							<Title title={game.title} />
-
-							{/* Deberia recibir como props las imagenes tambien */}
-							<Slider />
-							<GameDetails title="Video" video={game.video} />
-							<GameDetails
-								title="Efecto"
-								// text1={game.effect.map((effect) => effect.p)}
-								text1={game.effect}
-								text2={game.realization}
-								text3={game.comments}
-							/>
-							<GameDetails title="Recursos" text1={game.resources} />
-							<GameDetails title="Realización" text1={game.realization} />
-							<GameDetails title="Comentarios" text1={game.comments} />
+							<Slider images={game.images} />
+							<GameDetails title="Video" videos={game.videos} />
+							<GameDetails title="Efecto" effect={game.effect} />
+							<GameDetails title="Recursos" resources={game.resources} />
+							<GameDetails title="Diálogo" resources={game.dialog} />
+							<GameDetails title="Realización" realization={game.realization} />
+							<GameDetails title="Comentarios" comments={game.comments} />
 						</ContainerGame>
-					</ContainerModal>
+					</ContainerPage>
 				) : null
 			)}
 		</>
@@ -54,7 +48,7 @@ const GamePage = ({ course }) => {
 
 export default GamePage;
 
-const ContainerModal = styled.div`
+const ContainerPage = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,12 +63,5 @@ const ContainerGame = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 90%;
-
-	@media (min-width: 768px) {
-		width: 60%;
-	}
-
-	@media (min-width: 1200px) {
-		width: 40%;
-	}
+	max-width: 70rem;
 `;

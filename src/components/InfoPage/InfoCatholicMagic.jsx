@@ -95,15 +95,7 @@ const ContainerInfo = styled.section`
 		font-size: 1.6rem;
 		width: 80%;
 		margin-bottom: 3rem;
-
-		@media (min-width: 768px) {
-			font-size: 1.4rem;
-			width: 60%;
-		}
-
-		@media (min-width: 992px) {
-			width: 50%;
-		}
+		max-width: 70rem;
 	}
 
 	.italic {

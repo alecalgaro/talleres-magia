@@ -3,11 +3,9 @@ import styled from "styled-components";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../General/Navbar";
 import GameItem from "./GameItem";
-import Title from "../General/Title";
 import Footer from "../HomePage/Footer";
 import { Helmet } from "react-helmet";
 
-import course from "../../data/courses.json";
 import games_catholic from "../../data/magic_catholic.json";
 import games_family from "../../data/magic_family.json";
 import games_educational from "../../data/magic_educational.json";
@@ -18,6 +16,7 @@ const CoursePage = () => {
 	var games;
 	var title;
 
+	// Elijo el titulo del taller y de que archivo obtener la informacion:
 	if (courseName == "catolica") {
 		games = games_catholic;
 		title = "Con magia el Evangelio se contagia";
@@ -39,11 +38,7 @@ const CoursePage = () => {
 			<Navbar />
 			<main>
 				<ContainerGamePage>
-					<Title title={title} />
-					<img
-						src="https://res.cloudinary.com/alecalgaro/image/upload/v1656639900/En%20busca%20de%20la%20santidad/logo-header-es_w8rpgq.webp"
-						alt="logo curso"
-					/>
+					<h1>{title}</h1>
 					<GamesContainer>
 						{games.map((game) => (
 							<Link to={"/magia/" + courseName + "/" + game.idGame} key={game.idGame}>
@@ -68,17 +63,13 @@ const ContainerGamePage = styled.section`
 	width: 100%;
 	margin: 10rem 0;
 
-	img {
-		width: 80%;
-		@media (min-width: 768px) {
-			width: 60%;
-		}
-		@media (min-width: 992px) {
-			width: 50%;
-		}
-		@media (min-width: 1200px) {
-			width: 30%;
-		}
+	h1 {
+		font-size: 3.5rem;
+		margin: 0 2rem 2rem 2rem;
+		font-weight: 600;
+		color: var(--primary);
+		text-shadow: 2px 2px 0px var(--black);
+		text-align: center;
 	}
 `;
 
@@ -88,12 +79,5 @@ const GamesContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	width: 90%;
-
-	@media (min-width: 768px) {
-		width: 70%;
-	}
-
-	@media (min-width: 992px) {
-		width: 50%;
-	}
+	max-width: 70rem;
 `;

@@ -17,11 +17,23 @@ const firestore = getFirestore(firebaseApp);
 const Form = ({ type }) => {
 	const navigate = useNavigate();
 
-	// Notificacion (alert) de react-toastify:
-	const notify = (message) => {
+	// Notificaciones (alert) de react-toastify:
+	const notify_error = (message) => {
 		toast.error(message, {
 			position: "top-center",
 			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
+	};
+
+	const notify_info = (message) => {
+		toast.info(message, {
+			position: "top-center",
+			autoClose: 2000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
@@ -48,22 +60,29 @@ const Form = ({ type }) => {
 			if (await findUser(data.email)) {
 				// con await porque debe esperar a obtener la respuesta
 				// Crear usuario:
+				notify_info("Creando cuenta...");
 				const user = await createUserWithEmailAndPassword(auth, data.email, data.password);
+
+				if (user) {
+					await signInWithEmailAndPassword(auth, data.email, data.password);
+					navigate("/");
+				}
 			} else {
-				notify("Debes adquirir un taller antes de crear una cuenta");
+				notify_error("Debes adquirir un taller antes de crear una cuenta");
 			}
 		} catch (error) {
-			notify("Ya existe un usuario registrado con ese correo");
+			notify_error("Ya existe un usuario registrado con ese correo");
 		}
 	}
 
 	async function login(data) {
 		// gracias a handleSubmit de react-hook-form, en "data" obtiene los datos del formulario (como un objeto)
 		try {
+			notify_info("Iniciando sesión...");
 			const user = await signInWithEmailAndPassword(auth, data.email, data.password);
 			navigate("/");
 		} catch (error) {
-			notify("No existe un usuario registrado con esos datos");
+			notify_error("No existe un usuario registrado con esos datos");
 		}
 	}
 
@@ -89,6 +108,7 @@ const Form = ({ type }) => {
 				<form onSubmit={type === "create" ? handleSubmit(createUser) : handleSubmit(login)}>
 					<label htmlFor="">Correo</label>
 					<input
+						autoFocus
 						type="email"
 						placeholder="Ingrese un correo"
 						{...register("email", { required: true })}
@@ -111,21 +131,15 @@ const Form = ({ type }) => {
 
 					{type === "create" ? (
 						<>
-							{/* <label htmlFor="">Código</label>
-							<input
-								type="text"
-								placeholder="Ingrese el código recibido"
-								{...register("code", { required: true })}
-							/>
-							{errors.code?.type === "required" && <small>El campo no puede quedar vacío</small>} */}
-
 							<button type="submit">Crear cuenta</button>
 						</>
 					) : (
 						<button type="submit">Ingresar</button>
 					)}
 				</form>
-				<ToastContainer /> {/* Componente de notificacion de react-toastify */}
+				{/* Componente de notificacion de react-toastify. 
+				El limit={1} es para que solo aparezca un toast a la vez */}
+				<ToastContainer limit={1} />
 			</ContainerForm>
 		</>
 	);
@@ -143,15 +157,8 @@ const ContainerForm = styled.div`
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		max-width: 35rem;
 		margin-top: 2rem;
-
-		@media (min-width: 768px) {
-			width: 80%;
-		}
-
-		@media (min-width: 992px) {
-			width: 50%;
-		}
 
 		label {
 			font-size: 2rem;
@@ -168,6 +175,12 @@ const ContainerForm = styled.div`
 			border: 2px solid var(--primary);
 			border-radius: 6px;
 			padding: 0.5rem;
+
+			transition: all 0.3s;
+			&:focus {
+				outline: none;
+				border-color: var(--secondary);
+			}
 
 			@media (min-width: 768px) {
 				font-size: 1.6rem;
@@ -194,7 +207,7 @@ const ContainerForm = styled.div`
 		}
 
 		small {
-			color: red;
+			color: #da0000;
 			margin-top: 0.6rem;
 			padding-left: 0.2rem;
 			font-size: 1.6rem;

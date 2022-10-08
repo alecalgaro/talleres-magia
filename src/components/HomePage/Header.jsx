@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 import imgLogoWhatsapp from "../../img/icon-whatsapp.webp";
 
@@ -17,12 +18,8 @@ const Header = () => {
 					<span className="tres">familiar</span>
 				</div>
 			</h3>
-			<p className="description">
-				Para adquirir alguno de los talleres, haz click en el botón de Whatsapp que encontrarás
-				abajo a la derecha o en la sección de contacto. <br /> Muchas gracias!
-			</p>
 			<a
-				href="https://wa.me/3456474803?text=Quiero%20adquirir%20un%20taller%20de%20magia"
+				href="https://wa.me/+5493456474803?text=Hola!%20Deseo%20adquirir%20un%20taller%20de%20magia"
 				target="_blank"
 			>
 				<img className="btn-whatsapp" src={imgLogoWhatsapp} alt="Logo whatsapp" />
@@ -48,7 +45,7 @@ const ContainerHeader = styled.header`
 		margin: 0 2rem;
 		font-weight: 600;
 		color: var(--primary);
-		text-shadow: 4px 4px 0px var(--black);
+		text-shadow: 3px 3px 0px var(--black);
 		text-align: center;
 	}
 

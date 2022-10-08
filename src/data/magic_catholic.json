@@ -1,36 +1,131 @@
 [
 	{
 		"idGame": 1,
-		"title": "Nombre del juego 1",
-		"effect": "Estas banditas representan a distintas personas que aparecen en la Biblia, por ejemplo, Jesús, María, José, los discípulos… (Se pregunta al púbico para que ellos den más opciones). Pero en este momento nos queremos centrar en  tres personas muy especiales y unidas, que son Dios, Jesús y el Espíritu Santo. Muchas veces los nombramos juntos, por ejemplo, siempre que hacemos la señal de la cruz. Pero no tenemos que confundirnos, son tres personas, Padre, Hijo y Espíritu Santo, que conforman un solo Dios. Estas tres personas unidas forman lo que llamamos “la Santísima Trinidad”. La primera persona de la Santísima Trinidad es Dios Padre, la segunda es Dios Hijo (Jesús) y la tercera es Dios Espíritu Santo. Tres personas que se aman, Dios es amor, el Padre ama al Hijo, que ama al Padre, y de ese amor emana el Espíritu Santo.",
-		"resources": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis cumque vero, eius quae assumenda! Suscipit obcaecati neque consequuntur quasi!",
-		"realization": "Te dejo el link de dos vídeos de YouTube donde podrás aprender fácilmente como fabricarlo.",
-		"comments": "https://www.youtube.com/watch?v=wo3IOY6U2r0&t=341s",
-		"video": "https://www.youtube.com/embed/l30qpPzbwNI"
+		"title": "María, nuestra guía hacia Jesús",
+		"effect": [
+			"Se dará a elegir una carta que represente a Jesús, luego la misma se pierde entre el resto de cartas y, de forma mágica, otra carta que representa a María se gira en medio de la baraja para indicarnos el camino hacia Jesús. Desde ese lugar donde aparece la carta de María, se deletrea su nombre y se llega a la carta elegida que representaba a Jesús."
+		],
+		"resources": ["Una baraja de cartas (de cualquier tipo)."],
+		"dialog": [
+			"Vamos a elegir una carta que represente a Jesús, se la mostramos a todos y luego la colocamos arriba de la baraja y cortamos para perderla.",
+			"Muy bien, ahora Jesús está en alguna parte de la baraja de cartas, a simple vista no podemos saber dónde está y es difícil que lo podamos encontrar entre tantas cartas, eso mismo nos pasa en nuestra vida cuando no encontramos y no podemos ver a Jesús porque nos nubla la vista los problemas, preocupaciones o miedos.",
+			"Pero hay una persona especial que siempre estuvo cerca de Jesús y que es el mejor camino para llegar a Él. Esa persona es María, a la cual vamos a representar con la reina de corazones (Q).",
+			"Si se lo pedimos, ella nos conduce a Jesús, entonces se lo vamos a pedir en éste momento... y María se gira en alguna parte para darnos una señal… (Aparece la reina de corazones girada en alguna parte), ¿y de qué manera nos va a conducir a Jesús? En este caso, si deletreamos el nombre de María, una carta por letra, M A R Í A… llegamos a una carta, y si recordamos la carta que representaba a Jesús era (se nombra carta elegida) y la carta a la que nos llevó María es justamente Jesús (se muestra que la carta coincide)."
+		],
+		"realization": [
+			"Antes de comenzar el juego se debe preparar una carta que represente a María, en mi caso suelo utilizar la reina de corazones (“Q” de corazones) en la baraja de póker o cualquier otra carta en la baraja española o la que utilices. Dicha carta se debe colocar girada en la quinta posición desde debajo de la baraja.",
+			"Una vez que tengamos la baraja preparada, damos a elegir una carta cualquiera, evitando que se vea la carta dada vuelva. Ésta carta elegida representará a Jesús, en ese momento las demás personas ven la carta elegida, luego se la coloca encima de la baraja y se corta la bajara para perderla. De esta manera, la carta elegida (Jesús) quedará a una distancia de seis cartas de la carta daba vuelta (María).",
+			"En este momento ya está todo hecho, solo queda seguir con el diálogo, buscar la carta daba vuelta (María) y luego deletrear su nombre (una carta por letra) para llegar hasta la carta elegida (Jesús)."
+		],
+		"comments": [
+			"Este juego se puede utilizar para deletrear cualquier palabra que se necesite para hablar sobre otros temas, simplemente hay que cambiar la cantidad de cartas que se dejan debajo de la carta que aparece girada en la baraja, de acuerdo a la cantidad de letras que tenga la palabra que queramos deletrear luego. Por ejemplo, si queremos deletrear la palabra “Eucaristía”, pondríamos 10 cartas debajo de la carta girada. "
+		],
+		"images": [
+			"https://picsum.photos/id/1015/400",
+			"https://picsum.photos/id/1025/400",
+			"https://picsum.photos/id/1018/400"
+		],
+		"videos": [
+			"https://www.youtube.com/embed/l30qpPzbwNI",
+			"https://www.youtube.com/embed/l30qpPzbwNI"
+		]
 	},
+
 	{
 		"idGame": 2,
-		"number": "2",
-		"title": "Nombre del juego 2"
+		"title": "Pecado y perdón - Clips que se unen",
+		"effect": [
+			"Dos clips que representan a Dios y a nosotros, se encuentran separados debido a la acción del pecado, pero gracias al perdón y la confesión, logramos volver a estar unidos a Dios."
+		],
+		"resources": [
+			"Dos clips a los que se les puede pegar un papel a uno que diga “Yo” y al otro “Dios”, o simplemente recalcar lo que representan, y también un trozo rectangular de papel que tenga escrita la palabra “Pecado”.",
+			"También se podría usar una bandita elástica que se podría colocar en el papel y hacer que los dos clips se unan a la bandita, para que ésta represente la confesión o el pedir perdón."
+		],
+		"dialog": [
+			"Dios quiere que siempre permanezcamos unidos a Él, pero muchas veces el pecado hace que nos separemos y nos aleja de Dios poniéndonos barreras para que nos alejemos de Él.",
+			"Es importante que en esos momentos recordemos que tenemos la oportunidad de pedir perdón a través de la confesión, la cual nos permite superar el pecado y volver a estar unidos a Dios."
+		],
+		"realization": [
+			"Se comienza con los dos clips unidos, queriendo simbolizar nuestra unión con Dios.",
+			"Cuando hablamos sobre el pecado, se separan los clips y se los engancha por separado en el papel, el cual representa el pecado, luego se dobla una punta de la tira de papel y se engancha por la parte de atrás del clip más alejado, la otra punta de la tira se dobla en sentido contrario y se engancha con el otro clip.",
+			"Al tirar de las dos puntas juntas, los clips se vuelven a unir."
+		],
+		"comments": [
+			"Este mismo juego se puede usar para hablar sobre el pedir perdón a otra persona o algo relacionado a la amistad."
+		],
+		"images": [],
+		"videos": []
 	},
+
 	{
 		"idGame": 3,
-		"number": "3",
-		"title": "Nombre del juego 3"
+		"title": "Pecado y perdón - Palillo roto y recompuesto",
+		"effect": [
+			"Se coloca un escarbadientes/palillo/fósforo arriba de una servilleta o pañuelo, el mismo se dobla a la mitad y una persona tomando en sus manos el escarbadientes lo rompe una o dos veces. Luego, se deja el pañuelo sobre la mesa, se lo abre y sorprendentemente el escarbadientes se encuentra completamente sano."
+		],
+		"resources": [
+			"Dos escarbadientes o palillos o fósforos iguales y un pañuelo o servilleta que cumpla con el detalle explicado en la realización del juego para poder ser utilizado."
+		],
+		"dialog": [
+			"Imaginemos que este escarbadientes representa nuestra relación con Dios o nuestro corazón, el mismo en un comienzo se encuentra completamente sano, pero hay ocasiones donde nosotros mismos, a través del pecado, rompemos esa relación con Dios, o dañamos nuestro corazón, lo cual parece no tener solución.",
+			"Sin embargo, en ese momento es donde aparece la misericordia de Dios, y si nos arrepentimos y pedimos perdón, Dios hace posible que todo vuelva a ser como antes."
+		],
+		"realization": [
+			"Siguiendo las fotos o vídeo podrás observar fácilmente el secreto de este juego. Lo que deberás hacer es conseguir un pañuelo o servilleta que tenga sus bordes cocidos de tal forma que te permita esconder el segundo escarbadientes antes de realizar el juego. Una vez preparado, simplemente deberás extender el pañuelo sobre la mesa, colocar el escarbadientes encima, realizar el dobles correspondiente y entregarlo a una persona para que rompa el escarbadientes. En este momento, dicha persona pensará que está rompiendo el escarbadientes mostrado al comienzo, pero en realidad estará rompiendo el escarbadientes escondido en el borde del pañuelo.",
+			"Una vez hecho esto, se vuelve a dejar el pañuelo sobre la mesa, se lo extiende lentamente y se observa que el escarbadientes se encuentra completamente sano."
+		],
+		"comments": [
+			"Es muy importante que el escarbadientes lo rompa otra persona, para que sienta y escuche como de verdad se rompe y quede muy claro ese instante."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
+
 	{
 		"idGame": 4,
-		"number": "4",
-		"title": "Nombre del juego 4"
+		"title": "Nombre del juego",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": ["Recursos 1"],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
+
 	{
 		"idGame": 5,
-		"number": "5",
-		"title": "Nombre del juego 5"
+		"title": "Nombre del juego",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": ["Recursos 1"],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
+
 	{
 		"idGame": 6,
-		"number": "6",
-		"title": "Nombre del juego 6"
+		"title": "Nombre del juego",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": ["Recursos 1"],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 7,
+		"title": "Nombre del juego",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": ["Recursos 1"],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	}
 ]
