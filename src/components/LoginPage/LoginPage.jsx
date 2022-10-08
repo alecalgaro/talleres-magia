@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Form from "./Form";
-import Navbar from "./Navbar";
+import Navbar from "../General/Navbar";
 import { Helmet } from "react-helmet";
 
 const LoginPage = () => {

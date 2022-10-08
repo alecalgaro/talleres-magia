@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
-import imgLogo from "../img/logo.webp";
+import imgLogo from "../../img/logo.webp";
 
-import firebaseApp from "../firebaseConfig";
+import firebaseApp from "../../firebaseConfig";
 import { getAuth, signOut } from "firebase/auth";
 const auth = getAuth(firebaseApp);
 

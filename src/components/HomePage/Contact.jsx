@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import iconWhatsapp from "../img/icon-whatsapp.webp";
-import iconInstagram from "../img/icon-instagram.webp";
+import Title from "../General/Title";
+import iconWhatsapp from "../../img/icon-whatsapp.webp";
+import iconInstagram from "../../img/icon-instagram.webp";
 
 const Contact = () => {
 	return (

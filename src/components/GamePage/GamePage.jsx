@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-import Title from "./Title";
+import Title from "../General/Title";
 import GameDetails from "./GameDetails";
-import Slider from "./Slider";
-import Navbar from "./Navbar";
+import Slider from "../General/Slider";
+import Navbar from "../General/Navbar";
 
-import games_catholic from "./data/magic_catholic.json";
-import games_family from "./data/magic_family.json";
-import games_educational from "./data/magic_educational.json";
+import games_catholic from "../../data/magic_catholic.json";
+import games_family from "../../data/magic_family.json";
+import games_educational from "../../data/magic_educational.json";
 
 const GamePage = ({ course }) => {
 	const { idGame } = useParams();

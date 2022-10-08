@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import imgPerfil from "../img/img-perfil.webp";
+import Title from "../General/Title";
+import imgPerfil from "../../img/img-perfil.webp";
 
 const About = () => {
 	return (

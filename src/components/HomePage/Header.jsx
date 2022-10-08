@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgLogoWhatsapp from "../img/icon-whatsapp.webp";
+import imgLogoWhatsapp from "../../img/icon-whatsapp.webp";
 
 const Header = () => {
 	return (

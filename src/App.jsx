@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
-import HomePage from "./components/HomePage";
-import CoursePage from "./components/CoursePage";
-import GamePage from "./components/GamePage";
-import NotFound from "./components/NotFound";
-import LoginPage from "./components/LoginPage";
-import MoreInformation from "./components/MoreInformation";
+import HomePage from "./components/HomePage/HomePage";
+import CoursePage from "./components/CoursePage/CoursePage";
+import GamePage from "./components/GamePage/GamePage";
+import NotFound from "./components/General/NotFound";
+import LoginPage from "./components/LoginPage/LoginPage";
+import MoreInformation from "./components/InfoPage/MoreInformation";
 
 import firebaseApp from "./firebaseConfig";
 import { getAuth, onAuthStateChanged } from "firebase/auth";

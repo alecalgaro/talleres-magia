@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Navbar from "../General/Navbar";
 import Header from "./Header";
 import Course from "./Course";
 import About from "./About";
@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 
 // imports de Firebase:
-import firebaseApp from "../firebaseConfig";
+import firebaseApp from "../../firebaseConfig";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 const firestore = getFirestore(firebaseApp);
 

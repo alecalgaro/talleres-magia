@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "../General/Navbar";
 import GameItem from "./GameItem";
-import Title from "./Title";
-import Footer from "./Footer";
+import Title from "../General/Title";
+import Footer from "../HomePage/Footer";
 import { Helmet } from "react-helmet";
 
-import course from "./data/courses.json";
-import games_catholic from "./data/magic_catholic.json";
-import games_family from "./data/magic_family.json";
-import games_educational from "./data/magic_educational.json";
+import course from "../../data/courses.json";
+import games_catholic from "../../data/magic_catholic.json";
+import games_family from "../../data/magic_family.json";
+import games_educational from "../../data/magic_educational.json";
 
 const CoursePage = () => {
 	const { courseName } = useParams();

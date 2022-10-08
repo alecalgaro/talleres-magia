@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
-import Title from "./Title";
+import Navbar from "../General/Navbar";
+import Title from "../General/Title";
 import InfoCatholicMagic from "./InfoCatholicMagic";
 import InfoFamilyMagic from "./InfoFamilyMagic";
 import InfoEducationalMagic from "./InfoEducationalMagic";
-import Footer from "./Footer";
+import Footer from "../HomePage/Footer";
 import { Helmet } from "react-helmet";
 
 const MoreInformation = ({ course }) => {

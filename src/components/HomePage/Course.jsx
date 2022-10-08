@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Title from "./Title";
+import Title from "../General/Title";
 
 const Course = ({ title, route, textBtn, item1, item2, item3, enable, enableMoreInfo }) => {
 	return (
