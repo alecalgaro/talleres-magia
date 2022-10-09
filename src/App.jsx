@@ -26,6 +26,7 @@ function App() {
 	const notify = (message) => {
 		toast(message, {
 			position: "top-center",
+			delay: 800,
 			autoClose: false,
 			hideProgressBar: false,
 			closeOnClick: true,
@@ -110,7 +111,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
   }
 

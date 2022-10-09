@@ -74,22 +74,22 @@ const HomePage = ({ user }) => {
 					<Course
 						enable={enable[1]}
 						enableMoreInfo={false}
-						title="Magia educativa"
-						route="educativa"
-						textBtn="Proximamente"
-						item1="Magia con elementos de clases"
-						item2="Más atención y entusiasmo"
-						item3="Aprender de forma divertida"
-					/>
-					<Course
-						enable={enable[2]}
-						enableMoreInfo={false}
 						title="Magia familiar"
 						route="familiar"
 						textBtn="Proximamente"
 						item1="Magia para niños y adultos"
 						item2="Momentos compartidos en familia"
 						item3="Sonrisas y sorpresas garantizadas"
+					/>
+					<Course
+						enable={enable[2]}
+						enableMoreInfo={false}
+						title="Magia educativa"
+						route="educativa"
+						textBtn="Proximamente"
+						item1="Magia con elementos de clases"
+						item2="Más atención y entusiasmo"
+						item3="Aprender de forma divertida"
 					/>
 				</section>
 				<About />

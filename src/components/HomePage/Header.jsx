@@ -1,14 +1,13 @@
 import React from "react";
-import { useEffect } from "react";
 import styled from "styled-components";
 import imgLogoWhatsapp from "../../img/icon-whatsapp.webp";
+import logo_header from "../../img/logo_header.webp";
 
 const Header = () => {
 	return (
 		<ContainerHeader>
-			<h1 className="title">
-				¡Te doy la bienvenida!
-				<br />
+			<h1>
+				<img src={logo_header} alt="Logo del proyecto de talleres de magia con propósito" />
 			</h1>
 			<h3 className="subtitle">
 				Aquí encontrarás talleres de <br /> magia
@@ -32,28 +31,35 @@ export default Header;
 
 const ContainerHeader = styled.header`
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100vw;
 	height: 100vh;
-	margin: 2rem 2rem;
+	margin: 0 2rem;
 	overflow-x: hidden;
 
-	.title {
-		font-size: 5rem;
-		margin: 0 2rem;
-		font-weight: 600;
-		color: var(--primary);
-		text-shadow: 3px 3px 0px var(--black);
-		text-align: center;
+	img {
+		width: 300px;
+		margin: 0 1rem;
+		animation: scale 0.5s ease forwards;
+	}
+
+	@keyframes scale {
+		from {
+			transform: scale(0);
+		}
+		to {
+			transform: scale(1);
+		}
 	}
 
 	.subtitle {
 		font-size: 3rem;
-		margin: 3rem 4rem;
+		margin: 4rem;
 		color: var(--black);
 		text-align: start;
+		animation: scale 0.5s ease forwards;
 	}
 
 	.rotate-words {

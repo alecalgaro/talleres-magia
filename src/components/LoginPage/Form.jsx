@@ -27,6 +27,7 @@ const Form = ({ type }) => {
 			pauseOnHover: true,
 			draggable: true,
 			progress: undefined,
+			className: "toast_form",
 		});
 	};
 
@@ -39,6 +40,7 @@ const Form = ({ type }) => {
 			pauseOnHover: true,
 			draggable: true,
 			progress: undefined,
+			className: "toast_form",
 		});
 	};
 
@@ -216,5 +218,13 @@ const ContainerForm = styled.div`
 				font-size: 1.4rem;
 			}
 		}
+	}
+
+	.toast_form {
+		font-size: 1.4rem;
+		text-align: center;
+		margin: 2rem;
+		position: relative;
+		top: 50px;
 	}
 `;

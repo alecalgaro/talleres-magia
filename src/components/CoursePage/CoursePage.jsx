@@ -4,6 +4,9 @@ import { Link, useParams } from "react-router-dom";
 import Navbar from "../General/Navbar";
 import GameItem from "./GameItem";
 import Footer from "../HomePage/Footer";
+import logo_catholic from "../../img/logo_catholic.webp";
+import logo_family from "../../img/logo_family.webp";
+import logo_educational from "../../img/logo_educational.webp";
 import { Helmet } from "react-helmet";
 
 import games_catholic from "../../data/magic_catholic.json";
@@ -14,18 +17,18 @@ const CoursePage = () => {
 	const { courseName } = useParams();
 
 	var games;
-	var title;
+	var logo;
 
-	// Elijo el titulo del taller y de que archivo obtener la informacion:
+	// Elijo el logo del taller y de que archivo obtener la informacion:
 	if (courseName == "catolica") {
 		games = games_catholic;
-		title = "Con magia el Evangelio se contagia";
+		logo = logo_catholic;
 	} else if (courseName == "familiar") {
 		games = games_family;
-		title = "Titulo magia familiar";
+		logo = logo_family;
 	} else {
 		games = games_educational;
-		title = "Titulo magia educativa";
+		logo = logo_educational;
 	}
 
 	return (
@@ -38,7 +41,9 @@ const CoursePage = () => {
 			<Navbar />
 			<main>
 				<ContainerGamePage>
-					<h1>{title}</h1>
+					<h1>
+						<img src={logo} alt="Logo del taller de magia" />
+					</h1>
 					<GamesContainer>
 						{games.map((game) => (
 							<Link to={"/magia/" + courseName + "/" + game.idGame} key={game.idGame}>
@@ -57,19 +62,24 @@ export default CoursePage;
 
 const ContainerGamePage = styled.section`
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin: 10rem 0;
+	margin: 8rem 0;
+	animation: scale 0.5s ease forwards;
 
-	h1 {
-		font-size: 3.5rem;
-		margin: 0 2rem 2rem 2rem;
-		font-weight: 600;
-		color: var(--primary);
-		text-shadow: 2px 2px 0px var(--black);
-		text-align: center;
+	img {
+		width: 300px;
+		margin: 0 1rem;
+	}
+
+	@keyframes scale {
+		from {
+			transform: scale(0);
+		}
+		to {
+			transform: scale(1);
+		}
 	}
 `;
 

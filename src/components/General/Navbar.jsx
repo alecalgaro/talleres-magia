@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
-import imgLogo from "../../img/logo.webp";
+import logo_navbar from "../../img/logo_navbar.webp";
 
 import firebaseApp from "../../firebaseConfig";
 import { getAuth, signOut } from "firebase/auth";
@@ -19,7 +19,7 @@ function Navbar({ user, page }) {
 							<a href="#sobre-mi">Sobre mi</a>
 						</div>
 						<a href="#">
-							<img src={imgLogo} alt="logo" />
+							<img src={logo_navbar} alt="logo" />
 						</a>
 						<div className="menu_der">
 							<a href="#contacto">Contacto</a>
@@ -33,7 +33,7 @@ function Navbar({ user, page }) {
 							<a href="#sobre-mi">Sobre mi</a>
 						</div>
 						<a href="#">
-							<img src={imgLogo} alt="logo" />
+							<img src={logo_navbar} alt="logo" />
 						</a>
 						<div className="menu_der">
 							<a href="#contacto">Contacto</a>
@@ -57,7 +57,7 @@ function Navbar({ user, page }) {
 							<Link to="/">Inicio</Link>
 						</div>
 						<Link to="/">
-							<img src={imgLogo} alt="logo" />
+							<img src={logo_navbar} alt="logo" />
 						</Link>
 						<div className="menu_der">
 							<button onClick={() => signOut(auth)}>
@@ -128,8 +128,7 @@ const NavContainer = styled.nav`
 	}
 
 	img {
-		width: 3.5rem;
-		padding-bottom: 1rem;
+		width: 3.2rem;
 	}
 
 	button {
