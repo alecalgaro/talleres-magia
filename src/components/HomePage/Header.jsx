@@ -40,7 +40,7 @@ const ContainerHeader = styled.header`
 	overflow-x: hidden;
 
 	img {
-		width: 300px;
+		width: 250px;
 		margin: 0 1rem;
 		animation: scale 0.5s ease forwards;
 	}

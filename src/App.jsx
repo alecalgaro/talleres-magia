@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import HomePage from "./components/HomePage/HomePage";
@@ -21,6 +21,7 @@ const auth = getAuth(firebaseApp);
 function App() {
 	const [user, setUser] = useState(null);
 	const [enableToast, setEnableToast] = useState(true);
+	const routePath = useLocation();
 
 	// Notificacion de react-toastify
 	const notify = (message) => {
@@ -48,17 +49,23 @@ function App() {
 			} else {
 				// si no hay una sesion iniciada (o cuando se cierra sesion)
 				setUser(null);
+				// Si no hay una sesion iniciada y aun no se mostro el toast, muestro para indicar como adquirir un taller
+				if (enableToast === true) {
+					notify(
+						"Para adquirir uno de los talleres, haz click en el botón de Whatsapp que encontrarás abajo a la derecha o en la sección de contacto. Muchas gracias!"
+					);
+					// cambio el state para que no se vuelva a mostrar luego de cerrarlo:
+					setEnableToast(false);
+				}
 			}
 		});
 	}, []);
 
-	if (user === null && enableToast === true) {
-		notify(
-			"Para adquirir alguno de los talleres, haz click en el botón de Whatsapp que encontrarás abajo a la derecha o en la sección de contacto. Muchas gracias!"
-		);
-		// cambio el state para que no se vuelva a mostrar luego de cerrarlo:
-		setEnableToast(false);
-	}
+	// Este useEffect es para que al cambiar de ruta se vaya siempre a la parte superior de la pagina
+	// por eso es cada vez que cambia el routePath (obtenido de useLocation)
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [routePath]);
 
 	return (
 		<>
@@ -120,7 +127,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     background-color: var(--white);
 
-	.toast_header {
+	// estilos para los toast (de Home y Login)
+	.toast_header, .toast_form {
 		font-size: 1.4rem;
 		text-align: center;
 		margin: 2rem;

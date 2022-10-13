@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../../img/logo_catholic.webp";
 
 const InfoCatholicMagic = () => {
 	return (
 		<>
 			<ContainerInfo>
-				<h3>Subtítulo</h3>
+				<h1>
+					<img src={logo} alt="Logo del proyecto de talleres de magia católica" />
+				</h1>
 				<p>
 					Jesús siempre fue creativo con sus enseñanzas, le gusta sorprender, hacer que su mensaje
 					llegue al corazón y que se recuerde lo que Él quiere transmitir. Y si hablamos de
@@ -86,10 +89,14 @@ export default InfoCatholicMagic;
 const ContainerInfo = styled.section`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
 	margin: 2rem 0;
+
+	img {
+		width: 250px;
+		margin: 0 1rem;
+	}
 
 	p {
 		font-size: 1.6rem;

@@ -35,8 +35,6 @@ const MoreInformation = ({ course }) => {
 			<Navbar page="game" />
 			<main>
 				<ContainerMoreInformation>
-					<h1>{title}</h1>
-
 					{course === "catholic" ? (
 						<InfoCatholicMagic />
 					) : course === "family" ? (
@@ -55,11 +53,10 @@ export default MoreInformation;
 
 const ContainerMoreInformation = styled.section`
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin: 10rem 0 5rem 0;
+	margin: 7rem 0 3rem 0;
 
 	h1 {
 		font-size: 3.5rem;

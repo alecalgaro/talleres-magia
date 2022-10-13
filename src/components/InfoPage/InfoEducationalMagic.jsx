@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../../img/logo_educational.webp";
 
 const InfoEducationalMagic = () => {
 	return (
 		<>
 			<ContainerInfo>
-				<h3>Subtítulo</h3>
+				<h1>
+					<img src={logo} alt="Logo del proyecto de talleres de magia educativa" />
+				</h1>
 				<p>Aún no hay información sobre este taller</p>
 			</ContainerInfo>
 			;
@@ -18,10 +21,14 @@ export default InfoEducationalMagic;
 const ContainerInfo = styled.section`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
 	margin: 2rem 0;
+
+	img {
+		width: 250px;
+		margin: 0 1rem;
+	}
 
 	p {
 		font-size: 1.6rem;

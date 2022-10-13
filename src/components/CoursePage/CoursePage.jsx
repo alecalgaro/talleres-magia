@@ -69,7 +69,7 @@ const ContainerGamePage = styled.section`
 	animation: scale 0.5s ease forwards;
 
 	img {
-		width: 300px;
+		width: 250px;
 		margin: 0 1rem;
 	}
 
