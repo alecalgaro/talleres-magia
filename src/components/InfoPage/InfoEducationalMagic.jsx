@@ -23,10 +23,13 @@ const ContainerInfo = styled.section`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	margin: 2rem 0;
+
+	h1 {
+		margin: 0;
+	}
 
 	img {
-		width: 250px;
+		width: 300px;
 		margin: 0 1rem;
 	}
 

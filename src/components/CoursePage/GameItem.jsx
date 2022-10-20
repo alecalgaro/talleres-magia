@@ -19,7 +19,8 @@ const ContainerItem = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 12rem;
+	width: 13rem;
+	height: 15rem;
 	margin: 1.2rem;
 	padding: 0.5rem;
 	gap: 0.5rem;
@@ -43,7 +44,7 @@ const ContainerItem = styled.div`
 
 	p {
 		text-align: center;
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		margin: 0 0.5rem;
 	}
 `;

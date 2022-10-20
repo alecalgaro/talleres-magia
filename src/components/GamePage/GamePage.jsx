@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-import Title from "../General/Title";
 import GameDetails from "./GameDetails";
 import Slider from "./Slider";
 import Navbar from "../General/Navbar";
@@ -30,7 +29,7 @@ const GamePage = ({ course }) => {
 					<ContainerPage key={game.idGame}>
 						<Navbar page="game" />
 						<ContainerGame>
-							<Title title={game.title} />
+							<h1>{game.title}</h1>
 							<Slider images={game.images} />
 							<GameDetails title="Video" videos={game.videos} />
 							<GameDetails title="Efecto" effect={game.effect} />
@@ -64,4 +63,11 @@ const ContainerGame = styled.div`
 	flex-direction: column;
 	width: 90%;
 	max-width: 70rem;
+
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		color: var(--primary);
+		text-shadow: 3px 2px 0 var(--black);
+	}
 `;

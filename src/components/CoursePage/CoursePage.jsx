@@ -65,12 +65,12 @@ const ContainerGamePage = styled.section`
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin: 8rem 0;
+	margin: 5rem 0;
 	animation: scale 0.5s ease forwards;
 
 	img {
-		width: 250px;
-		margin: 0 1rem;
+		width: 300px;
+		margin: 2rem 1rem 0 1rem;
 	}
 
 	@keyframes scale {

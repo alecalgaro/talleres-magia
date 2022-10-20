@@ -50,7 +50,7 @@ const ContainerContact = styled.section`
 	div {
 		display: flex;
 		gap: 5rem;
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 	}
 
 	img {

@@ -4,6 +4,7 @@
 		"title": "Nombre del juego",
 		"effect": ["Texto 1", "Texto 2", "Texto 3"],
 		"resources": ["Recursos 1"],
+		"dialog": [],
 		"realization": ["Realización 1"],
 		"comments": ["Comentario 1."],
 		"images": [],

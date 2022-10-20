@@ -83,19 +83,26 @@
 
 	{
 		"idGame": 4,
-		"title": "Nombre del juego",
-		"effect": ["Texto 1", "Texto 2", "Texto 3"],
-		"resources": ["Recursos 1"],
-		"dialog": [],
-		"realization": ["Realización 1"],
-		"comments": ["Comentario 1."],
+		"title": "Pecado y perdón - Lápiz y billete",
+		"effect": [
+			"Se sujeta en las manos un billete, el cual se dobla a la mitad, se coloca dentro de un pedazo de papel y se atraviesa tanto el papel como el billete con un lápiz. Luego se retira el lápiz y se muestra que el papel se encuentra atravesado pero al abrir el billete el mismo se encuentra completamente sano."
+		],
+		"resources": [
+			"Un lápiz, un billete y un pedazo de papel como se muestra en las imágenes o video."
+		],
+		"dialog": [
+			"Se puede utilizar este juego para hablar sobre el pecado (cuando el lápiz atraviesa el papel y el billete) y luego hablar del perdón cuando se retira el lápiz y el billete se encuentra sano.",
+			"Una idea podría ser, en lugar de utilizar un billete, utilizar un papel que tenga dibujado por ejemplo un corazón, para hablar sobre el daño del pecado (lápiz) en nuestro corazón, y luego cómo el perdón y la reconciliación vuelven a sanar el corazón."
+		],
+		"realization": ["Explicación en video"],
+		"comments": [""],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
 
 	{
 		"idGame": 5,
-		"title": "Nombre del juego",
+		"title": "Pecado - Celular dentro del globo",
 		"effect": ["Texto 1", "Texto 2", "Texto 3"],
 		"resources": ["Recursos 1"],
 		"dialog": [],
@@ -107,24 +114,138 @@
 
 	{
 		"idGame": 6,
-		"title": "Nombre del juego",
-		"effect": ["Texto 1", "Texto 2", "Texto 3"],
-		"resources": ["Recursos 1"],
-		"dialog": [],
-		"realization": ["Realización 1"],
-		"comments": ["Comentario 1."],
+		"title": "Guiados por el Espíritu Santo",
+		"effect": [
+			"Se coloca la baraja de cartas mezcladas boca abajo sobre la mesa y entre dos personas intentarán separar todas las cartas por colores, sin poder mirarlas. Al finalizar, cada persona habrá logrado quedarse con todas las cartas de un mismo color.",
+			"(En caso de usar cartas de póker, se separarían las cartas en rojas y negras)."
+		],
+		"resources": [
+			"Una baraja de cartas. Preferentemente cartas de póker (cartas francesas) las cuales tienen cartas de dos colores: negro y rojo. Si no se tiene dichas cartas se puede adaptar con otros tipos de barajas."
+		],
+		"dialog": [
+			"Utilizando toda la baraja de cartas, vamos a pensar en que las mismas representan acciones buenas y malas de nuestro día a día (podemos pedirle a las personas del público que vayan mencionando distintas acciones buenas y malas). Las cartas rojas representarán las acciones buenas, mientras que las cartas negras representarán las acciones malas (si fueran cartas de póker que tienen esos colores).",
+			"La idea es representar como el Espíritu Santo nos puede guiar en la toma de decisiones en nuestra vida, siempre que se lo pidamos, por lo tanto, una de las personas intentará retirar todas las cartas rojas mientras que la otra persona intentará retirar todas las cartas negras, ambos sin poder mirar las cartas que eligen.",
+			"De esa manera irán retirando una a una todas las cartas y al final veremos cómo han logrado separar correctamente las acciones buenas de las malas gracias a la guía del Espíritu Santo."
+		],
+		"realization": ["Explicación en vídeo."],
+		"comments": [""],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
 
 	{
 		"idGame": 7,
-		"title": "Nombre del juego",
-		"effect": ["Texto 1", "Texto 2", "Texto 3"],
-		"resources": ["Recursos 1"],
-		"dialog": [],
-		"realization": ["Realización 1"],
-		"comments": ["Comentario 1."],
+		"title": "Lo esencial es invisible a los ojos",
+		"effect": [
+			"El siguiente no es un juego de magia, sino que es un desafío. La idea es la siguiente:",
+			"Se coloca un trozo de papel sobre una moneda en vertical (o sobre una tapa o algo similar) y se tapa todo con un vaso transparente. El desafío es intentar hacer mover y caer el trozo de papel sin tocar el vaso ni la mesa donde se encuentre."
+		],
+		"resources": [
+			"Una moneda, un trozo de papel chiquito, un vaso de plástico transparente, un globo."
+		],
+		"dialog": [
+			"Podría ser un juego para antes de comenzar a hablar por ejemplo sobre algo que no vemos (el Espíritu Santo, el amor de Dios, etc.) pero que sí lo podemos sentir, experimentar o saber que está presente."
+		],
+		"realization": [
+			"Simplemente se debe inflar el globo y frotarlo sobre un pantalón, buzo o campera que permita generar electricidad estática (se debe comprobar anteriormente ya que hay materiales mejores que otros, incluso se puede probar frotando el globo con el pelo), y a continuación acercar lentamente el globo al vaso y la estática hará que el trozo de papel se mueva."
+		],
+		"comments": [
+			"El globo se puede reemplazar por algún otro material, siempre que permita generar la electricidad estática, y lo que se elija utilizar podría tener escrito o pegada una imagen relacionada al tema que usemos como diálogo, por ejemplo, si hablamos del Espíritu Santo, podríamos pegar una imagen de una paloma si después les vamos a contar sobre los símbolos del Espíritu Santo, o lo que nos sirva para reforzar la idea a transmitir.",
+			"También se puede pensar en otra opción que no sea el trozo de papel sobre la moneda, por ejemplo, hacer mover un sorbete de plástico, o alguna otra idea que tenga cierta relación con lo que queremos transmitir."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 8,
+		"title": "Santísima Trinidad",
+		"effect": [
+			"Se muestran varias banditas elásticas y se las relaciona con distintas personas que aparecen en la Biblia o en nuestra familia, luego, a la vista de todos y mientras se habla sobre la Santísima Trinidad, tres de estas banditas se unen mágicamente representando a las tres personas de la Santísima Trinidad."
+		],
+		"resources": ["Varias banditas elásticas y pegamento."],
+		"dialog": [
+			"Estas banditas representan a distintas personas que aparecen en la Biblia, por ejemplo, Jesús, María, José, los discípulos… (Se pregunta al púbico para que ellos vayan mencionando). Pero en este momento nos queremos centrar en  tres personas muy especiales y unidas, que son Dios, Jesús y el Espíritu Santo.",
+			"Muchas veces los nombramos juntos, por ejemplo, siempre que hacemos la señal de la cruz. Pero no tenemos que confundirnos, son tres personas, Padre, Hijo y Espíritu Santo, que conforman un solo Dios. Estas tres personas unidas forman lo que conocemos como “la Santísima Trinidad”.",
+			"La primera persona de la Santísima Trinidad es Dios Padre, la segunda es Dios Hijo (Jesús) y la tercera es Dios Espíritu Santo. Tres personas que se aman, Dios es amor, el Padre ama al Hijo, que ama al Padre, y de ese amor emana el Espíritu Santo."
+		],
+		"realization": [
+			"Desde el comienzo tendremos un grupo de tres banditas unidas que muy fácilmente lo podemos armar cortando una de las banditas, pasándola por el centro de las otras dos y pegando los extremos cortados con delicadeza para que no se note el corte, como se muestra en la imagen y vídeo. Y además tendremos otro grupo de varias banditas sueltas.",
+			"Mientras se nombra a las distintas personas, se van mostrando las banditas por separado, sin darle importancia a las que están unidas para que no se note (por eso es importante tener varias banditas en la mano para mostrar algunas y disimularlo) y, al momento de comenzar a hablar sobre la Santísima Trinidad, se juntan entre los dedos las tres banditas ya unidas y el resto se dejan a un lado (simulando que nos quedamos con tres banditas cualesquiera).",
+			"Las tres banditas unidas se colocan en un dedo mientras se sigue con el diálogo y, al final, lentamente y de forma clara se muestra que están unidas representando la Santísima Trinidad y continuando con el diálogo como se desee.",
+			"El secreto es muy simple, lo importante es la naturalidad de los gestos al mostrar las banditas elásticas."
+		],
+		"comments": [
+			"Otra opción podría ser tener muchas banditas en la mano y hablar sobre la familia, por ejemplo: “en una familia hay muchas personas, tenemos al papá, la mamá, los hermanos…” y continuar como se desee."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 9,
+		"title": "El poder de la oración",
+		"effect": [
+			"Una carta elegida se pierde en el resto de la baraja, las cartas se mezclan algunas caras arriba y otras caras abajo, generando una situación de caos. Luego de un momento, de forma mágica todas las cartas aparecen cara abajo, excepto la carta elegida y las demás cartas de su mismo palo, las cuales quedan cara arriba y en orden en la baraja."
+		],
+		"resources": ["Una baraja de cartas de cualquier tipo."],
+		"dialog": [
+			"Entre todas las complicaciones de la vida (se muestran las cartas), todas las dificultades, momentos malos y demás, parece que nada tiene solución, muchas veces sentimos que nuestra vida es un caos (se mezclan las cartas cara arriba y cara abajo), pero eso no es así, con Dios siempre podemos encontrar una salida, siempre tenemos una nueva oportunidad, y es Él quien nos guía, quien nos sana, quien nos acompaña, quien está a nuestro lado y quien nos da lo que en verdad necesita nuestra vida.",
+			"Es por eso que si nos acercamos a Dios (se coloca la baraja junto a la carta que representa a Dios y se comienza a extender la baraja), a través de la oración con fe, veremos como todo lo que antes era un caos, ahora comienza a tener solución, ya que Él es quien comienza a ordenarlo todo para bien (aparece la carta elegida y las de su mismo palo ordenadas)."
+		],
+		"realization": ["Explicación en vídeo."],
+		"comments": [""],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 10,
+		"title": "Juego interactivo con tres objetos",
+		"effect": [
+			"Las personas colocan sobre la mesa tres objetos: una cruz, una imagen de Jesús y un rosario o denario. Se les pide que los mezclen y los dejen en el orden que ellos quieran, uno al lado del otro, de forma horizontal. Una vez hecho esto, se les da algunas indicaciones de movimientos que deben realizar con esos objetos, sin conocer el amor cuál es el orden en que cada persona ha colocado sus objetos (distintas personas pueden haber elegido distinto orden de los objetos), y al finalizar el mago es capaz de saber exactamente en qué posición tienen cada objeto."
+		],
+		"resources": [
+			"Una cruz, una imagen de Jesús y un rosario o denario (lo puede ir realizando una o muchas personas al mismo tiempo, cada una con sus tres objetos)."
+		],
+		"dialog": ["Incluido en la realización."],
+		"realization": [
+			"Simplemente se debe pedir a las personas que realicen los siguientes pasos:",
+			"1- Colocar los tres objetos uno al lado del otro en el orden que quieras. ¿Estás seguro/a de que los queres dejar así? Podes cambiar antes de pasar al paso 2.",
+			"2- Quiero que tomes la imagen de Jesús y la cambies de lugar con el objeto que tiene a su izquierda. Si a la izquierda de esa imagen no hay otro objeto, la dejas en el lugar donde está.",
+			"3- Ahora quiero que tomes la cruz y la cambies de lugar con el objeto que tiene a su derecha. Si a la derecha de la cruz no hay otro objeto, la dejas en el lugar donde está.",
+			"4- Por último, vas a tomar el rosario/denario y lo vas a cambiar de lugar con el objeto que tiene a su izquierda. Al igual que en los anteriores, si no hay ningún objeto a la izquierda del denario, lo dejas en el lugar donde está.",
+			"¿Listo? Ahora te voy a pedir que con tu mano derecha tomes el objeto que haya quedado más a tu derecha y que te lo lleves al corazón... ¿Sabes por qué? Porque estoy seguro de que tenes en la mano la cruz, el signo de amor más grande, y ese amor es el que Jesús quiere en tu corazón hoy y siempre.",
+			"Ahora, con la mano izquierda, quiero que tomes el objeto que tengas más a tu izquierda… Y estoy seguro de que te puede servir para tener presente a nuestra mamá María que te acompaña siempre, y también la oración, porque tiene que ser el rosario/denario.",
+			"Y en el centro estoy seguro de que tiene haber quedado la imagen de Jesús, porque Él siempre debe ser nuestro centro, la persona a la que debemos seguir, imitar y hacer vida su palabra en nosotros."
+		],
+		"comments": [
+			"Lo mejor de este juego es que la magia ocurre en las manos del público y para realizarlo simplemente tendrás que indicar a las personas que lo realicen que sigan unos pasos muy simples, como habrás podido ver en la realización.",
+			"Se puede utilizar de forma presencial o virtual y con cualquier cantidad de personas al mismo tiempo, lo más importante es la presentación.",
+			"También podrías cambiar los objetos que se utilizan para adaptarlo a tus necesidades o mensaje que desees transmitir, siguiendo siempre los mismos pasos pero con distintos objetos."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 11,
+		"title": "Todo es posible para Dios",
+		"effect": [
+			"Se muestra una servilleta o pedazo de papel cuadrado que contiene dibujadas varias “X” como se observa en la imagen y vídeo y se le pregunta al público cómo se podrían quitar todas las “X” dibujadas realizando un solo corte. Luego de un momento y tras la aparente imposibilidad del desafío, se demuestra cómo se lo puede lograr con un simple corte."
+		],
+		"resources": [
+			"Una hoja o servilleta para cada participante que vaya a realizar el desafío, las cuales se deberán marcar como se muestra en la imagen y vídeo."
+		],
+		"dialog": [
+			"Éste no es un juego de magia, sino un desafío que se podría proponer a los participantes y utilizarlo para hablar sobre que para Dios todo es posible, o algún tema que se adapte al juego/desafío."
+		],
+		"realization": [
+			"Para realizarlo se debe doblar la servilleta o papel como se muestra en el vídeo y realizar el corte indicado, logrando de esa manera quitar todas las “X” dibujadas con un solo corte."
+		],
+		"comments": [
+			"Una opción podría ser entregarle a cada persona una servilleta o papel con los cuadros y todas las “X” dibujadas, para que intenten realizarlo. Luego de unos minutos y hablando sobre que para Dios todo es posible, se les muestra cómo se lo puede lograr."
+		],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	}

@@ -7,12 +7,16 @@ const About = () => {
 	return (
 		<ContainerAbout id="sobre-mi">
 			<Title title="Sobre mí" />
-			<img src={imgPerfil} alt="foto" />
+			<img src={imgPerfil} alt="Foto de perfil" />
 			<h3>Alejandro Calgaro</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim voluptates, non
-				nisi velit exercitationem eaque quam neque? Iusto natus officia molestias odit nam repellat
-				minima cupiditate quo suscipit iste?
+				Tengo 26 años, soy de la ciudad de Chajari (Entre Ríos). Me recibí de Analista en
+				Informática Aplicada y continúo estudiando Ingeniería en Informática (FICH - UNL, Santa Fe).
+				<br /> <br />A los 15 años comencé a aprender juegos de magia sencillos como algunos de los
+				que verás en estos talleres, y luego seguí estudiando y aprendiendo a través de libros,
+				cursos y conferencias online, etc. Hace 9 años aproximadamente que realizo shows de magia en
+				cumpleaños infantiles, festejos familiares, cumpleaños de 15, encuentros de jóvenes y otros
+				tipos de eventos.
 			</p>
 		</ContainerAbout>
 	);

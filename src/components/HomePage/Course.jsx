@@ -90,8 +90,12 @@ const ContainerCourse = styled.div`
 		}
 
 		p {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			padding: 0.8rem 0.5rem;
+
+			@media (min-width: 567px) {
+				font-size: 1.8rem;
+			}
 		}
 	}
 

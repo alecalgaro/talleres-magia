@@ -93,7 +93,7 @@ const NavContainer = styled.nav`
 		display: block;
 		font-size: 1.2rem;
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 600;
 		margin: 0.5rem 0.6rem 0 0.6rem;
 		text-decoration: none;
 		transition: letter-spacing 0.3s;
@@ -128,7 +128,7 @@ const NavContainer = styled.nav`
 	}
 
 	img {
-		width: 3.2rem;
+		width: 4rem;
 	}
 
 	button {

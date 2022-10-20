@@ -40,8 +40,8 @@ const ContainerHeader = styled.header`
 	overflow-x: hidden;
 
 	img {
-		width: 250px;
-		margin: 0 1rem;
+		width: 300px;
+		margin: 0 1rem 2.5rem 1rem;
 		animation: scale 0.5s ease forwards;
 	}
 
@@ -56,7 +56,7 @@ const ContainerHeader = styled.header`
 
 	.subtitle {
 		font-size: 3rem;
-		margin: 4rem;
+		margin: 0 4rem 4rem 4rem;
 		color: var(--black);
 		text-align: start;
 		animation: scale 0.5s ease forwards;
@@ -68,14 +68,12 @@ const ContainerHeader = styled.header`
 	}
 
 	.rotate-words span {
-		font-size: 2.8rem;
+		font-size: 3rem;
 		text-align: center;
 		width: max-content;
 		position: absolute;
-		background-color: var(--primary);
-		color: var(--white);
-		padding-inline: 1rem;
-		padding-top: 0.5rem;
+		color: var(--primary);
+		text-shadow: 3.5px 2px 0 var(--black);
 		opacity: 0;
 		transform-origin: 10% 75%;
 		animation: rotateWords 9s var(--d) linear infinite;

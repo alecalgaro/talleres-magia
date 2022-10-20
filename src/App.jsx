@@ -107,11 +107,11 @@ export default App;
 
 const GlobalStyle = createGlobalStyle`
   :root {
-	--primary:#3F84B8;
-    --secondary:#50A8EA;
+	--primary:#2277cc;
+    --secondary:#2a91cf;
     --black:#282828;
     --grey:#7c8071;
-    --white:#f8f8f8;
+    --white:#fafafa;
   }
 
   * {
