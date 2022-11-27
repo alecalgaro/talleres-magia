@@ -85,17 +85,17 @@
 		"idGame": 4,
 		"title": "Pecado y perdón - Lápiz y billete",
 		"effect": [
-			"Se sujeta en las manos un billete, el cual se dobla a la mitad, se coloca dentro de un pedazo de papel y se atraviesa tanto el papel como el billete con un lápiz. Luego se retira el lápiz y se muestra que el papel se encuentra atravesado pero al abrir el billete el mismo se encuentra completamente sano."
+			"Se sujeta en las manos un billete, el cual se dobla y se coloca dentro de un pedazo de papel y se atraviesa tanto el papel como el billete con un lápiz. Luego se retira el lápiz y se muestra que el papel se encuentra atravesado pero al abrir el billete el mismo se encuentra completamente sano."
 		],
-		"resources": [
-			"Un lápiz, un billete y un pedazo de papel como se muestra en las imágenes o video."
-		],
+		"resources": ["Un lápiz, un billete y un pedazo de papel como se muestra en el video."],
 		"dialog": [
-			"Se puede utilizar este juego para hablar sobre el pecado (cuando el lápiz atraviesa el papel y el billete) y luego hablar del perdón cuando se retira el lápiz y el billete se encuentra sano.",
-			"Una idea podría ser, en lugar de utilizar un billete, utilizar un papel que tenga dibujado por ejemplo un corazón, para hablar sobre el daño del pecado (lápiz) en nuestro corazón, y luego cómo el perdón y la reconciliación vuelven a sanar el corazón."
+			"Al igual que en otros de los juegos, éste se puede utilizar con un diálogo relacionado al pecado (cuando el lápiz atraviesa el papel y el billete) y luego hablar del perdón cuando se retira el lápiz y el billete se encuentra sano.",
+			"En los comentarios se cuenta una posible opción."
 		],
 		"realization": ["Explicación en video"],
-		"comments": [""],
+		"comments": [
+			"Una idea podría ser, en lugar de utilizar un billete, utilizar un papel que tenga dibujado por ejemplo un corazón, para hablar sobre el daño del pecado (lápiz) en nuestro corazón, y luego cómo el perdón y la reconciliación vuelven a sanar el corazón."
+		],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
@@ -103,11 +103,21 @@
 	{
 		"idGame": 5,
 		"title": "Pecado - Celular dentro del globo",
-		"effect": ["Texto 1", "Texto 2", "Texto 3"],
-		"resources": ["Recursos 1"],
-		"dialog": [],
-		"realization": ["Realización 1"],
-		"comments": ["Comentario 1."],
+		"effect": [
+			"Se infla un globo sin atarlo y teniendo un celular en la mano se presiona el globo contra el celular mientras se suelta poco a poco el aire del globo para que el mismo se desinfle. Una vez que se termina de desinflar y para sorpresa de todos, se ve como el celular ha quedado dentro del globo."
+		],
+		"resources": [
+			"Un celular y un globo.",
+			"En lo posible que el celular no sea muy grande o que no tenga una funda muy grande, porque vas a necesitar inflar el globo más grande y podría costar más que el celular quede dentro del globo o directamente no funcionar. Te recomiendo practicarlo algunas veces antes de presentarlo."
+		],
+		"dialog": [
+			"Una opción para este juego es al comienzo preguntar por ejemplo para qué utilizamos los celulares, cuya finalidad principal de los mismos es mantenernos conectados y comunicados, entonces podemos hablar sobre que ese celular ahora representaría nuestra comunicación con Dios y que al aparecer el pecado, representado por el globo, éste nos “encierra” y dificulta o impide esa comunicación, es decir, nos aleja de Dios."
+		],
+		"realization": [
+			"En el vídeo verás cómo realizar el juego, pero simplemente debes presionar con el globo sobre el celular e ir soltando poco a poco el aire del globo mientras aplicas presión sobre el celular para que el globo vaya tomando la forma del celular al ir desinflándose.",
+			"Una vez que se muestra que el celular está dentro del globo, se puede terminar el juego ahí y guardar los elementos sin entregarlos al público, para que no vean que en realidad el celular no está dentro del globo, o si se quiere entregar los elementos se puede romper el globo cerca del pico y doblarlo envolviendo al celular, para que de esa manera ahora sí el celular este completamente dentro y se pueda entregar para que lo revise sin problema."
+		],
+		"comments": [""],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
@@ -128,7 +138,9 @@
 			"De esa manera irán retirando una a una todas las cartas y al final veremos cómo han logrado separar correctamente las acciones buenas de las malas gracias a la guía del Espíritu Santo."
 		],
 		"realization": ["Explicación en vídeo."],
-		"comments": [""],
+		"comments": [
+			"Otra opción interesante podría ser utilizar papeles o pedazos de cartulina en lugar de cartas, donde en dichos papeles se escribirían las acciones buenas y malas."
+		],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	},
@@ -246,6 +258,164 @@
 		"comments": [
 			"Una opción podría ser entregarle a cada persona una servilleta o papel con los cuadros y todas las “X” dibujadas, para que intenten realizarlo. Luego de unos minutos y hablando sobre que para Dios todo es posible, se les muestra cómo se lo puede lograr."
 		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 12,
+		"title": "Permanecer unidos a Dios",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": ["Recursos 1"],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 13,
+		"title": "Luz del mundo - Vela mágica",
+		"effect": [
+			"Se enciende una vela mientras se lleva a cabo un diálogo, en cierto momento, se sopla la vela para que la misma se apague y se continúa con el diálogo, y al cabo de pocos segundos, la vela se vuelve a encender sola. Esto se puede repetir las veces que sean necesarias según el diálogo elegido."
+		],
+		"resources": [
+			"Una vela de cumpleaños de las llamadas “inextinguibles” o “mágicas”, las cuales se vuelven a encender solas luego de soplarlas. Se pueden comprar en cotillones."
+		],
+		"dialog": [
+			"Dios envío a su hijo para ser luz del mundo, para iluminar nuestros caminos (se enciende la vela), pero en el tiempo de Jesús hubo personas que no creyeron en él y que intentaron apagar esa luz, criticándolo, condenándolo y crucificándolo (se sopla la vela hasta apagarla).",
+			"Sin embargo, al tercer día Jesús demostró que Él es el verdadero Hijo de Dios, y que murió y resucitó (se vuelve a encender sola la vela) para la salvación de nuestros pecados.",
+			"Y no solo eso, sino que Jesús quiso quedarse entre nosotros, nos regaló su presencia, nos regaló esa luz para nuestras vidas, y aunque muchas veces nos pase que nos alejamos de la luz (se sopa la vela para apagarla) o que ciertas situaciones de la vida la intentan apagar, siempre tenemos la oportunidad de volver a la misma, sabiendo que ésta luz de Jesús siempre volverá a resurgir (se vuelve a encender) para iluminar y guiar nuestros pasos."
+		],
+		"realization": [
+			"El juego no tiene un secreto, simplemente gracias a como están fabricadas este tipo de velas, la misma genera pequeñas chispas luego de apagarse y eso permite que se encienda sola nuevamente. Se puede repetir las veces que sean necesarias."
+		],
+		"comments": [
+			"Es importante dejar que la vela se caliente por unos segundos una vez que se vuelve a encender sola (luego de haberla soplado y apagado), para permitir que la vela genere pequeñas chispas de forma constante que le permitirán apagarse y volver a encenderse."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 14,
+		"title": "En el corazón de Jesús hay lugar para todos",
+		"effect": [
+			"Se muestra una hoja A4 (o de otro tamaño) y se pregunta al público si es posible hacer un agujero en dicha hoja que permita a una persona pasar por dentro del mismo. Se puede dar un tiempo para pensarlo o intentarlo y las personas responderán que es imposible la idea planteada, momento en el cual realizaremos unos cortes a la hoja y para sorpresa de todos, el agujero generado tendrá tamaño suficiente para que una persona puede pasar tranquilamente por el interior del mismo."
+		],
+		"resources": ["Una hoja A4 o del tamaño deseado y una tijera."],
+		"dialog": [
+			"Para comenzar se lo puede plantear simplemente como un desafío para que las personas intenten realizarlos o piensen si es posible, y una vez que se muestre la solución se puede hablar por ejemplo sobre que en el corazón de Jesús hay lugar para que todos podamos pasar y sentirnos amados por Él.",
+			"En los comentarios te comparto otras posibles ideas que podrías adaptar."
+		],
+		"realization": ["Explicación en vídeo."],
+		"comments": [
+			"-Otra posible idea para la cual podría servir en alguna ocasión este juego es para hablar sobre que en la Iglesia hay lugar para todos, las puertas están abiertas para que todos podamos pasar a través de ellas y ser parte de la misma,  creando un diálogo en relación al tema.",
+			"-También se podría tener dos hojas, una en blanco que nos represente a nosotros cuando no sabemos cómo resolver algún problema (o algo similar, en este caso es el problema de cómo hacer el corte), y luego de que todos digan que es imposible hacer un agujero en la hoja que permita pasar todo el cuerpo de una persona, mostrar otra hoja que tenga las marcas por donde hay que cortar y que represente cuando confiamos y nos dejamos guiar por Dios o el Espíritu Santo, entonces siguiendo esas guías se hacen los cortes correspondientes y se logra cumplir con el desafío.",
+			"-Otra opción podría ser que utilizar este juego/desafío para hablar sobre el sacarle el máximo provecho a nuestros dones.",
+			"-Te recomiendo probar con distintos tamaños de hojas para ver la que más te convenga según el uso que le vayas a dar. Por ejemplo, si se quisiera que todo un grupo de personas pasen dentro del agujero, se podría utilizar una cartulina o alguna hoja grande, con la cual se obtendrá un aguajero muy grande. También se podría usar un pedazo de papel chico si por ejemplo queremos hacer algo donde obtengamos un círculo para pasar solo la cabeza o algún objeto si nos sirviera para otro caso."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 15,
+		"title": "Experimento - Papel mágico",
+		"effect": [
+			"Se muestra una servilleta de papel que tiene un dibujo en blanco y negro o una pregunta sin respuesta, y cuando dicha servilleta se coloca dentro de una fuente o plato con agua mágicamente al hacer contacto con el agua aparecen los colores del dibujo o la respuesta a la pregunta."
+		],
+		"resources": [
+			"Una o varias servilletas de papel, fibras o marcadores de los colores que quieras utilizar, una fuente o plato con un poco de agua. Te recomiendo usar marcadores que no se corran con el agua."
+		],
+		"dialog": [
+			"En los comentarios te comparto algunas ideas para las cuales podría servir este experimento."
+		],
+		"realization": [
+			"Como se muestra en el vídeo, la idea es tomar una servilleta de papel, doblarla a la mitad y en la parte que nos queda al frente escribir algo o realizar algún dibujo por ejemplo solo con un marcador negro. Es importante que se haga presión al realizar el dibujo para que así la tinta traspase un poco la servilleta para que al abrirla veamos en la parte interior lo que dibujamos.",
+			"Lo que debemos hacer ahora es abrir la servilleta y remarcar el mismo dibujo en la parte interior pero en lo que sería la segunda mitad de la servilleta, no en la misma mitad donde hicimos antes el dibujo. Y ahora en el interior de la servilleta vamos a realizar el dibujo con colores o si lo que escribimos antes fue una pregunta ahora vamos a escribir la respuesta a dicha pregunta.",
+			"Una vez hecho esto, doblamos la servilleta nuevamente como al comienzo y solo se verá lo que se dibujó o escribió por la parte exterior de la servilleta. (Puede que se note un poco lo dibujado en la parte interior si los marcadores son muy fuertes o la servilleta muy fina).",
+			"Lo que queda es la parte final del experimento, donde al dejar la servilleta sobre una fuente o plato con agua, por acción del mismo agua se hará visible lo que habíamos escrito o dibujo en la parte interior de la servilleta."
+		],
+		"comments": [
+			"Este es un experimento que se hizo muy conocido durante la pandemia para realizarlo con niños, pero quería enseñarlo para quienes aún no lo conozcan porque puede ser una idea útil y fácil para usar y jugar con niños. No lo adapté a ningún mensaje en particular, sino que entre las ideas que tenía se encuentran:",
+			"-Para ilustrar un tema realizando un dibujo sobre un tema que vayan a trabajar ese día, por ejemplo, un dibujo de una paloma y una lengua de fuego si se va a hablar sobre el Espíritu Santo.",
+			"-Escribir en distintas servilletas preguntas relacionadas al tema que se está trabajando y que las respuestas correctas se revelen usando este experimento luego de que los niños respondan."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 16,
+		"title": "Igual de importantes – Ilusión óptica",
+		"effect": [
+			"Se muestran dos pedazos de papel que tienen escritas dos palabras para diferenciarlos, por ejemplo, “Oración” y “Evangelización” para representar las dos formas de misión de los patronos de las misiones: Santa Teresita del Niño Jesús y San Francisco Javier.",
+			"En un primer momento se colocan uno al lado del otro los dos papeles y se ve claramente como el papel de “Evangelización” es más grande que el de “Oración”, representando como la palabra del papel más grande es más importante que el otro, es decir, como podemos pensar que el ir a evangelizar a algún lugar es más importante que el rezar. Pero al sacudir o soplar el papel más chico y volver a ponerlos uno al lado del otro, ahora se ve como el papel de “Oración” es más grande (más importante) que el de “Evangelización”.",
+			"Esto se puede repetir las veces que sean necesarias y al final, sacudiendo o soplando los dos pedazos de papel al mismo tiempo se logra que ahora ambos sean del mismo tamaño (igual de importantes)."
+		],
+		"resources": ["Dos pedazos de papel cortados como se muestra en las imágenes y vídeo."],
+		"dialog": [
+			"En este caso la idea que mostré en el juego es comparando dos formas de misión que nos enseñan los santos patronos de las misiones, una a través de la oración como lo hizo Santa Teresita del Niño Jesús, y otra a través del ir a evangelizar a distintos lugares, como lo hizo San Francisco Javier.",
+			"La idea es hablar sobre que algunas veces podemos pensar que una es más importante que la otra (un papel más grande que el otro), o algunas veces pensar lo contrario (el papel más chico ahora se convierte en el más grande) pero que en realidad ambas formas de misionar son igual de importantes (papeles de igual tamaño)."
+		],
+		"realization": [
+			"Como se muestra en el vídeo, simplemente debes recordar las dos figuras de igual tamaño y gracias a la ilusión óptica que se genera al colocar uno de los papeles por encima del otro se logra este efecto de que parezcan de distinto tamaño."
+		],
+		"comments": [
+			"Si te interesa conocer más sobre esta ilusión óptica, la puedes buscar en internet como “Ilusión óptica de los Arcos de Jastrow”."
+		],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 17,
+		"title": "Árbol que crece - Fe",
+		"effect": ["Texto 1", "Texto 2", "Texto 3"],
+		"resources": [
+			"Granito de mostaza (o cualquier otra semilla), hojas de diario, revistas o cartulinas y pegamento."
+		],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 18,
+		"title": "El plan de Dios",
+		"effect": [
+			"Antes de comenzar el juego se deja a la vista un sobre con la frase “El plan de Dios”, el cual dentro contiene una carta que se dejará oculta hasta el final. Se le entrega la baraja de cartas a una persona y se le pide que arme un montón de cartas sobre la mesa, colocando una a una hasta que decida detenerse.",
+			"Una vez que se detenga, se le pide que con ese montón de cartas ahora realice dos montones, uno al lado del otro, también colocando una a una sobre la mesa.",
+			"Teniendo los dos montones, las dos cartas que libremente hayan quedado arriba de cada montón formaran una única carta, tomando el número de una de esas cartas y el palo de la otra.",
+			"Luego de esto y hablando sobre que Dios tiene un plan para cada uno de nosotros, se abre el sobre que se encontraba a la vista desde un comienzo y se ve que la carta que había dentro coincide exactamente con la carta formada por el espectador."
+		],
+		"resources": [
+			"Una baraja de cartas de cualquier tipo y un sobre o papel al que se le escribe “El plan de Dios”."
+		],
+		"dialog": [],
+		"realization": ["Realización 1"],
+		"comments": ["Comentario 1."],
+		"images": [],
+		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
+	},
+
+	{
+		"idGame": 19,
+		"title": "Papel - círculo - estrella",
+		"effect": [
+			"Se muestra una servilleta de papel y se indica que doblando algunas veces la servilleta y con un corte recto se intentará que en el centro de la servilleta quede formado un círculo. El mago dobla la servilleta, realiza un corte recto y aunque parezca imposible al quitar la parte cortada queda formado el círculo en el centro de la servilleta. Luego de eso, se muestra el pedazo de papel cortado, el cual se pensará que es exactamente el círculo cortado, pero para sorpresa de todos al abrirlo se observa que tiene la forma de una estrella."
+		],
+		"resources": ["Una servilleta de papel."],
+		"dialog": [
+			"Podría servir como algo divertido hablando sobre los reyes magos, contando una historia graciosa como que ellos siguieron la luna... (cortando y mostrando la luna) hasta que alguien diga que era no era la luna sino una estrella, momento en el cual se corrige la historia y se transforma el corte en la estrella.",
+			"Podría ser que una persona vaya leyendo la historia y otra hace los dibujos con la servilleta, entonces, cuando la persona que lee dice “estrella” la otra persona muestra una luna y ahí los niños se ríen y comienzan a decir que está mal, se juega con eso y al final se continúa y se termina obteniendo la estrella."
+		],
+		"realization": ["Explicación en video."],
+		"comments": ["-"],
 		"images": [],
 		"videos": ["https://www.youtube.com/embed/l30qpPzbwNI"]
 	}

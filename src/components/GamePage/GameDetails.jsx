@@ -9,7 +9,6 @@ const GameDetails = ({ title, effect, resources, dialog, realization, comments, 
 	// detalle (son las tipo cards que se abren). Es por eso que en este componente
 	// abajo compruebo cual de las props recibi para mostrar eso.
 
-	console.log(videos);
 	return (
 		<Container open={open} onClick={() => setOpen(!open)}>
 			<div>
@@ -36,9 +35,9 @@ const GameDetails = ({ title, effect, resources, dialog, realization, comments, 
 							// height="315"
 							src={video}
 							title="Video del juego"
-							// frameborder="0"
+							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							// allowfullscreen
+							allowFullScreen
 						></iframe>
 				  ))
 				: null}

@@ -14,7 +14,7 @@ const About = () => {
 				Informática Aplicada y continúo estudiando Ingeniería en Informática (FICH - UNL, Santa Fe).
 				<br /> <br />A los 15 años comencé a aprender juegos de magia sencillos como algunos de los
 				que verás en estos talleres, y luego seguí estudiando y aprendiendo a través de libros,
-				cursos y conferencias online, etc. Hace 9 años aproximadamente que realizo shows de magia en
+				cursos, conferencias online, etc. Hace 9 años aproximadamente que realizo shows de magia en
 				cumpleaños infantiles, festejos familiares, cumpleaños de 15, encuentros de jóvenes y otros
 				tipos de eventos.
 			</p>

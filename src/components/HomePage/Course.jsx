@@ -8,7 +8,7 @@ const Course = ({ title, route, textBtn, item1, item2, item3, enable, enableMore
 		<ContainerCourse>
 			<Title title={title} />
 			<div className="buttons">
-				<Link to={"/magia/" + route}>
+				<Link to={"/" + route}>
 					{enable ? (
 						<Button enable={enable}>{textBtn}</Button>
 					) : (
@@ -17,7 +17,7 @@ const Course = ({ title, route, textBtn, item1, item2, item3, enable, enableMore
 						</Button>
 					)}
 				</Link>
-				<Link to={"/magia/" + route + "/info"}>
+				<Link to={"/" + route + "/info"}>
 					{enableMoreInfo ? (
 						<Button className="btn-more" enableMoreInfo={enableMoreInfo}>
 							Conocer más

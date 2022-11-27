@@ -73,23 +73,15 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage user={user} />} />
 
-				{/* A las rutas de cursos te permite ingresar solo si hay una cuenta de usuario abierta 
-        y si se presiona uno de los botones, pero si se escribe la ruta en la barra de busqueda del 
-        navegador no pude hacer que funcione solo cuando hay una cuenta abierta porque cuando evaluo "user"
-        al comienzo es "null" y me ejecuta el Navigate. Igual no es tan importante porque es mas normal
-        que ingresen desde los botones de cada taller */}
-				<Route
-					path="/magia/:courseName"
-					element={user ? <CoursePage /> : <Navigate to="/" replace />}
-				/>
+				{user && <Route path="/:courseName" element={<CoursePage />} />}
 
-				<Route path="/magia/catolica/info" element={<MoreInformation course="catholic" />} />
-				<Route path="/magia/familiar/info" element={<MoreInformation course="family" />} />
-				<Route path="/magia/educativa/info" element={<MoreInformation course="educational" />} />
+				<Route path="/catolica/info" element={<MoreInformation course="catholic" />} />
+				<Route path="/familiar/info" element={<MoreInformation course="family" />} />
+				<Route path="/educativa/info" element={<MoreInformation course="educational" />} />
 
-				<Route path="/magia/catolica/:idGame" element={<GamePage course="catholic" />} />
-				<Route path="/magia/familiar/:idGame" element={<GamePage course="family" />} />
-				<Route path="/magia/educativa/:idGame" element={<GamePage course="educational" />} />
+				<Route path="/catolica/:idGame" element={<GamePage course="catholic" />} />
+				<Route path="/familiar/:idGame" element={<GamePage course="family" />} />
+				<Route path="/educativa/:idGame" element={<GamePage course="educational" />} />
 
 				<Route path="/login" element={<LoginPage />} />
 
@@ -108,9 +100,9 @@ export default App;
 const GlobalStyle = createGlobalStyle`
   :root {
 	--primary:#2277cc;
-    --secondary:#2a91cf;
+	--secondary: #3399ff;
     --black:#282828;
-    --grey:#7c8071;
+    --grey:#bababa;
     --white:#fafafa;
   }
 

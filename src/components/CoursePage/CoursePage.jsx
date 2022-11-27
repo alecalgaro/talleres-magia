@@ -46,7 +46,7 @@ const CoursePage = () => {
 					</h1>
 					<GamesContainer>
 						{games.map((game) => (
-							<Link to={"/magia/" + courseName + "/" + game.idGame} key={game.idGame}>
+							<Link to={"/" + courseName + "/" + game.idGame} key={game.idGame}>
 								<GameItem idGame={game.idGame} titleGame={game.title} />
 							</Link>
 						))}

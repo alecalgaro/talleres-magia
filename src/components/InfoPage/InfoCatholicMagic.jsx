@@ -92,7 +92,6 @@ const InfoCatholicMagic = () => {
 					MAGIA!
 				</p>
 			</ContainerInfo>
-			;
 		</>
 	);
 };
