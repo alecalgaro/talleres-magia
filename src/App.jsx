@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
+import PageInConstruction from "./components/PageInConstruction";
 import HomePage from "./components/HomePage/HomePage";
 import CoursePage from "./components/CoursePage/CoursePage";
 import GamePage from "./components/GamePage/GamePage";
@@ -71,7 +72,8 @@ function App() {
 		<>
 			<GlobalStyle />
 			<Routes>
-				<Route path="/" element={<HomePage user={user} />} />
+				<Route path="/" element={<PageInConstruction />} />
+				{/* <Route path="/" element={<HomePage user={user} />} /> */}
 
 				{user && <Route path="/:courseName" element={<CoursePage />} />}
 
