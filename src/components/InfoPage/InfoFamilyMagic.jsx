@@ -7,8 +7,12 @@ const InfoFamilyMagic = () => {
 		<>
 			<ContainerInfo>
 				<h1>
-					<img src={logo} alt="Logo del proyecto de talleres de magia católica" />
+					<img src={logo} alt="Logo del proyecto de talleres de magia familiar" />
 				</h1>
+				<a href="" target="_blank">
+					<Button disabled>Ver trailer</Button>
+				</a>
+				<br />
 				<p>Aún no hay información sobre este taller</p>
 			</ContainerInfo>
 		</>
@@ -24,12 +28,12 @@ const ContainerInfo = styled.section`
 	width: 100%;
 
 	h1 {
-		margin: 0;
+		margin: 0 !important;
 	}
 
 	img {
-		width: 300px;
-		margin: 0 1rem;
+		width: 340px;
+		margin: 1rem 1rem 0 1rem;
 	}
 
 	p {
@@ -46,5 +50,26 @@ const ContainerInfo = styled.section`
 	h3 {
 		font-size: 2rem;
 		margin-bottom: 2rem;
+		color: var(--black);
+	}
+`;
+
+const Button = styled.button`
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 1rem 1rem 0.5rem 1rem;
+	margin: 0 0 1.5rem 0;
+	border: none;
+	border-radius: 1rem;
+	//transform: rotate(-1deg);
+	transition: all 0.3s;
+	cursor: not-allowed;
+
+	@media (hover: hover) {
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 `;

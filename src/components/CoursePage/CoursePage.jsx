@@ -51,6 +51,10 @@ const CoursePage = () => {
 							</Link>
 						))}
 					</GamesContainer>
+					<p className="message">
+						El taller se podrá ir actualizando con nuevos juegos, diálogos o ideas, por lo tanto, si
+						tenes alguna idea que te gustaría compartir no dudes en escribirme.
+					</p>
 				</ContainerGamePage>
 			</main>
 			<Footer />
@@ -69,8 +73,8 @@ const ContainerGamePage = styled.section`
 	animation: scale 0.5s ease forwards;
 
 	img {
-		width: 300px;
-		margin: 2rem 1rem 0 1rem;
+		width: 340px;
+		margin: 1rem 1rem 0 1rem;
 	}
 
 	@keyframes scale {
@@ -80,6 +84,14 @@ const ContainerGamePage = styled.section`
 		to {
 			transform: scale(1);
 		}
+	}
+
+	.message {
+		font-size: 1.6rem;
+		text-align: center;
+		padding: 4rem 0 0 0;
+		width: 90%;
+		max-width: 60rem;
 	}
 `;
 

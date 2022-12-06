@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import imgLogoWhatsapp from "../../img/icon-whatsapp.webp";
-import logo_header from "../../img/logo_header1.webp";
+import logo_header from "../../img/logo_header.webp";
 
 const Header = () => {
 	return (
 		<ContainerHeader>
 			<h1>
-				<img src={logo_header} alt="Logo del proyecto de talleres de magia con propósito" />
+				<img
+					className="img_logo"
+					src={logo_header}
+					alt="Logo del proyecto de talleres de magia con propósito"
+				/>
 			</h1>
 			<h3 className="subtitle">
-				Aquí encontrarás talleres de <br /> magia
+				Talleres de magia <br />
 				<div className="rotate-words">
 					<span className="uno">católica</span>
 					<span className="dos">educativa</span>
@@ -38,10 +42,12 @@ const ContainerHeader = styled.header`
 	height: 100vh;
 	margin: 0 2rem;
 	overflow-x: hidden;
+	overflow-y: hidden;
 
-	img {
-		width: 300px;
-		margin: 0 1rem 2.5rem 1rem;
+	.img_logo {
+		width: 100%;
+		max-width: 680px;
+		padding: 0 2rem;
 		animation: scale 0.5s ease forwards;
 	}
 
@@ -55,20 +61,26 @@ const ContainerHeader = styled.header`
 	}
 
 	.subtitle {
-		font-size: 3rem;
-		margin: 0 4rem 4rem 4rem;
+		font-size: 3.2rem;
+		padding: 3rem 1rem;
 		color: var(--black);
-		text-align: start;
+		text-align: center;
 		animation: scale 0.5s ease forwards;
+
+		@media (min-width: 567px) {
+			font-size: 4rem;
+			padding: 1rem 1rem;
+		}
 	}
 
 	.rotate-words {
-		display: inline;
+		display: flex;
+		justify-content: center;
 		margin-left: 1rem;
 	}
 
 	.rotate-words span {
-		font-size: 3rem;
+		font-size: 3.2rem;
 		text-align: center;
 		width: max-content;
 		position: absolute;
@@ -77,6 +89,10 @@ const ContainerHeader = styled.header`
 		opacity: 0;
 		transform-origin: 10% 75%;
 		animation: rotateWords 9s var(--d) linear infinite;
+
+		@media (min-width: 567px) {
+			font-size: 4rem;
+		}
 	}
 
 	.uno {
@@ -104,24 +120,6 @@ const ContainerHeader = styled.header`
 		25% {
 			opacity: 0;
 			transform: translateY(9rem) rotate(10deg);
-		}
-	}
-
-	.description {
-		font-size: 2rem;
-		text-align: center;
-		margin: 6rem 2rem 5rem 2rem;
-		padding: 2rem;
-		border-radius: 3rem;
-		background-color: #ffffff;
-		z-index: 9;
-
-		@media (min-width: 576px) {
-			width: 70%;
-		}
-
-		@media (min-width: 992px) {
-			width: 40%;
 		}
 	}
 
