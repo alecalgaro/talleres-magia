@@ -25,7 +25,7 @@ const Header = () => {
 				href="https://wa.me/+5493456474803?text=Hola!%20Deseo%20adquirir%20un%20taller%20de%20magia"
 				target="_blank"
 			>
-				<img className="btn-whatsapp" src={imgLogoWhatsapp} alt="Logo whatsapp" />
+				{/* <img className="btn-whatsapp" src={imgLogoWhatsapp} alt="Logo whatsapp" /> */}
 			</a>
 		</ContainerHeader>
 	);

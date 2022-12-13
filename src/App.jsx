@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import PageInConstruction from "./components/PageInConstruction";
@@ -62,8 +62,8 @@ function App() {
 		});
 	}, []);
 
-	// Este useEffect es para que al cambiar de ruta se vaya siempre a la parte superior de la pagina
-	// por eso es cada vez que cambia el routePath (obtenido de useLocation)
+	// Este useEffect es para que al cambiar de ruta (routePath obtenido de useLocation)
+	// el scroll se mueva siempre a la parte superior de la pagina
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [routePath]);
@@ -72,8 +72,8 @@ function App() {
 		<>
 			<GlobalStyle />
 			<Routes>
-				<Route path="/" element={<PageInConstruction />} />
-				{/* <Route path="/" element={<HomePage user={user} />} /> */}
+				{/* <Route path="/" element={<PageInConstruction />} /> */}
+				<Route path="/" element={<HomePage user={user} />} />
 
 				{user && <Route path="/:courseName" element={<CoursePage />} />}
 

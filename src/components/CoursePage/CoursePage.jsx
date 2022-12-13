@@ -52,8 +52,8 @@ const CoursePage = () => {
 						))}
 					</GamesContainer>
 					<p className="message">
-						El taller se podrá ir actualizando con nuevos juegos, diálogos o ideas, por lo tanto, si
-						tenes alguna idea que te gustaría compartir no dudes en escribirme.
+						El taller se podrá ir actualizando con nuevos juegos o ideas, por lo tanto, si tenes
+						alguna idea que te gustaría compartir no dudes en escribirme.
 					</p>
 				</ContainerGamePage>
 			</main>

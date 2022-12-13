@@ -24,9 +24,9 @@ const InfoCatholicMagic = () => {
 					través de la magia.
 					<br />
 					<br />
-					La idea de este taller es mostrarte parte de mi experiencia al usar la magia como una
+					La idea de este taller es compartirte parte de mi experiencia al usar la magia como una
 					herramienta y recurso para transmitir ciertos mensajes, además de generar alguna sonrisa y
-					sorpresa, y compartirte algunas ideas creativas para que puedas aplicar a la hora de
+					sorpresa, y mostrarte algunas ideas creativas para que puedas aplicar a la hora de
 					evangelizar de esta manera.
 					<br />
 					Te vas a encontrar juegos de magia sencillos utilizando objetos cotidianos, que podrás
@@ -83,13 +83,17 @@ const InfoCatholicMagic = () => {
 					y más técnica la podremos ver en otros cursos.
 					<br /> <br />
 					Con respecto a los juegos, cada uno tendrá tanto en vídeo como en texto: una demostración
-					del juego, la realización, los recursos necesarios y comentarios adicionales. Además, cada
-					uno viene con un dialogo de ejemplo para dar un mensaje sobre un tema en concreto, sin
-					embargo, siempre tendrás la opción (y te lo recomiendo) de usar tu creatividad para
-					adaptarlos a tu personalidad y a la situación o mensaje que necesites transmitir,
-					encontrando distintas aplicaciones y presentaciones para cada juego, no solo la que yo te
-					propongo, además de tener en cuenta la edad de las personas a las cuales se lo
-					compartirás.
+					del juego (efecto), los recursos necesarios, la realización y comentarios adicionales.
+					Además, cada uno viene con un dialogo de ejemplo para dar un mensaje sobre un tema en
+					concreto, sin embargo, siempre tendrás la opción (y te lo recomiendo) de usar tu
+					creatividad para adaptarlos a tu personalidad y a la situación o mensaje que necesites
+					transmitir, encontrando distintas aplicaciones y presentaciones para cada juego, no solo
+					la que yo te propongo, además de tener en cuenta la edad de las personas a las cuales se
+					lo compartirás.
+					<br />
+					<br />
+					Por último, el taller se podrá ir actualizando con nuevos juegos, diálogos o ideas, por lo
+					tanto, si tenes alguna idea que te gustaría compartir no dudes en escribirme.
 					<br />
 					<br />
 					Ahora sí, vayamos a la parte divertida, te espero dentro del taller y ¡QUE COMIENCE LA
