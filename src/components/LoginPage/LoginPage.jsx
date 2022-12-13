@@ -64,6 +64,7 @@ const ContainerLogin = styled.div`
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	animation: scale 0.5s ease forwards;
 
 	@keyframes scale {
