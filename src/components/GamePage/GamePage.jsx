@@ -68,6 +68,6 @@ const ContainerGame = styled.div`
 		font-size: 3rem;
 		text-align: center;
 		color: var(--primary);
-		text-shadow: 3px 2px 0 var(--black);
+		text-shadow: 3px 2px 0 var(--shadow);
 	}
 `;
