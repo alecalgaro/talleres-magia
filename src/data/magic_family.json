@@ -1,1 +1,401 @@
-[]
+[
+	{
+		"idGame": 1,
+		"title": "Introducción al taller",
+		"effect": [
+			"Además de la introducción al taller, indicar que se consigan una caja para ir armando su propia caja de magia.",
+			"Así la primera semana son dos videos de juegos y uno de introducción pero tienen la tarea de ir armando la caja."
+		],
+		"resources": [""],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 2,
+		"title": "El hotel y las familias",
+		"effect": ["..."],
+		"resources": ["Una baraja de cartas."],
+		"dialog": [""],
+		"explication": [
+			"Para comenzar se debe retirar de la baraja un grupo de 16 cartas pero de cuatro valores, por ejemplo, los cuatro 1, los cuatro 2, los cuatro 3 y los cuatro 4 de la baraja (se pueden elegir otras). Luego se comienza a realizar el juego mientras se cuenta una historia (en este caso se sugiere una pero se puede inventar otra historia que se adapte al juego).",
+			"“Una noche, cuatro familias amigas llegaron a un hotel para pasar la noche y continuar con sus vacaciones, ese hotel tenía cuatro habitaciones disponibles, entonces decidieron que irá una familia en cada habitación, por lo tanto, primero se separaron los cuatro padres (los 1 de la baraja) y se fueron uno a cada habitación, luego las madres (los 2 de la baraja) fueron una a cada habitación, luego los cuatro hijos (los 3) y por último las cuatro hijas (los 4) hicieron lo mismo.",
+			"Todo iba bien hasta que a media noche las familias comenzaron a separarse porque los hijos e hijas salieron a jugar por las escaleras y salones del hotel, mientras que los padres y madres salieron a la terraza y a conocer el resto del hotel, pero entre todos hacían tanto ruido que esto no le gusto al dueño del hotel, quien comenzó a revisar en todas las habitaciones quienes eran los que estaban haciendo ruidos en el hotel.",
+			"Las familias se dieron cuenta de esto y salieron rápido a sus habitaciones, pero como las luces estaban apagadas y no recordaban el número de habitación que les tocada a cada uno, entraron en cualquiera y cuando el dueño del hotel pasó a revisar cada habitación se encontró con que en una de ellas estaban reunidos los cuatro padres (aparecen los cuatro 1 juntos), en otra las cuatro madres juntas (aparecen los cuatro 2 juntos), en otra los cuatro hijos juntos (aparecen los cuatro 3 juntos) y en la última las cuatro hijas juntas (aparecen los cuatro 4 juntos)”."
+		],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 3,
+		"title": "Ilusión óptica de los arcos de Jastrow",
+		"effect": [
+			"Se muestran dos pedazos de papel “A” y “B”. En primer lugar se coloca el papel “A” encima del “B”, para mostrar claramente como el papel de “A” es más chico que el “B”.",
+			"Luego se sacude y se sopla el papel “A” y ahora se lo coloca por debajo del papel “B”, y para sorpresa de todos se puede ver como ahora el papel “B” es el más chico.",
+			"Esto se puede repetir las veces que sean necesarias, intercambiando de lado los papeles, viendo como siempre uno es más grande que el otro.",
+			"Para finalizar, se sacuden y se soplan los dos pedazos de papel al mismo tiempo y se logra que ahora ambos sean del mismo tamaño."
+		],
+		"resources": [
+			"Dos pedazos de papel o cartulina con la forma de arco como se muestra en la imagen y video."
+		],
+		"dialog": [""],
+		"explication": [
+			"Como se muestra en las imágenes y vídeo, simplemente se debe recortar las dos figuras de igual tamaño y gracias a la ilusión óptica que se genera al colocar uno de los papeles por encima del otro se logra este efecto de que parezcan de distinto tamaño.",
+			"Es importante que, al momento se soplar uno de los papeles para hacer que cambie de tamaño, separemos y alejemos los dos papeles, para que las personas no presten atención al otro, ya que la ilusión óptica se genera cuando tenemos un papel encima del otro, debido a la forma de arco que tienen."
+		],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 4,
+		"title": "El detective secreto",
+		"effect": [
+			"El mago/a da a elegir una carta a una persona del público quien recordará su carta y la colocará nuevamente en la baraja. El mago le cuenta al público que la carta elegida representará a un ladrón, el cual se mezcla entre las personas representadas por las demás cartas mientras se corta y completa la baraja varias veces. Sin embargo, el mago indica que dentro de la baraja hay una carta que representa a un detective secreto, el cual se encontraba escondido y está representado por ejemplo, por el 10 de espadas.",
+			"Después de contar esa historia, el mago indica que el detective ya está buscando al ladrón, y luego de esperar unos pocos segundos, se extienden las cartas para buscar al detective y se puede ver que la carta del detective esta exactamente al lado de la carta que representa al ladrón."
+		],
+		"resources": ["Una baraja de cartas (de cualquier tipo)."],
+		"dialog": [""],
+		"explication": [
+			"De forma secreta antes de comenzar con el juego, el mago deja preparada una carta debajo de la baraja, por ejemplo, el 10 de espadas, la cual representaría al detective.",
+			"Al comenzar el juego se le da a elegir una carta al público y después de memorizarla se le indica que esa carta representará un ladrón, y se le pide que la coloquen encima de la baraja y que corte y complete la baraja para perder la carta, es decir, para que el ladrón se esconda entre las demás. Se puede cortar y completar la baraja las veces que se quiera (siempre sin mezclar la baraja, solo realizar cortes simples y completar).",
+			"El secreto es muy simple, y está en que al hacer el primer corte y completar, la carta que al comienzo teníamos debajo de la baraja (el detective), ahora ya estará al lado de la carta elegida por la persona (el ladrón). En este momento el mago le cuenta al público que hay un detective encubierto entre las demás cartas, que es el 10 de espadas, y que si se espera unos segundos, ese detective es capaz de encontrar al ladrón. Se extiende la baraja y se muestra que el detective está al lado de la carta elegida, es decir, al lado del ladrón.",
+			"Para que recuerdes siempre, la carta del detective estará debajo de la carta elegida por la persona, entonces al ir extendiendo las cartas y buscar la que corresponde al detective, vamos a separar esa carta y la que se encuentra encima de la misma mostrando como el detective encontró al ladrón."
+		],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 5,
+		"title": "Desaparición y aparición de moneda",
+		"effect": [
+			"Se muestra una moneda sobre un pedazo de papel o cartulina, se la tapa con una vaso transparente y al mostrar la moneda ha desaparecido. Luego de unos segundos, se quita el vaso y la moneda vuelva a aparecer."
+		],
+		"resources": [
+			"Un vaso transparente, una moneda, una hoja de papel o cartulina, tijera y cinta.",
+			"En la carpeta de videos tengo la versión que hacía una niña que es fácil y que me gustó. Podríamos fabricarlo en el taller y que se lleven todo en su caja de magia. (Podría conseguir varios vasos descartables de los transparentes en algún lugar y sino pedirle a los padres que consigan)."
+		],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 6,
+		"title": "Desafío, broma o ilusión óptica",
+		"effect": [""],
+		"resources": [""],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 7,
+		"title": "Moneda que atraviesa el tarro",
+		"effect": [
+			"Se muestra un tarro de plástico tapado y sobre la tapa se coloca una moneda a vista de todos. Luego se cubre la moneda con una baraja de cartas y al darle un golpe la moneda atraviesa la tapa del tarro y cae dentro del mismo."
+		],
+		"resources": [
+			"Un tarro plástico con tapa (de mayonesa, mermelada o similar), dos monedas lo más iguales posibles, cinta y una baraja de cartas (o algo similar)."
+		],
+		"dialog": [""],
+		"explication": [
+			"El secreto del juego está en que, antes de realizarlo, sin que nadie nos vea debemos pegar un pequeño trozo de cinta en la parte interna de la tapa del tarro y pegar una de las monedas suavemente. Luego tapamos el tarro con cuidado para que la moneda no se caiga y también debemos colocar un pequeño trozo de cinta en la parte inferior de la baraja de cartas, sin que nadie lo vea. Una vez hecha esta preparación podemos comenzar con el juego.",
+			"Cuando vayamos a realizar el juego, mostramos el tarro vacío, colocamos una moneda encima de la tapa y sobre la misma colocamos la baraja de cartas. Contamos hasta tres o hacemos algún pase mágico y con la palma de la mano damos un golpe sobre la baraja. De esa manera, la moneda que esta sobre la tapa del tarro quedará pegada secretamente con la cinta que colocamos debajo de la bajara, y al mismo tiempo la moneda que estaba pegada por dentro de la tapa, al estar pegada suavemente y dar el golpe la misma caerá dentro del tarro dando la sensación de que atravesó la tapa."
+		],
+		"comments": [
+			"Es importante que las monedas sean lo más iguales posibles por si alguna persona la mira con detenimiento, pero no hace falta que le demos mucha importancia.",
+			"También es recomendable practicarlo varias veces para encontrar la mejor forma de pegar la moneda por dentro de la tapa para que no quede pegada muy fuerte ni muy suave, y saber la fuerza con la que se debe dar el golpe para que la moneda se despegue y caiga dentro del tarro."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 8,
+		"title": "Energía estática",
+		"effect": [
+			"El siguiente no es un juego de magia, sino un desafío que puede ser muy interesante. La idea es la siguiente:",
+			"Se coloca un trozo de papel sobre una tapa de gaseosa (también podría ser sobre una moneda en vertical) y se tapa todo con un vaso transparente. El desafío es intentar hacer mover y caer el trozo de papel sin tocar el vaso ni la mesa donde se encuentre."
+		],
+		"resources": [
+			"Un vaso descartable de los transparentes, una tapa de gaseosa y un trozo de papel. (Si se quiere, el papel se puede reemplazar por un sorbete u otro elemento con el que funcione el juego)."
+		],
+		"dialog": [""],
+		"explication": [
+			"Simplemente se debe inflar un poco un globo y frotarlo sobre un pantalón, buzo o campera que permita generar electricidad estática (se debe comprobar anteriormente ya que hay materiales mejores que otros, incluso se puede probar frotando el globo con el pelo), y a continuación acercar lentamente el globo al vaso y la estática hará que el trozo de papel se mueva y caiga."
+		],
+		"comments": [
+			"El globo se puede reemplazar por algún otro material, siempre que permita generar la electricidad estática, y lo que se elija utilizar podría tener escrito o pegada una imagen relacionada con algún tema si queremos inventar un diálogo.",
+			"También se puede pensar en otra opción que no sea mover un trozo de papel, por ejemplo, hacer mover un sorbete de plástico colocado encima de la tapa de gaseosa, ya que funcionará de la misma manera."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 9,
+		"title": "Levitar lápiz",
+		"effect": [""],
+		"resources": [
+			"Un lápiz y un reloj, muñequera o pulsera que permita realizar la segunda parte del juego."
+		],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 10,
+		"title": "El montón de 7",
+		"effect": [
+			"Al comenzar el juego, el mago/a escribe una predicción en un papel, es decir, algo que piensa que va a suceder en un momento, y la deja sobre la mesa a la vista de todos.",
+			"Luego muestra que sobre la mesa hay dos montones de cartas y le pide a una persona que elija uno de esos dos montones. Cuando la persona elige uno de los dos montones, el mago/a muestra su predicción y en el papel se ve que antes de comenzar había escrito que la persona elegiría exactamente ese montón de cartas."
+		],
+		"resources": ["Una baraja de cartas."],
+		"dialog": [""],
+		"explication": [
+			"En la predicción escribiremos “Elegirás el montón de siete”, y el secreto se encuentra en una pequeña preparación que haremos antes de comenzar. Sin que las personas vean, armaremos dos montones de cartas sobre la mesa, donde uno de ellos tendrá siete cartas que no nos importan cuales sean, y el otro montón tendrá cuatro cartas que serán los cuatro 7 de la baraja.",
+			"De esta manera, sin importar que montón elija la persona, siempre nos servirá nuestra predicción, ya que en caso de elegir el montón que tiene siete cartas le diremos que en nuestra predicción habíamos escrito que iba a elegir el montón de siete cartas, entonces al contar las cartas verá que en el montón que eligió hay siete y en el otro montón solo hay cuatro cartas. Mientras que si elige el otro montón, le mostraremos que el mismo tiene justamente los cuatro 7 de la baraja, y nuestra predicción decía que iba a elegir el montón de siete."
+		],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 11,
+		"title": "Los dos clips",
+		"effect": [
+			"Para comenzar se muestran dos clips separados y un pedazo de papel. El mago/a engancha los dos clips en el papel, separados  uno del otro, y se muestra claramente. Se realizan unos pases mágicos y al tirar de ambos extremos del papel los dos clips saltan y quedan enganchados entre sí.",
+			"En otra versión del mismo juego, se puede colocar una bandita elástica en el centro del papel y al tirar de los extremos los dos clips quedan unidos entre sí y también unidos a la bandita elástica."
+		],
+		"resources": [
+			"Dos clips, una bandita elástica y una tira de papel como se muestra en el video."
+		],
+		"dialog": [""],
+		"explication": [
+			"Como se observa en el vídeo, se comienza mostrando los dos clips por separado, luego se dobla una punta de la tira de papel y se engancha por la parte de atrás del clip más alejado, la otra punta de la tira se dobla en sentido contrario y se engancha con el otro clip. De esta manera el papel queda formando una “z”, con un clip enganchado en la parte trasera y el otro en la parte frontal. Al tirar de las dos puntas del papel al mismo tiempo, los clips se unen.",
+			"Si usamos una bandita elástica, antes de colocar los clips se debe colocar la bandita en el centro de la tira de papel, y luego el procedimiento es el mismo, con la diferencia de que al tirar de las puntas del papel ahora los clips quedarán unidos a la bandita."
+		],
+		"comments": [
+			"Es recomendable probar con distintos clips para ver con cuales nos funciona mejor, y es preferible que sean clips de distintos colores para que sea más llamativo."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 12,
+		"title": "Vaso que atraviesa la mesa",
+		"effect": [
+			"El mago/a muestra una moneda sobre la mesa e indica al público que la va a tapar con un vaso y una servilleta y luego de un pase mágico la moneda atravesará la mesa. Se trata de hacer lo indicado pero al destapar la moneda se ve que no ha atravesado, entonces se lo vuelve a intentar y en esta oportunidad el mago da un golpe al vaso y para sorpresa de todos lo que atraviesa la mesa no es la moneda sino el vaso."
+		],
+		"resources": [
+			"Un vaso, una moneda y una servilleta de papel con tamaño suficiente para envolver el vaso."
+		],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 13,
+		"title": "Tubo mágico",
+		"effect": [
+			"Se muestra un tubo armado con una hoja de papel, a través del cual se puede ver de un lado al otro, mostrando claramente que se encuentra vacío.",
+			"Luego de mostrar que el tubo se encuentra vacío, el mago/a realiza unos pases mágicos y hace aparecer un pañuelo desde dentro del tubo."
+		],
+		"resources": ["Dos hojas A4 u otro tamaño, un pañuelo y cinta."],
+		"dialog": [""],
+		"explication": [
+			"El secreto se encuentra en la fabricación del tubo de papel, ya que utilizaremos dos hojas y armaremos un tubo con un compartimiento secreto que no mostraremos a las personas pero que igualmente nos permitirá mostrar el tubo vacío.",
+			"En el video dentro del sitio web te enseño una forma sencilla de fabricarlo."
+		],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 14,
+		"title": "Cambio de cubiertos",
+		"effect": [
+			"El mago/a coloca un tenedor sobre un repasador o pañuelo grande, luego enrolla el tenedor con el pañuelo, realiza unos pases mágicos y al desenrollarlo se ve como el tenedor se ha transformado en una cuchara."
+		],
+		"resources": ["Un pañuelo grande o repasador, un tenedor y una cuchara."],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [
+			"Puede ser interesante pensar en alguna idea para reemplazar el tenedor y la cuchara por otros elementos."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 15,
+		"title": "Suspicacia",
+		"effect": [""],
+		"resources": [""],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 16,
+		"title": "Anillo que sube",
+		"effect": [
+			"Se muestra una bandita elástica cortada y se la pasa por dentro de un anillo dejándolo en uno de los extremos. Luego de esto se estira la bandita, el mago/a se concentra y el anillo comienza a subir y moverse a lo largo de la bandita hasta llegar al otro extremo."
+		],
+		"resources": ["Una bandita elástica y un anillo."],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 17,
+		"title": "El mozo y los reyes",
+		"effect": [""],
+		"resources": ["Una baraja de cartas"],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 18,
+		"title": "Desafío, broma o ilusión óptica",
+		"effect": [""],
+		"resources": [""],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 19,
+		"title": "Dado dinamita",
+		"effect": [""],
+		"resources": [
+			"Se les puede llevar cartulinas recortadas y que cada uno fabrique su propio juego, haciendo círculos o dibujos."
+		],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 20,
+		"title": "La carta soñada",
+		"effect": [
+			"Antes de comenzar el juego se deja a la vista una carta cara abajo que se dejará oculta hasta el final. Se le entrega la baraja de cartas a una persona y se le pide que arme un montón de cartas sobre la mesa, colocando una a una hasta que decida detenerse.",
+			"Una vez que se detenga, se le pide que con ese montón de cartas ahora realice dos montones, colocando una carta a la izquierda y otra a la derecha, una a una hasta terminar con todas las cartas de su montón.",
+			"Teniendo los dos montones, las dos cartas que libremente hayan quedado arriba de cada montón formaran una única carta, tomando el número de una de esas cartas y el palo de la otra, y remarcando que la persona se podría haber detenido en otro momento, colocando más o menos cartas, pero por las decisiones que tomo llegamos a formar esa carta.",
+			"Luego de esto se muestra la carta que estaba a la vista desde un comienzo y se ve que coincide exactamente con la carta formada por el espectador."
+		],
+		"resources": ["Una baraja de cartas."],
+		"dialog": [""],
+		"explication": [
+			"Para realizar el juego, en primer lugar se debe elegir una carta que se guardará en un sobre o que se dejará a un lado como predicción para el final del juego, por ejemplo, supongamos que elegimos como carta el 2 de espadas. Dicha carta no se debe mostrar a las personas. Si se quiere se puede dejarla simplemente como una predicción o contando una historia diciendo que hemos soñado que hoy hacíamos un juego de magia y se elegiría una carta, la cual vamos a separar y dejar sin mostrar hasta el final del juego, de ahí el nombre del juego.",
+			"Luego debemos colocar en la parte superior de la baraja, dos cartas que juntas formarían nuestra carta elegida, en nuestro ejemplo podría ser un 2 de cualquier palo y una carta cualquiera de espadas. Esto se debe hacer antes de realizar el juego, sin que las personas del público sepan.",
+			"Se puede mostrar claramente como toda la baraja se encuentra mezclada, sin que se vean mucho las dos primeras cartas para evitar que las personas las recuerden, y si se quiere se puede cortar la baraja varias veces para dar la sensación de estar mezclando la baraja, sin darle demasiada importancia.",
+			"Y con eso ya tenemos todo listo, solo debemos continuar con el juego pidiendo a la persona que vaya colocando una a una cartas sobre la mesa armando un único montón de cartas hasta cuando libremente se quiera detener. Luego le pedimos que tome ese montón de cartas y ahora arme dos montones, colocando una a la izquierda y una a la derecha, una a una todas las cartas de su montón.",
+			"Finalmente, le pedimos que gire la carta que ha quedado encima de cada montón y, cuando veamos la carta que representa el número de nuestra carta elegida, le indicamos a la persona que esa carta representará el número y la otra representará el palo, por lo tanto, si las juntamos formamos una carta que es, en nuestro ejemplo, el 2 de espadas."
+		],
+		"comments": [
+			"Otra opción, para aquellos que lo quieran hacer más avanzado sin preparar previamente la carta, podría ser dar a mezclar la baraja, luego mostrar todas las cartas cara arriba para que se vea que son distintas y que están mezcladas, y en ese momento disimuladamente ver cuáles son las dos primeras cartas, por ejemplo si fueran un 2 de cualquier palo y un 5 de espadas, juntas podrían formar el 2 de espadas. Sabiendo eso, ahora podemos buscar un papel y escribir “2 de espadas” o separar el 2 de espadas, sin mostrarle a la persona lo que hemos escrito y diciendo que eso representaría nuestra predicción, lo que creemos que va a pasar en unos minutos, y lo dejamos a un lado. Luego realizamos todo el juego de la manera explicada y al final mostramos el papel que hemos escrito al comienzo o la carta que separamos."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 21,
+		"title": "Desafío, broma o ilusión óptica",
+		"effect": [""],
+		"resources": [""],
+		"dialog": [""],
+		"explication": [""],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 22,
+		"title": "Papel mágico y agua",
+		"effect": [
+			"Se muestra una servilleta de papel que tiene un dibujo en blanco y negro o una pregunta sin respuesta, y cuando dicha servilleta se coloca dentro de una fuente o plato con agua, al hacer contacto con el agua aparecen los colores del dibujo o la respuesta a la pregunta."
+		],
+		"resources": [
+			"Servilletas de papel de cocina, marcadores o fibrones (preferiblemente que sean permanentes) y un plato o fuente con un poco de agua."
+		],
+		"dialog": [""],
+		"explication": [
+			"Como se muestra en el vídeo, la idea es tomar una servilleta de papel, doblarla a la mitad y en la parte que nos queda al frente escribir algo o realizar algún dibujo por ejemplo, solo con un marcador negro. Es importante que se haga un poco de presión al realizar el dibujo para que así la tinta traspase un poco la servilleta para que al abrirla veamos en la parte interior lo que dibujamos.",
+			"Lo que debemos hacer ahora es abrir la servilleta y en el interior de la misma vamos a realizar el dibujo con colores o si lo que escribimos antes fue una pregunta ahora vamos a escribir la respuesta a dicha pregunta. Una vez hecho esto, doblamos la servilleta nuevamente como al comienzo y solo se verá lo que se dibujó o escribió en la parte exterior de la servilleta. (Puede que se note un poco lo dibujado en la parte interior si los marcadores son muy fuertes o la servilleta muy fina).",
+			"Lo que queda es la parte final del experimento, donde al colocar la servilleta sobre una fuente o plato con agua, por acción de la misma agua se hará visible lo que habíamos escrito o dibujado en la parte interior de la servilleta."
+		],
+		"comments": [
+			"Una posible idea es realizar dibujos y que al colocarlos sobre el agua aparezcan los colores, pero también algo divertido para los niños es realizar preguntas, por ejemplo, sumas o restas, y que la respuesta este en la parte interior de la servilleta y se revele al colocarla en el agua, así podemos jugar y a su vez practicar."
+		],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 23,
+		"title": "Moneda a través del codo",
+		"effect": [
+			"El mago/a muestra una moneda y le indica el público que hará que la moneda atraviese su brazo. Para demostrar esto coloca la moneda sobre su brazo y luego de frotar suavemente la moneda desaparece."
+		],
+		"resources": ["Una moneda."],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	},
+
+	{
+		"idGame": 24,
+		"title": "Moneda a través de carta",
+		"effect": [""],
+		"resources": ["Una moneda y una carta especial, fabricada como se explica en el video."],
+		"dialog": [""],
+		"explication": ["Explicación en video."],
+		"comments": [""],
+		"images": [],
+		"videos": [""]
+	}
+]
