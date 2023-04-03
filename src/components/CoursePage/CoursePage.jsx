@@ -51,10 +51,13 @@ const CoursePage = () => {
 							</Link>
 						))}
 					</GamesContainer>
-					<p className="message">
-						El taller se podrá ir actualizando con nuevos juegos o ideas, por lo tanto, si tenes
-						alguna idea que te gustaría compartir no dudes en escribirme.
-					</p>
+					{courseName == "familiar" && <ButtonDiploma>Descargar diploma</ButtonDiploma>}
+					{courseName != "familiar" && (
+						<p className="message">
+							El taller se podrá ir actualizando con nuevos juegos o ideas, por lo tanto, si tenes
+							alguna idea que te gustaría compartir no dudes en escribirme.
+						</p>
+					)}
 				</ContainerGamePage>
 			</main>
 			<Footer />
@@ -102,4 +105,23 @@ const GamesContainer = styled.div`
 	align-items: center;
 	width: 90%;
 	max-width: 70rem;
+`;
+
+const ButtonDiploma = styled.button`
+	margin-top: 4rem;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 1rem 1rem 0.5rem 1rem;
+	border: none;
+	border-radius: 1rem;
+	transition: all 0.3s;
+	cursor: pointer;
+
+	@media (hover: hover) {
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 `;

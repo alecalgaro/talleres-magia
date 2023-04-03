@@ -34,8 +34,8 @@ const GamePage = ({ course }) => {
 							<GameDetails title="Video" videos={game.videos} />
 							<GameDetails title="Efecto" effect={game.effect} />
 							<GameDetails title="Recursos" resources={game.resources} />
-							<GameDetails title="Diálogo" resources={game.dialog} />
-							<GameDetails title="Realización" realization={game.realization} />
+							{course == "catholic" && <GameDetails title="Diálogo" resources={game.dialog} />}
+							<GameDetails title="Explicación" explication={game.explication} />
 							<GameDetails title="Comentarios" comments={game.comments} />
 						</ContainerGame>
 					</ContainerPage>

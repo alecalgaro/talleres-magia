@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const GameDetails = ({ title, effect, resources, dialog, realization, comments, videos }) => {
+const GameDetails = ({ title, effect, resources, dialog, explication, comments, videos }) => {
 	const [open, setOpen] = useState(false);
 
 	// Desde GamePage voy a renderizar varios GameDetails enviando como props en cada uno
@@ -45,7 +45,7 @@ const GameDetails = ({ title, effect, resources, dialog, realization, comments, 
 			{effect ? effect.map((eff, index) => <p key={index}>{eff}</p>) : null}
 			{dialog ? dialog.map((dia, index) => <p key={index}>{dia}</p>) : null}
 			{resources ? resources.map((res, index) => <p key={index}>{res}</p>) : null}
-			{realization ? realization.map((rea, index) => <p key={index}>{rea}</p>) : null}
+			{explication ? explication.map((rea, index) => <p key={index}>{rea}</p>) : null}
 			{comments ? comments.map((com, index) => <p key={index}>{com}</p>) : null}
 		</Container>
 	);

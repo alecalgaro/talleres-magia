@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import SplashScreenApp from "./SplashScreenApp";
 import Navbar from "../General/Navbar";
 import Header from "./Header";
 import Course from "./Course";
@@ -49,54 +50,61 @@ const HomePage = ({ user }) => {
 	}
 
 	return (
-		<ContainerHome>
-			<Helmet>
-				<title>Talleres de magia</title>
-				<meta
-					name="description"
-					content="Talleres online de magia católica, familiar y educativa."
-				/>
-			</Helmet>
-			<Navbar user={user} page="home" />
-			<Header />
-			<main>
-				<section className="courses" id="talleres">
-					<Course
-						enable={enable[0]}
-						enableMoreInfo={true}
-						title="Magia católica"
-						route="catolica"
-						textBtn="Acceder"
-						item1="Magia con objetos cotidianos"
-						item2="Nuevas ideas para evangelizar"
-						item3="Mensajes creativos y alegres"
-					/>
-					<Course
-						enable={enable[1]}
-						enableMoreInfo={false}
-						title="Magia familiar"
-						route="familiar"
-						textBtn="Proximamente"
-						item1="Magia para niños y adultos"
-						item2="Momentos compartidos en familia"
-						item3="Sonrisas y sorpresas garantizadas"
-					/>
-					<Course
-						enable={enable[2]}
-						enableMoreInfo={false}
-						title="Magia educativa"
-						route="educativa"
-						textBtn="Proximamente"
-						item1="Magia con elementos de clases"
-						item2="Más atención y entusiasmo"
-						item3="Aprender de forma divertida"
-					/>
-				</section>
-				<About />
-				<Contact />
-			</main>
-			<Footer />
-		</ContainerHome>
+		<>
+			{!user ? (
+				<SplashScreenApp />
+			) : (
+				<ContainerHome>
+					<Helmet>
+						<title>Talleres de magia</title>
+						<meta
+							name="description"
+							content="Talleres online de magia católica, familiar y educativa."
+						/>
+					</Helmet>
+
+					<Navbar user={user} page="home" />
+					<Header />
+					<main>
+						<section className="courses" id="talleres">
+							<Course
+								enable={enable[0]}
+								enableMoreInfo={true}
+								title="Magia católica"
+								route="catolica"
+								textBtn="Acceder"
+								item1="Magia con objetos cotidianos"
+								item2="Nuevas ideas para evangelizar"
+								item3="Mensajes creativos y alegres"
+							/>
+							<Course
+								enable={enable[1]}
+								enableMoreInfo={false}
+								title="Magia familiar"
+								route="familiar"
+								textBtn="Proximamente"
+								item1="Magia para niños y adultos"
+								item2="Momentos compartidos en familia"
+								item3="Sonrisas y sorpresas garantizadas"
+							/>
+							<Course
+								enable={enable[2]}
+								enableMoreInfo={false}
+								title="Magia educativa"
+								route="educativa"
+								textBtn="Proximamente"
+								item1="Magia con elementos de clases"
+								item2="Más atención y entusiasmo"
+								item3="Aprender de forma divertida"
+							/>
+						</section>
+						<About />
+						<Contact />
+					</main>
+					<Footer />
+				</ContainerHome>
+			)}
+		</>
 	);
 };
 
