@@ -26,7 +26,7 @@ const SplashScreen = styled.div`
 		padding-right: 6.4rem;
 	}
 
-	.loarder::after,
+	.loader::after,
 	.loader::before {
 		animation: loader 1s linear infinite;
 		content: "";

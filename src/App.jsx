@@ -52,9 +52,11 @@ function App() {
 				setUser(null);
 				// Si no hay una sesion iniciada y aun no se mostro el toast, muestro para indicar como adquirir un taller
 				if (enableToast === true) {
-					notify(
-						"Para adquirir uno de los talleres, haz click en el botón de Whatsapp que encontrarás abajo a la derecha o en la sección de contacto. Muchas gracias!"
-					);
+					setTimeout(() => {
+						notify(
+							"Para adquirir uno de los talleres, haz click en el botón de Whatsapp que encontrarás abajo a la derecha o en la sección de contacto. Muchas gracias!"
+						);
+					}, 1000);
 					// cambio el state para que no se vuelva a mostrar luego de cerrarlo:
 					setEnableToast(false);
 				}

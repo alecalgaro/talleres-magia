@@ -16,6 +16,7 @@ const firestore = getFirestore(firebaseApp);
 
 const HomePage = ({ user }) => {
 	const [enable, setEnable] = useState([]);
+	const [loader, setLoader] = useState(true);
 
 	useEffect(() => {
 		async function getEnables() {
@@ -24,6 +25,9 @@ const HomePage = ({ user }) => {
 		if (user === null) {
 			// cuando se cierra la sesion user queda como null, asi que deshabilito todos
 			setEnable([false, false, false]);
+			setTimeout(() => {
+				setLoader(false);
+			}, 1500);
 		} else {
 			// sino llamo a esta funcion para revise si existe el user y vea que talleres tiene habilitados
 			getEnables();
@@ -43,15 +47,17 @@ const HomePage = ({ user }) => {
 			// Codigo cuando si existe: obtengo los talleres que tiene habilitados y los guardo en el state
 			const infoDoc = result.data();
 			setEnable(infoDoc.enable);
+			setLoader(false);
 		} else {
 			// Codigo cuando no existe: dejo el state con todos los talleres deshabilitados
 			setEnable([false, false, false]);
+			setLoader(false);
 		}
 	}
 
 	return (
 		<>
-			{!user ? (
+			{loader ? (
 				<SplashScreenApp />
 			) : (
 				<ContainerHome>

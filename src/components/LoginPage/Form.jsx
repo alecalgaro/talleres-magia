@@ -34,7 +34,7 @@ const Form = ({ type }) => {
 	const notify_info = (message) => {
 		toast.info(message, {
 			position: "top-center",
-			autoClose: 2000,
+			autoClose: 1500,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
