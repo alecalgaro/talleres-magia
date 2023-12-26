@@ -4,4 +4,4 @@
 
 Podes conocer más sobre los talleres y obtener acceso ingresando a:
 
-https://magia.alejandrocalgaro.com.ar/
+https://magia.alecalgaro.com.ar/
